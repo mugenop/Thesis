@@ -1,14 +1,29 @@
-\contentsline {chapter}{\numberline {0}Introduction}{1}{chapter.0}
-\contentsline {chapter}{\numberline {1}Experimental setups}{5}{chapter.1}
-\contentsline {section}{\numberline {1.1}Motives of the up-scaling}{6}{section.1.1}
-\contentsline {paragraph}{}{6}{section.1.1}
-\contentsline {paragraph}{}{6}{section.1.1}
-\contentsline {section}{\numberline {1.2}Shell fabrication}{6}{section.1.2}
-\contentsline {paragraph}{}{6}{section.1.2}
-\contentsline {paragraph}{}{7}{section.1.2}
-\contentsline {paragraph}{}{7}{section.1.2}
-\contentsline {chapter}{\numberline {2}The title of chapter two}{8}{chapter.2}
-\contentsline {chapter}{\numberline {3}Consectetuer adipiscing elit}{13}{chapter.3}
-\contentsline {chapter}{\numberline {4}Conclusion}{49}{chapter.4}
-\contentsline {chapter}{Appendix \numberline {A}Some extra stuff}{53}{Appendix.1.A}
-\contentsline {chapter}{References}{57}{chapter*.4}
+\contentsline {chapter}{\numberline {0}Materials and methods}{1}{chapter.0}
+\contentsline {section}{\numberline {0.1}Shell fabrication}{1}{section.0.1}
+\contentsline {subsection}{\numberline {0.1.1}Motivations}{1}{subsection.0.1.1}
+\contentsline {paragraph}{}{1}{subsection.0.1.1}
+\contentsline {paragraph}{}{2}{subsection.0.1.1}
+\contentsline {paragraph}{}{2}{subsection.0.1.1}
+\contentsline {paragraph}{}{2}{subsection.0.1.1}
+\contentsline {subsection}{\numberline {0.1.2}Molding equipments}{3}{subsection.0.1.2}
+\contentsline {paragraph}{\textbf {Female mold:}}{3}{subsection.0.1.2}
+\contentsline {paragraph}{\textbf {Translation guide sleeve:}}{3}{figure.caption.4}
+\contentsline {paragraph}{\textbf {Male mold:}}{3}{figure.caption.5}
+\contentsline {paragraph}{\textbf {Gluing sleeve}}{4}{figure.caption.6}
+\contentsline {paragraph}{\textbf {Mechanical press}}{5}{figure.caption.6}
+\contentsline {paragraph}{\textbf {Pasta machine}}{5}{figure.caption.6}
+\contentsline {subsection}{\numberline {0.1.3}Materials and protocols}{6}{subsection.0.1.3}
+\contentsline {subsubsection}{Dragon skin\textregistered 30}{6}{subsection.0.1.3}
+\contentsline {paragraph}{}{6}{subsection.0.1.3}
+\contentsline {paragraph}{Half shell casting}{7}{subsection.0.1.3}
+\contentsline {paragraph}{Half spheres gluing}{7}{Item.8}
+\contentsline {paragraph}{}{8}{Item.8}
+\contentsline {subsubsection}{AJO121/122}{9}{Item.16}
+\contentsline {paragraph}{}{9}{Item.16}
+\contentsline {paragraph}{Half shell casting}{10}{Item.16}
+\contentsline {paragraph}{Half spheres gluing}{10}{Item.23}
+\contentsline {subsubsection}{}{12}{Item.32}
+\contentsline {subsubsection}{Molding protocol for Dragon skin\textregistered 30}{12}{Item.32}
+\contentsline {subsubsection}{}{12}{Item.32}
+\contentsline {chapter}{Appendix \numberline {A}Some extra stuff}{13}{Appendix.1.A}
+\contentsline {chapter}{References}{17}{chapter*.8}
