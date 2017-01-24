@@ -202,4 +202,74 @@ It was also provided with threaded ends to fit M6 and M4 screws. The M6 end is d
 
 \subsubsection{Spherical shells}
 \paragraph{}
-The spherical shells used in this experiment are shells cast in the 'Dragon skin \textregistered 30' material. The external radius is kept constant at 5 cm and three thicknesses were explored: 2 mm, 5 mm and 6.5 mm. The choice of these thicknesses is primarily directed by the fact that we wanted to explore the effect of stored elastic energy on the buckling mechanism and the thrust induced during the deflation and the re-inflation of the capsule. Taking into account that the stored elastic energy before the 
+The spherical shells used in this experiment are shells cast in the 'Dragon skin \textregistered 30' material. The external radius is kept constant at 5 cm and three thicknesses were explored: 2 mm, 5 mm and 6.5 mm.
+The choice of these thicknesses is primarily directed by the fact that we wanted to explore the effect of stored elastic energy on the buckling mechanism and the thrust induced during the deflation and the re-inflation of the capsule. Taking into account that the stored elastic energy before the advent of the buckling instability is proportional to the ratio between the thickness and the shell radius squared \cite{cqpcritic2011} $P_c \propto (\frac{d}{R})^2$, the resulting range of variation of this geometric ratio in this experiment, ranges from $6.4 10^{-3}$ to $6.76 10^{-2}$.
+A lower value of this parameter was tried (taking a thickness of 1 mm) but it resulted in a spontaneous buckling when immersed, due to the static pressure.
+A higher value of of this parameter was tried (taking a thickness of 7.5 mm) but it was not possible to reach the pressure high enough to produce a buckling in the range of the operable pressure [0, 2] bars.
+\paragraph{}
+Special measure were taken to conduct experiments on the 2mm thick shell, due to the fact that once attached to the suction cup that ensures the link with the spring, the shell gets deformed at the attaching point by buoyancy effects which lower locally the curvature radius, creating a weak spot \cite{cqpcritic2011}. An imperfection was introduced at the casting, by reducing locally the thickness of the shell. Practically, the shell thickness was reduced of 0.1 mm over a circular surface with a 10 mm diameter.
+\paragraph{}
+One of the properties of the material used is its semi-transparency when light is shone on it. which is an important feature to determine the volume of the concave shapes resulting after the buckling.
+
+\subsubsection{Pressure controller}
+\paragraph{}
+Since deflation and re-inflation cycles of the shell are actuated by applying a difference of pressure between the inside and outside, it was necessary to use a pressure controller.
+\paragraph{}
+A pressure controller is not an air compressor, it needs a high pressure input. The user sets the pressure wanted using a piece of software which in turn, communicates with the hardware assigning the desired command. The pressure controller then, opens its valves and regulates the in/out air flux until the desired pressure is reached, using a pressure sensor which measures a relative pressure to the reference: the room atmospheric pressure.
+\paragraph{}
+The equipment used during this experiment is the OB1 flow control system manufactured by Elveflow\textcopyright. This system is supplied with four channels (fig.\ref{fig:ob1}), three channels operate between 0 and 2bars (relative pressure) and one channel operates between -1 and 1 bar and requires a vacuum pump to reach -1 bar.
+In the spring experiment, the external pressure is the control parameter, therefor only a 0-2 bar channel was used.
+As stated earlier, a pressure source is necessary to be able to use the "`OB1"' pressure controller, and in this case a 6 bar pressure source is used.
+\paragraph{}
+The pressure is controlled thanks to a very user-friendly interface, which allows to apply different kind of pressure signals such as: constant, ramp, sinusoidal, square signals. It also allows programing sequences using the previously stated signals, but also wait time, triggers and loops. This particular function was helpful to implement reproducible pressure cycles during the spring experiment.
+\paragraph{}
+To ensure the proper functioning of the pressure controller, two air filters were used: one upstream, to filter the air between the pressured air supply and the "`OB1"' and one downstream to filter the air between the "`OB1"' and the tank, where liquid vapor can affect the equipments of the "`OB1"' during the pressure regulation phase.
+The air filters used consist in a 5$\mu$m pore size pneumatic filter which removes liquid and solid contaminants. It is supplied with drain that can be opened as needed to drain condensed contaminants.
+\begin{figure}[h] %
+	\centering%
+  \includegraphics[width=0.48\textwidth]{figures/Chapter_1/OB1.png}
+	\caption{OB1 pressure controller}
+	\label{fig:ob1}
+\end{figure}
+\paragraph{Notes}
+This pressure controller is not supposed to be used in such conditions, operating on rather large air volumes. One of its inconveniences was its time response with a max air-flux dimensioned for micro-fluidic experiments. We bought a pressure controller intended to work with large volumes but it was not supplied with neither any power supply nor any software and necessary electronics to control it with a computer. The fact that we were not investigating the actuation frequency role in the physics and the impossibility to control negative relative pressures, comforted us into using the plug and play solution "`OB1"'.
+
+\subsubsection{Camera,lenses and light sources}
+\paragraph{Camera}
+Taking into account the fast nature of the instability, where the shells undertakes a deformation of almost a radius, in less than 5 ms, it was necessary to use a high-speed camera.
+The camera used for this purpose is the Phantom\textcopyright Miro 310, its main characteristics are the following:
+\begin{itemize}
+	\item Resolution: One megapixel, 1280x800.
+	\item Full resolution speed: 3260 frame per second (FPS).
+	\item Sensor: CMOS sensor with 20 $\mu$m pixel size, 12-bit depth gray-scale colors.
+	\item Memory: 6GB, with 2.3 seconds record time at maximum frame rate.
+	\item Communication: Gb Ethernet for control and data.
+\end{itemize}
+\paragraph{}
+It is supplied with a software which allows the control of these parameters and also triggering and storing images.
+\paragraph{Lenses}
+A lens with high iris opening value is necessary to capture images at high speed with low light exposure. It was necessary to capture a large field which contains an object of 50 mm plus part of a spring which moves during the process. This is why a fixed focal length $f= 50$ mm with a maximum aperture of f/1.4 was selected, from the lens manufacturer Zeiss\textcopyright.
+
+\paragraph{Light source}
+Three parameters were to take into account for the choice of light sources:
+\begin{enumerate}
+	\item A stable source of light with no variation of light intensity was required to be able to use the 2D image registration algorithm "`UnwrapJ"' to correct the deformation of the tank windows due to pressure.
+	\item A powerful intensity is required to be able to record at high speed.
+	\item A homogenous light source is needed to be able to correctly extract the edges of the shell from the images.	
+\end{enumerate}
+To do so, two 30x30 daylight balanced led-based panels were used providing 6560 lumen, disposed as shown in figure \ref{fig:schematics_spring}. The one at the back is tuned at full power to highlight the complete ball-spring system and a filter is added to diffuse light and avoid seeing the individual leds. The one upfront is used with 25\% of its power, in order to see the concavity, once the shell is buckled.
+\begin{figure}[h] %
+	\centering%
+  \includegraphics[width=0.48\textwidth]{figures/Chapter_1/schematic_experimental_setup.png}
+	\caption{schematics of the spring experiment}
+	\label{fig:schematics_spring}
+\end{figure}
+\subsection{Experimental process}
+\subsubsection{1-D orientation}
+\paragraph{}
+Theoretically, the buckling instability nucleates randomly  on the surface of the shell. Practically, this instability always occurs at a specific spot of the elastic shell which represent its weak spot, when the boundary conditions are not changed \footnote{Experimentally, when the shell is in contact of a wall, the buckling spot occurs at the contact point, due to some change in the shell stress.}.
+\paragraph{}
+To properly conduct a force measurement, using a spring, it is necessary to align the buckling spot in the spring axis to obtain a 1-D displacement. To do so, a series of preliminary experiments are conducted to determine precisely the buckling spot:
+First, mark the shell surface with 12 distinctive symbols, then put the marked ball inside the tank and apply a pressure to induce the buckling instability. Once buckled, define the closest symbol to the concavity center resulting from the buckling. Link the shell to the suction cup fixed on the spring, in a way to have the buckling spot aligned to the spring and mark the position of the guessed buckling spot and the attaching area and pressurize the the tank to trigger the buckling again. Measure the angle between the spring axis and the concavity and repeat the operation until a 90° angle is achieved.
+
+
