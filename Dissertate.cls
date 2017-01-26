@@ -97,7 +97,7 @@
                 tablewithin=chapter]{caption}
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 \RequirePackage{microtype}
-
+\RequirePackage{adjustbox}
 
 % Headings and headers.
 \RequirePackage{fancyhdr}

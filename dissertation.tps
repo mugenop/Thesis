@@ -35,8 +35,8 @@ Class=LaTeXView
 Document=Dissertate.cls
 
 [Frame1_View0,0]
-TopLine=63
-Cursor=1526
+TopLine=78
+Cursor=3331
 
 [Frame2]
 Flags=0
@@ -71,8 +71,8 @@ Class=LaTeXView
 Document=chapters\chapter1.tex
 
 [Frame3_View0,0]
-TopLine=202
-Cursor=17046
+TopLine=412
+Cursor=34014
 
 [Frame4]
 Flags=0
@@ -94,5 +94,5 @@ Cursor=0
 
 [SessionInfo]
 FrameCount=5
-ActiveFrame=3
+ActiveFrame=1
 
