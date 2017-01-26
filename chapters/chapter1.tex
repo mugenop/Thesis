@@ -164,7 +164,7 @@ This is the protocol followed which solved partially the problems previously sta
 The purpose of this experiment is to quantify the thrust generated during the buckling and unbuckling phases when the pressure cycle is imposed externally, using a force sensor. The advantages of this method is that all the forces that are involved can be quantified using the recording images of the experiment. To do so, the capsule is attached to a spring and immersed in a tank filled with a Newtonian liquid characterized with a density $\rho$ and a viscosity $\mu$. The spring plays the role of a force sensor and prevents the spherical shell from floating to the surface due to buoyancy effects.  The buckling spot is directed in the vertical direction, to get a 1-D displacement\footnote{In theory, the buckling can happen anywhere on the capsule. In practice, the buckling happens at the same spot if the boundary conditions are not changed. This is due to the presence of a weakness in the material which decides of the buckling spot.}. Pressure cycles are applied by pressurizing the air above the liquid in which the shell is immersed. Figure \ref{fig:spring_experiment_schematic} is a representation of the spring experiment.
 \begin{figure}[h] %
 	\centering%
-  \includegraphics[width=0.48\textwidth]{figures/Chapter_1/rolling_machine.png}
+  \includegraphics[width=0.48\textwidth]{figures/Chapter_1/schematic_experimental_setup.png}
 	\caption{Schematics of the spring experiment}
 	\label{fig:spring_experiment_schematic}
 \end{figure}
@@ -172,12 +172,12 @@ The purpose of this experiment is to quantify the thrust generated during the bu
 \subsection{Equipment}
 \subsubsection{Tank}
 \paragraph{}
-It consists of a cubic tank (see fig.\ref{fig:tank}) made of anodized Aluminum supplied with windows made of polycarbonate polymer. It is dimensioned to withstand an absolute pressure bigger than $3 10^5 Pa$. Its dimensions are consistent with the non-confinement conditions (CITATION) where the charateristic length of the container is close to 10 times the characteristic length of the object to be studied.
+It consists of a cubic tank (see fig.\ref{fig:tank}) made of anodized Aluminum supplied with windows made of polycarbonate polymer. It is dimensioned to withstand an absolute pressure bigger than $3 10^5 Pa$. Its dimensions are consistent with the non-confinement conditions (CITATION) where the characteristic length of the container is close to 10 times the characteristic length of the object to be studied.
 \begin{figure}[h] %
 	\centering%
-  \includegraphics[width=0.48\textwidth]{figures/Chapter_1/rolling_machine.png}
+  \includegraphics[width=0.48\textwidth]{figures/Chapter_1/cuve_representation.png}
 	\caption{Schematics of the pressurizeable tank}
-	\label{fig:tank}
+	%\label{fig:tank}
 \end{figure}
 \subsubsection{Spring}
 \paragraph{}
@@ -201,6 +201,7 @@ It was also provided with threaded ends to fit M6 and M4 screws. The M6 end is d
 
 
 \subsubsection{Spherical shells}
+\label{sec:Spherical_shells}
 \paragraph{}
 The spherical shells used in this experiment are shells cast in the 'Dragon skin \textregistered 30' material. The external radius is kept constant at 5 cm and three thicknesses were explored: 2 mm, 5 mm and 6.5 mm.
 The choice of these thicknesses is primarily directed by the fact that we wanted to explore the effect of stored elastic energy on the buckling mechanism and the thrust induced during the deflation and the re-inflation of the capsule. Taking into account that the stored elastic energy before the advent of the buckling instability is proportional to the ratio between the thickness and the shell radius squared \cite{cqpcritic2011} $P_c \propto (\frac{d}{R})^2$, the resulting range of variation of this geometric ratio in this experiment, ranges from $6.4 10^{-3}$ to $6.76 10^{-2}$.
@@ -260,8 +261,8 @@ Three parameters were to take into account for the choice of light sources:
 To do so, two 30x30 daylight balanced led-based panels were used providing 6560 lumen, disposed as shown in figure \ref{fig:schematics_spring}. The one at the back is tuned at full power to highlight the complete ball-spring system and a filter is added to diffuse light and avoid seeing the individual leds. The one upfront is used with 25\% of its power, in order to see the concavity, once the shell is buckled.
 \begin{figure}[h] %
 	\centering%
-  \includegraphics[width=0.48\textwidth]{figures/Chapter_1/schematic_experimental_setup.png}
-	\caption{schematics of the spring experiment}
+  \includegraphics[width=0.48\textwidth]{figures/Chapter_1/schematic_experimental_setup_light_lenses.png}
+	\caption{Representation of the light and camera dispositon}
 	\label{fig:schematics_spring}
 \end{figure}
 \subsection{Experimental process}
@@ -274,10 +275,113 @@ First, mark the shell surface with 12 distinctive symbols, then put the marked b
 \paragraph{}
 This step also allows to determine the critical pressure at which the buckling and unbuckling occur.
 \subsubsection{Experimental protocol}
+\paragraph{}
+We used three fluids in this experiment, and in each fluid, three capsules were investigated \ref{sec:Spherical_shells}.
+The main characteristics of the fluids used are shown in table \ref{tab:fluid_carac_spring}. The following experimental protocol is applied for each fluid.
+\begin{table}[h]
+	\centering
+		\begin{tabular}{|l|c|r|}
+			\hline
+			Fluid & Density (Kg.m$^{-3}$) & Viscosity (Pa.s)\\
+			\hline
+			Glycerol & 1250 & 1.37 \\
+			\hline
+			Water & 1000 & 10$^{-3} $\\
+			\hline
+			Air &  1.2 & 10$^{-6}$\\
+			\hline
+		\end{tabular}
+	\label{tab:fluid_carac_spring}
+	\caption{Fluids used in the experiments and their main properties at room temperature.}
+\end{table}
 \paragraph{Quasi-static experiments}
+We noticed, during the first experiments done with the spring that the shape of a shell submitted to a constant pressure P, continues to slightly evolve in time due to the relaxation of the material through creep. To investigate this effect, quasi-static experiments were conducted by submitting the shell to a pressure cycle which evolves at a slow rate. Practically, a step-like cycle was applied knowing the buckling and unbuckling critical pressures.\\
+Figure \ref{fig:quasi_static_pressure_cycle} shows a qualitative example of such step-like cycle where the step width represents the amount of time waited at each pressure step\footnote{by varying this step width, we can evaluate its importance and how it impacts the instability dynamics}.
+First, an image is recorded at (P=0), then the pressure is increased by a pressure step and is kept constant during a time $T=step width$, at the end of this time an image is recorded. This process is repeated until nearing the pressure at which the buckling occurs which can slightly vary from an experiment to another, the pressure is then gradually increased by smaller steps\footnote{The smaller steps are necessary in order to keep the pressure constant at the buckling and unbuckling phases, to independently study the buckling and unbuckling dynamics.}
+ and when arriving to a critical pressure where the buckling occurs, the camera is triggered and a movie is recorded at 5000 FPS \footnote{Figure \ref{fig:quasi_static_pressure_cycle} shows a longer time at the buckling and unbuckling phases to count for the time necessary to save the resulting movies, which takes about 8 minutes}. An image is taken at the end of the buckling phase, in order to record the state to which the capsule has relaxed to, following the buckling.
+The pressure is decreased following the same procedure until nearing the critical pressure at which the unbuckling occurs and the same procedure is followed for the buckling phase. After that, the pressure is decreased until reaching zero.
+This protocol is performed for each step width, and there are 2 of them: 10 minutes and 1 minute. 10 minutes, represents the time after which the final state of relaxation is reached and any change that might occur cannot be perceived within our experimental precision. This limit is specific to the material used. The 1 minute time was added to measure the rate at which this relaxation happens.\\
+   
+\begin{figure}[h] %
+	\centering%
+  \includegraphics[width=0.48\textwidth]{figures/Chapter_1/quasi_static_pressure_cycle.png}
+	\caption{Qualitative representation of pressure cycles applied for the quasi-static experiments}
+	\label{fig:quasi_static_pressure_cycle}
+\end{figure}
 \paragraph{Dynamic experiments}
+In the second set of experiments, step width is shortened to 20 seconds\footnote{Time necessary to save images to the computer}, and a similar cycle is applied with the exception of the phase between buckling phase and the unbuckling phase where the depressurization rate was varied, to investigate the production of thrust during the rolling. 
+Figure \ref{fig:quasi_static_pressure_cycle} shows a qualitative example of a pressure cycle applied for the dynamic set of experiments. The parameter $\alpha$ corresponds to the depressurization rate to get from the buckling pressure to near the unbuckling pressure. Three different rates are applied.
+\begin{figure}[h] %
+	\centering%
+  \includegraphics[width=0.48\textwidth]{figures/Chapter_1/dynamic_pressure_cycle.png}
+	\caption{Qualitative representation of pressure cycles applied for the dynamic experiments}
+	\label{fig:dynamic_pressure_cycle}
+\end{figure}
+The fluid temperature is measured at the beginning of the pressure cycle and at its end. These temperature measurements are then, used to properly characterize the viscosity of the medium, by taking a sample and perform rheological measurements, thanks to a rheometer.\\
+The tables \ref{tab:Experimental_pressure_cycle_parameters_in_glycerol},\ref{tab:Experimental_pressure_cycle_parameters_in_water} and \ref{tab:Experimental_pressure_cycle_parameters_in_air}
+\begin{table}[h]
+	\centering
+		\begin{tabular}{|c|c|c|c|c|}
+			\cline{2-4}
+			Capsules & Buckling pressure (mbar) & Unbuckling pressure (mbar) & Depressurization rates (mbar.s$^{-1}$) & Temperature (Celsius) \\
+			\hline
+			$\frac{d}{R} = $ & 100 & [70,80] & -1, -10, -20 & [20,21.5]\\
+			\hline
+			$\frac{d}{R} = $ & [780,790] & [380,390] & -1, -10, -15 & [24.5,26]\\
+			\hline
+			$\frac{d}{R} = $ & [1350,1450] & [620,660] & 100 mbar steps, -1, -10 & [25,26]\\
+			\hline
+		\end{tabular}
+	\label{tab:Experimental_pressure_cycle_parameters_in_glycerol}
+	\caption{Experimental pressure cycle parameters in glycerol}
+\end{table}
+
+\begin{table}[h]
+	\centering
+		\begin{tabular}{|c|c|c|c|c|}
+			\cline{2-4}
+			Capsules & Buckling pressure (mbar) & Unbuckling pressure (mbar) & Depressurization rates (mbar.s$^{-1}$) & Temperature (Celsius) \\
+			\hline
+			$\frac{d}{R} = $ & [100,110]& [75,85] & -1, -10, -20 & [23,23.5]\\
+			\hline
+			$\frac{d}{R} = $ & 780 & [360,370] & -1, -10, -20 & [20,23.2]\\
+			\hline
+			$\frac{d}{R} = $ &  \multicolumn{4}{c|}{Experiments were not possible due to the non visibility of the buckling concavity in water.}\\
+			\hline
+		\end{tabular}
+	\label{tab:Experimental_pressure_cycle_parameters_in_water}
+	\caption{Experimental pressure cycle parameters in water}
+\end{table}
+
+\begin{table}[h]
+	\centering
+		\begin{tabular}{|c|c|c|c|c|}
+			\cline{2-4}
+			Capsules & Buckling pressure (mbar) & Unbuckling pressure (mbar) & Depressurization rates (mbar.s$^{-1}$) & Temperature (Celsius) \\
+			\hline
+			$\frac{d}{R} = $ & [100,110]& [70,80] & -1, -1, -2 & [23.5,25]\\
+			\hline
+			$\frac{d}{R} = $ & [850,900] & [380,480] & -1,-2,-2.5 & [24.5,26]\\
+			\hline
+			$\frac{d}{R} = $ & 1570 & 790 & -1 & 23 \\
+			\hline
+		\end{tabular}
+	\label{tab:Experimental_pressure_cycle_parameters_in_air}
+	\caption{Experimental pressure cycle parameters in air}
+\end{table}
+
+
 \paragraph{Distortion correction}
-Done
+When static pressure is applied inside the tank used for the experiment, its windows made out of polycarbonate bend. This bending creates a sort of a barrel distortion which depends on the pressure applied inside the tank (fig.\ref{fig:barrel_distortion}). This distortion alters the images recorded during the experiment and ultimately any distance measurements extracted from them.
+\begin{figure}[h] %
+	\centering%
+  \includegraphics[width=0.48\textwidth]{figures/Chapter_1/barrel_effect.png}
+	\caption{Qualitative representation of a barrel distortion}
+	\label{fig:barrel_distortion}
+\end{figure}
+ Two possibilities to correct this effect were considered: either modeling the bent window as a lens and characterize it as function of the pressure, or applying a numerical method to find the deformation of the image between the rest state where the relative pressure is zero and a state at pressure P. Once found, this deformation matrix is inversed and we can transform a distorted image to a non-distorted one. The latter solution was adopted, because it is less time-consuming knowing an algorithm has already been implemented in ImageJ registration pluing called "`bUnwrajJ"'.
+To calibrate the correction, a damier was placed at the same position as the spring-ball system, and images were recorded for each pressure step, used during experiments in one fluid\footnote{This operation was renewed each time we fill the tank with a new fluid, because the camera-tank position may change during the emptying phase}.
+
 
 
 

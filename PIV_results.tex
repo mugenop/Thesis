@@ -1,0 +1,981 @@
+%% Based on a TeXnicCenter-Template by Tino Weinkauf.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,10pt]{report}
+% Alternative Options:
+%	Paper Size: a4paper / a5paper / b5paper / letterpaper / legalpaper / executivepaper
+% Duplex: oneside / twoside
+% Base Font Size: 10pt / 11pt / 12pt
+\usepackage[margin=1in]{geometry}
+
+%% Language %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[USenglish]{babel} %francais, polish, spanish, ...
+\usepackage[T1]{fontenc}
+\usepackage[ansinew]{inputenc}
+\usepackage{lmodern} %Type1-font for non-english texts and characters
+
+
+%% Packages for Graphics & Figures %%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx} %%For loading graphic files
+%\usepackage{subfig} %%Subfigures inside a figure
+%\usepackage{pst-all} %%PSTricks - not useable with pdfLaTeX
+
+%% Please note:
+%% Images can be included using \includegraphics{Dateiname}
+%% resp. using the dialog in the Insert menu.
+%% 
+%% The mode "LaTeX => PDF" allows the following formats:
+%%   .jpg  .png  .pdf  .mps
+%% 
+%% The modes "LaTeX => DVI", "LaTeX => PS" und "LaTeX => PS => PDF"
+%% allow the following formats:
+%%   .eps  .ps  .bmp  .pict  .pntg
+
+
+%% Math Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+
+%% Line Spacing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{setspace}
+%\singlespacing        %% 1-spacing (default)
+%\onehalfspacing       %% 1,5-spacing
+%\doublespacing        %% 2-spacing
+
+
+%% Other Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{a4wide} %%Smaller margins = more text per page.
+%\usepackage{fancyhdr} %%Fancy headings
+%\usepackage{longtable} %%For tables, that exceed one page
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Remarks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Edit the used packages and their options (see above).
+% 2. If you want, add a BibTeX-File to the project
+%    (e.g., 'literature.bib').
+% 3. Happy TeXing!
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Options / Modifications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{options} %You need a file 'options.tex' for this
+%% ==> TeXnicCenter supplies some possible option files
+%% ==> with its templates (File | New from Template...).
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\pagestyle{empty} %No headings for the first pages.
+
+
+%% Title Page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ==> Write your text here or include other files.
+
+%% The simple version:
+\title{PIV results and discussion}
+\author{Adel Djellouli}
+%\date{} %%If commented, the current date is used.
+\maketitle
+
+%% The nice version:
+%\input{titlepage} %%You need a file 'titlepage.tex' for this.
+%% ==> TeXnicCenter supplies a possible titlepage file
+%% ==> with its templates (File | New from Template...).
+
+
+%% Inhaltsverzeichnis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents %Table of contents
+\cleardoublepage %The first chapter should start on an odd page.
+
+\pagestyle{plain} %Now display headings: headings / fancy / ...
+\chapter{Water}
+\section{Buckling}
+\subsection{Buckling short times}
+\paragraph{}
+The decompostion of this phase follows observations on the direction of the flow before, during and after the buckling.
+
+
+\subsubsection{Pre-buckling}
+First, the pre-buckling phase where the concavity nucleates. At the beginning of this nucleation we observe a flow towardss the concavity upfront, with a typical velocity modulus is between \textbf{0.4} and \textbf{0.5 m/s} (fig.\ref{fig:ConcavityNucleationflowcharacteristics}). 
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[h]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/prebuckling_beg_vectors.png}%
+        \caption{Concavity Nucleation velocity field}%
+				\label{fig:ConcavityNucleationvelocityfield}%
+    \end{subfigure}%
+    \begin{subfigure}[h]{0.5\linewidth}%
+        \includegraphics[width=\linewidth]{Figures/prebuckling_beg_streamlines.png}%
+        \caption{Concavity Nucleation streamlines}%
+        \label{fig:ConcavityNucleationstreamlines}%
+    \end{subfigure}%
+		\caption{Concavity nucleation}%
+		\label{fig:ConcavityNucleationflowcharacteristics}%
+\end{figure}
+After \textbf{12.5 ms}, we observe a converging normal flow at the bottom of the ball (fig.\ref{fig:PreBucklingflowcharacteristics}). 
+The typical velocities are respectively of \textbf{2 m/s} and \textbf{0.5 m/s}  upfront and at the bottom. And after \textbf{6 ms}, the converging flow at the bottom, inverses its direction.
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[h]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/prebuckling_vectors.png}%
+        \caption{Pre-buckling velocity field}%
+				\label{fig:PreBucklingVelocityField}%
+    \end{subfigure}%
+    \begin{subfigure}[h]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/prebuckling_streamlines.png}%
+        \caption{Pre-buckling streamlines}%
+        \label{fig:PreBucklingstreamlines}%
+    \end{subfigure}%
+		\caption{Pre-buckling flow characteristics}%
+		\label{fig:PreBucklingflowcharacteristics}%
+\end{figure}
+\paragraph{}
+If we focus on the flow observed at the left of the shell (fig.\ref{fig:PreBucklingflowcharacteristics}), We observe a flow characteristic of the presence of source in the middle and two wells (well-source-well triplet) at the extremeties of the streamlines.
+It also looks like a dipole flow truncated at the symmetry plan.
+\paragraph{}
+The averaged Vx and Vy fields confirm the observations on the flow stated earlier (fig.\ref{fig:PreBucklingVx} and fig.\ref{fig:PreBucklingVy}).
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[t]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Prebuckling_mean_vx.png}%
+        \caption{Pre-buckling mean Vx}%
+				\label{fig:PreBucklingVx}%
+    \end{subfigure}%
+    \begin{subfigure}[t]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Prebuckling_mean_vy.png}%
+        \caption{Pre-buckling mean Vy}%
+        \label{fig:PreBucklingVy}%
+    \end{subfigure}%
+		\caption{Pre-buckling averaged flow quantities}%
+		\label{fig:PreBucklingAveragedquantities}%
+\end{figure}
+
+\newpage
+\subsubsection{Buckling}
+Once the concavity has nucleated, it propagates creating flanks, which remain still during the pre-buckling phase. After reaching a certain propagation stage, these flanks start to move downward, pushing the flow at the bottom normally to the shell, hence inverting the flow direction at the bottom. The flow loses the property of well-source-well triplet. Instead, we observe the nucleation of a vortex at the flanks as shown in fig \ref{fig:Snapshotduringthebucklingstage}.
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[t]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Buckling_vectors.png}%
+        \caption{Buckling Velocity field}%
+				\label{fig:BucklingVelocityfield}%
+    \end{subfigure}%
+    \begin{subfigure}[t]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Buckling_streamlines.png}%
+        \caption{Buckling streamlines}%
+        \label{fig:Bucklingstreamlines}%
+    \end{subfigure}%
+		
+		\begin{subfigure}[t]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Buckling_rotationnal.png}%
+        \caption{Buckling rotationnal}%
+        \label{fig:BucklingRotationnal}%
+    \end{subfigure}%
+		\caption{Snapshot during the buckling stage}%
+		\label{fig:Snapshotduringthebucklingstage}%
+\end{figure}
+
+We notice also that the max velocities are reached during the previous stage and that the flow during this stage is decelerating. The typical velocities are around 1.3 m/s. This stage lasts approximately \textbf{9 ms}  and is followed by shape oscillations.
+\paragraph{}
+Taking a look at the averaged Vx and Vy (fig.\ref{fig:BucklingAveragedquantities}) shows difference with flow during the previous stage (see fig.\ref{fig:PreBucklingAveragedquantities}). During this stage, the flow is no more recruited from the flanks but completely upfront. What proves this, is the broadening of the Vx frontal lobe in both directions and the spacing increase between the 2 frontal lobes in the Vy figure. Taking this fact into account, one can state that the flow recruited on the flanks can no more enter the frontal area and is rotated, which triggers a recirculation and hence a vortex nucleation.
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[t]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/buckling_1170_1360_AverageVx.png}%
+        \caption{Buckling mean Vx}%
+				\label{fig:BucklingVx}%
+    \end{subfigure}%
+    \begin{subfigure}[t]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/buckling_1170_1360_AverageVy.png}%
+        \caption{Buckling mean Vy}%
+        \label{fig:BucklingVy}%
+    \end{subfigure}%
+		\caption{Buckling averaged flow quantities}%
+		\label{fig:BucklingAveragedquantities}%
+\end{figure}
+
+
+\subsubsection{Oscillations}
+\paragraph{}
+As mentioned earlier, the buckling is followed by shape oscillations. Oscillations, probably due to the fact that the energy equilibrium was disturbed and lowered. This perturbation creates a dynamic state and if we imagine the elastic membrane as a kelvin-Voigt material i.e a spring in a viscous fluid. One can understand that buckling is equivalent to reducing brutally the mass suspended to the said spring, which was at rest. This mass would undertake a vibration dynamic regime, a regime mainly determined by the attached mass, the stiffness coefficient and the viscosity of the surrounding medium. Since the material damping coefficient in this case is not strong enough, the buckling is followed by a damped oscillatory regime.
+\paragraph{}
+To understand what happens, let's take a look at the averaged quantities, for the first and second half of the first oscillation period, right after the buckling stage.
+\paragraph{}
+In fig.\ref{fig:fsAveragedquantities}, we clearly see that the flow is unversed between the first and second half of the oscillation period, with a slight decrease in the max velocity reached during the second half. The period duration is measured at approximately \textbf{28 ms}.
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[t]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/1_sign_change_vx.png}%
+        \caption{First half-period averaged Vx}%
+				\label{fig:FirsthalfperiodaveragedVx}%
+    \end{subfigure}%
+		\begin{subfigure}[t]{0.5\textwidth}%
+				\includegraphics[width=\linewidth]{Figures/1_sign_change_vy.png}%
+        \caption{First half-period averaged Vy}%
+				\label{fig:FirsthalfperiodaveragedVy}%
+    \end{subfigure}%
+		
+    \begin{subfigure}[t]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/2_sign_change_vx.png}%
+        \caption{Second half-period averaged Vx}%
+				\label{fig:SecondhalfperiodaveragedVx}%
+    \end{subfigure}%
+		\begin{subfigure}[t]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/2_sign_change_vy.png}%
+        \caption{Second half-period averaged Vy}%
+				\label{fig:SecondhalfperiodaveragedVy}%
+    \end{subfigure}%
+		\caption{Buckling averaged flow quantities}%
+		\label{fig:fsAveragedquantities}%
+\end{figure}
+\paragraph{}
+Figure \ref{fig:PeriodAveragedquantities} that shows the flow charcteristics, allows us to say that the flow generated by the shape oscillations is also damped.
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[t]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/period_vx.png}%
+        \caption{Period mean Vx}%
+				\label{fig:PeriodVx}%
+    \end{subfigure}%
+    \begin{subfigure}[t]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/period_vy.png}%
+        \caption{Period mean Vy}%
+        \label{fig:PeriodVy}%
+    \end{subfigure}%
+		\caption{Period averaged flow quantities}%
+		\label{fig:PeriodAveragedquantities}%
+\end{figure}
+
+\paragraph{}
+Taking a look at the averaged quantities over the whole buckling-oscillations period (see fig.\ref{fig:GlobalAveragedquantities}) reveals that globally, the flow upfront converges towards the concavity but gets trapped in what seems to be a clock rotating vortex, at the flank.
+\paragraph{Important note}
+An important conclusion to be extracted from all precedent results is that it is realistic to suppose that the flow is symmetrical on the x-axis which leads to a safe assumption on the existance of 3D axi-symmetry of the flow.
+
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[t]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/w_c_vx.png}%
+        \caption{Global buckling mean Vx}%
+				\label{fig:GlobalVx}%
+    \end{subfigure}%
+    \begin{subfigure}[t]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/w_c_vy.png}%
+        \caption{Global buckling mean Vy}%
+        \label{fig:GlobalVy}%
+    \end{subfigure}%
+		\caption{Global buckling averaged flow quantities}%
+		\label{fig:GlobalAveragedquantities}%
+\end{figure}
+\subsection{Buckling long times}:
+\paragraph{}
+During the buckling-oscillations period we observe the formation of a pair of counter-rotating vortices at the flanks, Once the oscillations are completely damped, these vortices, start to move tangentially to the membrane and gets larger. The right one rotates clockwise and moves tangentially to the right.
+At some point, it seems to detach from the membrane and leave the field of view at 4s(see fig.\ref{fig:vortexlife}).
+The typical velocity intensity is around \textbf{0.04 m/s}.
+ \begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[t]{0.25\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/post_buckling_vorticity/B00001.png}%
+        \caption{t0: Just after the end of the oscillations}%
+				\label{fig:t0}%
+    \end{subfigure}%
+		\begin{subfigure}[t]{0.25\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/post_buckling_vorticity/B00250.png}%
+        \caption{After 0.25s}%
+				\label{fig:25ms}%
+    \end{subfigure}%
+    \begin{subfigure}[t]{0.25\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/post_buckling_vorticity/B00500.png}%
+        \caption{After 0.5s}%
+				\label{fig:500ms}%
+    \end{subfigure}%
+		\begin{subfigure}[t]{0.25\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/post_buckling_vorticity/B01000.png}%
+        \caption{After 1s}%
+				\label{fig:1000ms}%
+    \end{subfigure}%
+		
+		\begin{subfigure}[t]{0.25\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/post_buckling_vorticity/B02000.png}%
+        \caption{After 2s}%
+				\label{fig:2000ms}%
+    \end{subfigure}%
+		\begin{subfigure}[t]{0.25\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/post_buckling_vorticity/B03000.png}%
+        \caption{After 3s}%
+				\label{fig:3000ms}%
+    \end{subfigure}
+		\begin{subfigure}[t]{0.25\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/post_buckling_vorticity/B04000.png}%
+        \caption{After 4s}%
+				\label{fig:4000ms}%
+    \end{subfigure}
+		\caption{Evolution of the vortex at the flank}%
+		\label{fig:vortexlife}%
+\end{figure}
+\paragraph{}
+In the mean time, we observe the separation of the second vortex that rotates in counter clockwise direction. It seems that it moved to the left and disappears inside the concavity which provokes a flow diverging from the concavity (see fig.\ref{fig:vortexlife} and fig.\ref{fig:PostbucklingAveragedquantities}).
+\paragraph{}
+The figure \ref{fig:Postbucklingvorticity} showing an average value of the vorticity, shows in one hand the history of the right vortex and on the other hand confirms the presence of a vortex inside the concavity (2 taking into account the symmetry).
+
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[t]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/post_buckling_vx.png}%
+        \caption{Post-buckling Vx}%
+				\label{fig:PostbucklingVx}%
+    \end{subfigure}%
+    \begin{subfigure}[t]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/post_buckling_vy.png}%
+        \caption{Post-buckling Vy}%
+        \label{fig:PostbucklingVy}%
+    \end{subfigure}%
+		\caption{Post-buckling averaged flow quantities}%
+		\label{fig:PostbucklingAveragedquantities}%
+\end{figure}
+\begin{figure}[htbp]%
+	\centering%
+ 	 \includegraphics[width=\linewidth]{Figures/post_buckling_Vorticity.png}%
+	 \caption{Post-buckling vorticity}%
+	 \label{fig:Postbucklingvorticity}%
+\end{figure}
+\section{Unbuckling}
+\subsection{Unbuckling short times}
+\paragraph{}
+The unbuckling is fundamentally different compared to the buckling in the sense where it is not just the inverse in terms of deformation or the induced flow.
+\subsubsection{Unbuckling}
+It is difficult to say when we transit from the rolling phase which is a succession of equilibrium states, meaning that if the pressure stops varying the shape stops varying, to the unbuckling phase which is an unstable state, where the shape deforms from concave to convex, even at fixed pressure.
+I propose two ways to do this distinction: either link the instability to the critical curvature radius, by precisely controlling the pressure and recording the curvature radius map. The second measure is measuring the H quantity (distance between the bottom and the projected upfront), derive it and deduce a threshold to this transition.
+It will not be done here and so it is irrelevant to discuss how long does the unbuckling phase last.
+\paragraph{}
+Contrary to the buckling phase where we had two distinct phases linked to the existence and sense of flow at the bottom of the ball, the unbuckling consists solely on a rolling fold which pushes the liquid immediately in front of it. No flow is created at the bottom (see fig.\ref{fig:Unbucklingflowcharacteristics}).\\
+The maximum velocity reached during this around \textbf{1.8 m/s} lower than the \textbf{2.4 m/s} reached during the buckling phase. But what is remarkable is that both phases exhibit sensitively the same acceleration. It takes in both cases \textbf{0.0035} to go from \textbf{0.5 m/s} to \textbf{1.5 m/s}, which yields an average acceleration around \textbf{300 m/s2}.
+\newline
+We need to remind that the deformation rate depends on time, and it has a maximum which means that the deceleration is also a quantity that we can compare and we find first that they are quite comparable and that the deceleration is stronger than the acceleration, with a value around \textbf{-400 m/s2}.
+\paragraph{}
+Figure \ref{fig:Unbucklingmeanvelocityfields} shows the mean velocity field of the unbuckling phase.
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[h]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/unbuckling/Unbuckling_vectors.png}%
+        \caption{Unbuckling velocity field}%
+				\label{fig:UnbucklingVelocityField}%
+    \end{subfigure}%
+    \begin{subfigure}[h]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/unbuckling/Unbuckling_stream.png}%
+        \caption{Unbuckling streamlines}%
+        \label{fig:Unbucklingstreamlines}%
+    \end{subfigure}%
+		\caption{Unbuckling flow characteristics}%
+		\label{fig:Unbucklingflowcharacteristics}%
+\end{figure}
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[h]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/unbuckling/mean_vx.png}%
+        \caption{Unbuckling mean vx}%
+				\label{fig:UnbucklingVelocityField}%
+    \end{subfigure}%
+    \begin{subfigure}[h]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/unbuckling/mean_vy.png}%
+        \caption{Unbuckling mean vy}%
+        \label{fig:Unbucklingstreamlines}%
+    \end{subfigure}%
+		\caption{Unbuckling mean velocity fields}%
+		\label{fig:Unbucklingmeanvelocityfields}%
+\end{figure}
+\newpage
+\subsubsection{Undulation phase}
+\paragraph{}
+Unlike the buckling where we clearly see a periodic deformation of the membrane after the buckling, the unbuckling is followed by a phase where the front of the ball stretches forward, triggering a wave created at the bottom traveling forward then traveling backward (see fig.\ref{fig:Ondulationpostunbuckling}).
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[h]{0.2\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Shape/B01120.png}%
+        \caption{t0}%
+				\label{fig:UnbucklingVelocityField}%
+    \end{subfigure}%
+		\begin{subfigure}[h]{0.2\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Shape/B01177.png}%
+        \caption{+ 3 ms}%
+				\label{fig:UnbucklingVelocityField}%
+    \end{subfigure}%
+		\begin{subfigure}[h]{0.2\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Shape/B01212.png}%
+        \caption{+4.5 ms}%
+				\label{fig:UnbucklingVelocityField}%
+    \end{subfigure}%
+		\begin{subfigure}[h]{0.2\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Shape/B01237.png}%
+        \caption{+6 ms}%
+				\label{fig:UnbucklingVelocityField}%
+    \end{subfigure}%
+		\begin{subfigure}[h]{0.2\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Shape/B01265.png}%
+        \caption{+7.25 ms}%
+				\label{fig:UnbucklingVelocityField}%
+    \end{subfigure}%
+    
+		\begin{subfigure}[h]{0.2\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Shape/B01290.png}%
+        \caption{+ 8.5 ms}%
+				\label{fig:UnbucklingVelocityField}%
+    \end{subfigure}%
+		\begin{subfigure}[h]{0.2\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Shape/B01315.png}%
+        \caption{+ 9.75 ms}%
+				\label{fig:UnbucklingVelocityField}%
+    \end{subfigure}%
+		\begin{subfigure}[h]{0.2\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Shape/B01355.png}%
+        \caption{+11.75 ms}%
+				\label{fig:UnbucklingVelocityField}%
+    \end{subfigure}%
+		\begin{subfigure}[h]{0.2\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Shape/B01407.png}%
+        \caption{+14.35 ms}%
+				\label{fig:UnbucklingVelocityField}%
+    \end{subfigure}%
+		\begin{subfigure}[h]{0.2\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Shape/B01437.png}%
+        \caption{+15.85 ms}%
+				\label{fig:UnbucklingVelocityField}%
+    \end{subfigure}%
+		\caption{undulation post-unbuckling}%
+		\label{fig:Ondulationpostunbuckling}%
+\end{figure}
+\paragraph{}
+This traveling wave doesn't show a clear periodic deformation as shown in the re-slicing of the front-end in figure \ref{fig:ondulationReslicefront}.
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[h]{0.2\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/debuckling_oscillation_illustration.png}%
+        \caption{Re-slice of the frontal tip}%
+				\label{fig:ondulationReslicefront}%
+    \end{subfigure}%
+\end{figure}
+\paragraph{}
+This undulation induces a complex flow shown in figure \ref{fig:FlowOndulationpostunbuckling}. It also shows clearly a non-periodic flow through the undulation phase.
+\\
+At first, the flow is pushed forward (fig.\ref{fig:t0}) recirculating towards the flanks (counter-clockwise) as if there was a dipole, with no clear flow at the bottom of the ball (contrary to the buckling phase).\\
+Then, this dipole separates and displaces to the flanks (fig.\ref{fig:3ms}) creating a recirculation at the flanks and a forward flow upfront.
+after 1 ms (see fig.\ref{fig:4ms}), the flank's recirculation moves even further towards the bottom. In the mean time, two recirculation appear at the front. if we consider the symmetry, the one in it has a clockwise rotation.
+In the next image \ref{fig:6ms}, this upfront recirculation gets  bigger, pushing the flank one even further towards the bottom, causing a converging flow at the bottom.
+At some point (fig.\ref{fig:7ms}) all these structures seem to disappear. After a short moment (fig.\ref{fig:8ms}), a recirculation reappears at the flank, with an opposite direction of rotation to the previous one. \textbf{1.6 ms} later, two recirculation patterns appear at the front with an opposite direction of rotation to the previous ones in figure \ref{fig:10ms}. In the mean time, the flank recirculation gets closer to  the front. The frontal recirculation quickly disappear, maybe due to the fact that the flank recirculation getting closer to the front (see fig\ref{fig:12ms}), leaving a diverging flow from the front, and in figure \ref{fig:14ms}, we clearly see that the flank recirculation gets all the way back to the front. Finally (see fig.\ref{fig:17ms}), after 17.2 ms, we come back to roughly the same configuration we had in figure\ref{fig:t0}. After that, we can distinguish some recirculation patterns and directed flow but no clear pattern can be extracted and the cycle exposed here is not reproduced.
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[h]{0.25\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Stream/B01120.png}%
+        \caption{t0}%
+				\label{fig:t0}%
+    \end{subfigure}%
+		\begin{subfigure}[h]{0.25\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Stream/B01180.png}%
+        \caption{+ 3 ms}%
+				\label{fig:3ms}%
+    \end{subfigure}%
+		\begin{subfigure}[h]{0.25\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Stream/B01200.png}%
+        \caption{+4 ms}%
+				\label{fig:4ms}%
+    \end{subfigure}%
+		\begin{subfigure}[h]{0.25\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Stream/B01235.png}%
+        \caption{+5.75 ms}%
+				\label{fig:6ms}%
+    \end{subfigure}%
+		
+		\begin{subfigure}[h]{0.25\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Stream/B01268.png}%
+        \caption{+7.4 ms}%
+				\label{fig:7ms}%
+    \end{subfigure}%
+		\begin{subfigure}[h]{0.25\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Stream/B01282.png}%
+        \caption{+ 8.1 ms}%
+				\label{fig:8ms}%
+    \end{subfigure}%
+		\begin{subfigure}[h]{0.25\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Stream/B01316.png}%
+        \caption{+ 9.75 ms}%
+				\label{fig:10ms}%
+    \end{subfigure}%
+		\begin{subfigure}[h]{0.25\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Stream/B01353.png}%
+        \caption{+11.75 ms}%
+				\label{fig:12ms}%
+    \end{subfigure}%
+		
+		\begin{subfigure}[h]{0.25\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Stream/B01400.png}%
+        \caption{+14 ms}%
+				\label{fig:14ms}%
+    \end{subfigure}%
+		\begin{subfigure}[h]{0.25\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/Stream/B01464.png}%
+        \caption{+17.2 ms}%
+				\label{fig:17ms}%
+    \end{subfigure}%
+		\caption{Flow induced by the undulation post-unbuckling}%
+		\label{fig:FlowOndulationpostunbuckling}%
+\end{figure}
+\paragraph{}
+Figure \ref{fig:Undulationmeanvelocityfields} shows the mean velocity field during the undulation phase. It shows that the undulation cycle is not periodic and that it produces a flow opposite to the flow in the unbuckling phase (see fig.\ref{fig:Unbucklingmeanvelocityfields})
+
+
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[h]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/mean_vx.png}%
+        \caption{Undulation mean vx}%
+				\label{fig:UnbucklingVelocityField}%
+    \end{subfigure}%
+    \begin{subfigure}[h]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/ondulation/mean_vy.png}%
+        \caption{Undulation mean vy}%
+        \label{fig:Unbucklingstreamlines}%
+    \end{subfigure}%
+		\caption{Undulation mean velocity fields}%
+		\label{fig:Undulationmeanvelocityfields}%
+\end{figure}
+
+\paragraph{}
+Taking a look at the averaged quantities over the whole unbuckling-undulation period (see fig.\ref{fig:GlobalUnbucklingAveragedquantities})  reveals that globally, the flow upfront diverge from the concavity. But at the flank, the flow is directed towards the positive x values. This is different from what we see in the buckling phase (see fig.\ref{fig:GlobalAveragedquantities}), which is yet another difference between these two phases.
+
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[t]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/Global_vx.png}%
+        \caption{Global unbuckling mean Vx}%
+				\label{fig:GlobalVx}%
+    \end{subfigure}%
+    \begin{subfigure}[t]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/Debuckling_water/Global_vy.png}%
+        \caption{Global unbuckling mean Vy}%
+        \label{fig:GlobalVy}%
+    \end{subfigure}%
+		\caption{Global unbuckling averaged flow quantities}%
+		\label{fig:GlobalUnbucklingAveragedquantities}%
+\end{figure}
+\subsection{Unbuckling long times}
+\paragraph{}
+After the unbuckling-undulation phase, a flow is observed adjacent to the apparent flank from the bottom upward, but since the use of a powerful laser can and does heat the surface, it is suspected that it is a flow induced by a forced-convection. What comforts this hypothesis is the fact that it is always supplied, and that it doesn't seem to appear on the other side. Which means that it should be ignored.
+
+\section{Conclusion}
+\paragraph{}
+Even though we have comparable velocities moduli between the buckling and unbuckling, the flow in one phase is not just the inverse of the flow in the other phase. It is fundamentally different, in terms of length of interaction, in terms of the deformation behavior, in terms of the structures generated during each phase and their lifespan. But, what is the most intriguing is that for some reason, the displacement in water for both phases is forward and similar in term of modulus.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\chapter{Glycerol}
+\paragraph{}
+The glycerol is a Newtonian liquid with a density of \textbf{1250 kg/m3} and a viscosity roughly \textbf{1000} times the viscosity of water.
+\section{Buckling}
+\subsection{Buckling first phase}
+\subsubsection{Pre-buckling}
+\paragraph{}
+The pre-buckling phase in glycerol is very similar to the equivalent in water.
+In this phase, the concavity nucleates. At the beginning of this nucleation we observe a flow towards the concavity upfront, with a typical velocity modulus is 
+between \textbf{0.4} and \textbf{0.5m/s} and lasts \textbf{16.5 ms}(see fig.\ref{fig:GConcavityNucleationflowcharacteristics}).
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[h]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Prebuckling/pre_buckling_nucleation.png}%
+        \caption{Concavity nucleation}%
+				\label{fig:GConcavityNucleationflowcharacteristics}%
+    \end{subfigure}%
+    \begin{subfigure}[h]{0.5\linewidth}%
+        \includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Prebuckling/pre_buckling_recirculation.png}%
+        \caption{Pre-buckling flow characteristics}%
+        \label{fig:GPrebuckling}%
+    \end{subfigure}%
+		\caption{Nucleation and propagation of the concavity}%
+		\label{fig:GPrebucklingflowcharacteristics}%
+\end{figure}
+\paragraph{}
+In figure \ref{fig:GPrebuckling}, we see two contra-rotating recirculations at the flank, the one  farther right displaces towards the bottom and eventually vanishes, when the concavity growing pushes the flanks downward, which inverses the direction of the normal flow at the bottom,causing it to diverge.
+\paragraph{}
+Figure \ref{fig:GPrebucklingmeanvelocityfield} show the mean velocity field of the pre-buckling phase, which looks comparable with the flow induced during the same phase in water (fig.\ref{fig:PreBucklingAveragedquantities}), excluding the fact that there is a stronger tangential flow from the bottom towards the the concavity not cut by a recirculation as shown in figure \ref{fig:Gprebucklingmeanvx}.
+
+
+
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[h]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Prebuckling/B00001.png}%
+        \caption{Glycerol pre-buckling mean vx}%
+				\label{fig:Gprebucklingmeanvx}%
+    \end{subfigure}%
+    \begin{subfigure}[h]{0.5\linewidth}%
+        \includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Prebuckling/B00002.png}%
+        \caption{Glycerol pre-buckling mean vy}%
+        \label{fig:Gprebucklingmeanvy}%
+    \end{subfigure}%
+		\caption{Nucleation and propagation mean velocity field}%
+		\label{fig:GPrebucklingmeanvelocityfield}%
+\end{figure}
+\subsubsection{Buckling}
+\paragraph{}
+This phase is where the concavity propagates and eventually touches the opposite extremity and lasts \textbf{13.5 ms}, the flow is decelating and the typical velocities are around \textbf{1.4 m/s}.
+In figure \ref{fig:bigVortex}, we see that the remaining recirculation that has more or less a radius of action of more than 40 mm and that rotates clockwise, and this recirculation flattens horizontally to 20mm during the deceleration of the shell deformation (see fig. \ref{fig:flattenVortex}).
+
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[h]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Buckling/B00656.png}%
+        \caption{Beginning of the buckling phase in Glycerol}%
+				\label{fig:bigVortex}%
+    \end{subfigure}%
+    \begin{subfigure}[h]{0.5\linewidth}%
+        \includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Buckling/B00841.png}%
+        \caption{10 ms later}%
+        \label{fig:flattenVortex}%
+    \end{subfigure}%
+		\caption{}%
+		\label{fig:GPrebucklingmeanvelocityfield}%
+\end{figure}
+
+\paragraph{}
+What we observe when the deformation stops completely (see fig.\ref{fig:Beginningofthevortexdetachment}) is that the flow coming from the front slides in between the shell and the vortex increasing even more its detachment. The flow turns at the bottom and is directed normally to the shell.
+\begin{figure}[htbp]%
+	\centering%
+		\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Buckling/B00895.png}%
+		\caption{End of the buckling phase}%
+		\label{fig:Beginningofthevortexdetachment}%
+\end{figure}
+\paragraph{}
+The mean flow resulting from this phase is similar to the one observed in water when looking at the Vy mean field (fig.\ref{fig:gbucklingmeanvy} ), but it is sensitively different when looking at the Vx mean field (fig.\ref{fig:gbucklingmeanvx}), due to the penetrating tangential flow from the front towards the bottom, and the detaching vortex.
+\begin{figure}[htbp]%
+	\centering%
+	 \begin{subfigure}[h]{0.5\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Buckling/B00001.png}%
+        \caption{Glycerol buckling mean vx}%
+				\label{fig:gbucklingmeanvx}%
+    \end{subfigure}%
+    \begin{subfigure}[h]{0.5\linewidth}%
+        \includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Buckling/B00002.png}%
+        \caption{Glycerol buckling mean vy}%
+        \label{fig:gbucklingmeanvy}%
+    \end{subfigure}%
+		\caption{Buckling mean flow field in glycerol}%
+		\label{fig:Gbucklingmeanvelocityfield}%
+\end{figure}
+\subsubsection{Shape oscillations}
+\paragraph{}
+This phase is shorter than the equivalent in water, it lasts \textbf{70 ms} compared to \textbf{185 ms} in water.
+The shell starts to deform forward, but in this case, the flow observed at the concavity is unprecedented.
+First, the vortex which has detached -rotating clockwise- moves towards the concavity. Second, the flanks flow transforms into a recirculation (counter-clockwise). But what is the most surprising, is that contrary to the buckling in water where the flow direction is inverted immediately when the shell pulsates, here in glycerol, the flow continues to converge for some time towards the concavity (surely due to the presence of the vortex which aspirates the flow forward). In the mean time, the concavity is pushed forward and both opposite flows meet at some point and get directed radially (considering the axi-symmetry) diverging away from the center (see fig.\ref{fig:migrationVortex}).
+\begin{figure}[htbp]%
+	\centering%
+		\begin{subfigure}[h]{0.5\textwidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/B00953.png}%
+					\caption{Streamlines of the migration}%
+					\label{fig:migrationVortexstream}%
+			\end{subfigure}%
+			\begin{subfigure}[h]{0.5\linewidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/R00953.png}%
+					\caption{Vorticity map of the migration}%
+					\label{fig:migrationVortexvorticity}%
+			\end{subfigure}%
+		\caption{Migration of the detached vortex after 2 ms from the beginning of the deformation in (-X)-axis direction}
+		\label{fig:migrationVortex}%
+\end{figure}
+\paragraph{}
+In figure \ref{fig:dissipationmigrationVortex}, we notice that the vortex observed earlier has completely vanished. The flow upfront is canceled, but for some reason the flow getting out of the concavity, continues to escape radially towards the flanks, maybe due a strong pulling of the flank vortex.
+This pulling gets weaker (see fig.\ref{fig:weakning}) and shortly after (see fig.ref{fig:detachingccwvortex}),the flank vortex begins to detach and changes the orientation of the flow escaping the concavity from axial to radial, further more the recirculating flow at the back remains mostly normal. This configuration changes in \textbf{1 ms}  (see fig.\ref{fig:convergingflow}), where we can observe a converging upfront flow towards the concavity, co-existing with a flow trying to escape the concavity. This configuration is most probably triggered by the detaching vortex, because at that moment the shell hasn't began deforming in the positive X-axis direction. The bottom flow transits from a mostly normal to the shell to a mostly tangential to the shell, which will lead  eventually to the detaching of the vortex.
+What you can see in figure \ref{fig:convergingaxialflow}, is a complete converging flow towards the concavity that started moving in the +X-axis direction. The outer part of the converging flow gets sucked in by the detached vortex at the flank (which is getting bigger and bigger horizontally). We can guess the formation of a contra-rotating vortex on the outskirts of the flank vortex.
+What you can see in figure \ref{fig:convergingaxialflow}, is a complete converging flow towards the concavity that started moving in the +X-axis direction. The outer part of the converging flow gets sucked in by the detached vortex at the flank (which is getting bigger and bigger horizontally). We can guess the formation of a contra-rotating vortex on the outskirts of the flank vortex.
+\begin{figure}[htbp]%
+	\centering%
+		\begin{subfigure}[h]{0.5\textwidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/B00980.png}%
+					\caption{Streamlines post-dissipation of the frontal vortex}%
+					\label{fig:migrationVortexstream}%
+			\end{subfigure}%
+			\begin{subfigure}[h]{0.5\linewidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/R00980.png}%
+					\caption{Vorticity map post-dissipation of the frontal vortex}%
+					\label{fig:migrationVortexvorticity}%
+			\end{subfigure}%
+		\caption{Dissipation of the vortex 3.7 ms after the phase beginning}
+		\label{fig:dissipationmigrationVortex}%
+\end{figure}
+\begin{figure}[htbp]%
+	\centering%
+		\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/B01050.png}%
+		\caption{Weakning of the influence of the flank vortex on the frontal flow 7.2 ms after the phase beginning}%
+		\label{fig:weakning}%
+\end{figure}
+
+\begin{figure}[htbp]%
+	\centering%
+		\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/B01150.png}%
+		\caption{Detachment of the flank counter-clockwise vortex 12.2ms after the phase beginning}%
+		\label{fig:detachingccwvortex}%
+\end{figure}
+\begin{figure}[htbp]%
+	\centering%
+		\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/B01170.png}%
+		\caption{Converging frontal flow 13.2 ms after the phase beginning, before the beginning of the shell deformation in the +X direction}%
+		\label{fig:convergingflow}%
+\end{figure}
+\begin{figure}[htbp]%
+	\centering%
+		\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/B01180.png}%
+		\caption{Axial frontal flow 13.7 ms after the phase beginning, at the beginning of the shell deformation in the +X direction}%
+		\label{fig:convergingaxialflow}%
+\end{figure}
+\paragraph{}
+In figure \ref{fig:1206}, the flow upfront is completely axial, there is also a flow arriving from the bottom engulfs between the shell and the flank vortex and converges towards the concavity. In the mean time the flank vortex moves towards the bottom, we can see in figure \ref{fig:dissipationmigrationVortexbottom} that it continues moving in the same direction and eventually completely dissipates. Another vortex is created at the flank rotating in the clockwise direction, co-existing with an adjacent vortex that rotates in the same direction (fig.\ref{fig:1239}). In the next figure \ref{fig:1280}, these two vortices seem to merge into one, enlarging the field of action of the resultant vortex. We can also observe that at the bottom, we have a normal diverging flow from the shell. The new flank vortex detaches like the precedent ones, letting a flow slip in between the shell and the detached vortex, as can be seen in figure \ref{fig:1350} and \ref{fig:1550}.
+\begin{figure}[htbp]%
+	\centering%
+		\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/B01206.png}%
+		\caption{Complete axial frontal flow 15 ms after the phase beginning}%
+		\label{fig:1206}%
+\end{figure}
+\begin{figure}[htbp]%
+	\centering%
+		\begin{subfigure}[h]{0.5\textwidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/B01227.png}%
+					\caption{Migration towards the bottom of the detached vortex 16 ms after the phase beginning}%
+					\label{fig:migrationVortexbottom}%
+			\end{subfigure}%
+			\begin{subfigure}[h]{0.5\linewidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/B01239.png}%
+					\caption{Dissipation of the migrated vortex 16.5 ms after the phase beginning}%
+					\label{fig:1239}%
+			\end{subfigure}%
+		\caption{Evolution of the detached counter-clockwise vortex}
+		\label{fig:dissipationmigrationVortexbottom}%
+\end{figure}
+\begin{figure}[htbp]%
+	\centering%
+		\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/B01280.png}%
+		\caption{Merging of two vortices 18.7 ms after the phase beginning}%
+		\label{fig:1280}%
+\end{figure}
+\begin{figure}[htbp]%
+	\centering%
+		\begin{subfigure}[h]{0.5\textwidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/B01350.png}%
+					\caption{Detaching vortex at the flank 22.2 ms after the phase beginning}%
+					\label{fig:1350}%
+			\end{subfigure}%
+			\begin{subfigure}[h]{0.5\linewidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/B01550.png}%
+					\caption{Migration of the detached vortex 32.2 ms after the phase beginning}%
+					\label{fig:1550}%
+			\end{subfigure}%
+		\caption{Evolution of the detached clockwise vortex}
+		\label{fig:dissipationmigrationVortexbottom}%
+\end{figure}
+\paragraph{}
+In figure \ref{fig:contraryflow}, the ball starts deforming in the (-X)-axis direction but surprisingly this flow moves radially ending up in the flank recirculation and a continuous flow upfront keeps converging towards the concavity, axially. A diverging axial flow configuration doesn't appear no more while the ball keeps oscillating.
+\begin{figure}[htbp]%
+	\centering%
+		\begin{subfigure}[h]{0.5\textwidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/B01728.png}%
+					\caption{7.8 ms after the ball started deforming forward again}%
+					\label{fig:1728}%
+			\end{subfigure}%
+			\begin{subfigure}[h]{0.5\linewidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/B01877.png}%
+					\caption{End of the deformation forward}%
+					\label{fig:1877}%
+			\end{subfigure}%
+		\caption{Converging flow while ball deforms forward}
+		\label{fig:contraryflow}%
+\end{figure}
+\paragraph{}
+Figure \ref{fig:means_oscillation_glycerol} shows clearly the non-periodicity of the flow and its non-symmetry.
+\begin{figure}[htbp]%
+	\centering%
+		\begin{subfigure}[h]{0.5\textwidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/1_sign/B00001.png}%
+					\caption{First deformation forward Vx (duration: 14 ms) }%
+			\end{subfigure}%
+			\begin{subfigure}[h]{0.5\linewidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/1_sign/B00002.png}%
+					\caption{First deformation forward Vy (duration: 14 ms)}%
+			\end{subfigure}%
+			
+			\begin{subfigure}[h]{0.5\textwidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/2_sign/B00001.png}%
+					\caption{First deformation backward Vx (duration: 19.25 ms) }%%
+			\end{subfigure}%
+			\begin{subfigure}[h]{0.5\linewidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/2_sign/B00002.png}%
+					\caption{First deformation backward Vy (duration: 19.25 ms)}%
+			\end{subfigure}%
+			
+			\begin{subfigure}[h]{0.5\textwidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/3_sign/B00001.png}%
+					\caption{Second deformation forward Vx (duration: 15.05 ms)}%%
+			\end{subfigure}%
+			\begin{subfigure}[h]{0.5\linewidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Shape_oscillation/3_sign/B00002.png}%
+					\caption{Second deformation forward Vy (duration: 15.05 ms)}%
+			\end{subfigure}%
+		\caption{Mean flow field during the oscillation}
+		\label{fig:means_oscillation_glycerol}%
+\end{figure} 
+\subsubsection{Post-oscillations}
+\paragraph{}
+After the end of the oscillations, we can observe a continuous flow converging towards the ball (see fig.\ref{fig:convergingflowpostoscillation}), we also notice the presence of a vortex at the outskirts of the shell upfront, which seem to slowly move radially until we can no longer see it. This vortex may be responsible for the converging flow. We observe no notable recirculation at the bottom of the shell. Another observation can be made on the fact that the flow seems to detach at the flanks, it clearly doesn't follow gently the shell curvature.
+\begin{figure}[htbp]%
+	\centering%
+		\begin{subfigure}[h]{0.5\textwidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Post_buckling/B00001.png}%
+					\caption{post-oscillation: t0 }%
+					\label{fig:t0_pb}%
+			\end{subfigure}%
+			\begin{subfigure}[h]{0.5\linewidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Post_buckling/B00050.png}%
+					\caption{25 ms later}%
+					\label{fig:50_pb}%
+			\end{subfigure}%
+			
+			\begin{subfigure}[h]{0.5\textwidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Post_buckling/B00100.png}%
+					\caption{50 ms later}%
+					\label{fig:100_pb}%
+			\end{subfigure}%
+			\begin{subfigure}[h]{0.5\linewidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Post_buckling/B00150.png}%
+					\caption{75 ms later}%
+					\label{fig:150_pb}%
+			\end{subfigure}%
+			
+			\begin{subfigure}[h]{0.5\textwidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Post_buckling/B00200.png}%
+					\caption{100 ms later}%
+					\label{fig:200_pb}%
+			\end{subfigure}%
+			\begin{subfigure}[h]{0.5\linewidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Post_buckling/B00250.png}%
+					\caption{125 ms later}%
+					\label{fig:250_pb}%
+			\end{subfigure}%
+		\caption{Converging flow post-oscillation}
+		\label{fig:convergingflowpostoscillation}%
+\end{figure}
+
+\subsubsection{Conclusions}
+\paragraph{}
+
+We saw through the precedent detailed description, that even if the ball keeps deforming in a damped oscillatory regime -giving it a periodic nature-, the flow ``induced'' by it doesn't present any periodic signs.
+\paragraph{}
+The only similar sub-phase flow-wise between water and glycerol is the pre-buckling phase. The rest of the sub-phases present big differences. The main one is the presence of vortices (which were not predicted at all in glycerol) and which tend to direct the flow towards the flanks and let it escape the concavity when they detach and move forward, they also may have an effect of forward propulsion when they detach and move towards the bottom. This may explain why the swimming in glycerol is more efficient than the one in water.    
+
+\section{Unbuckling}
+\paragraph{}
+The Unbuckling phase in glycerol is also decomposed in unbuckling sub-phase where the shell transits from a concave to convex configuration and an undulation sub-phase where a wave travels through the shell.
+
+\subsection{Unbuckling}
+\paragraph{}
+The shell transits from a rolling rim towards a spherical shell through an instability. During this phase, we observe similar flow configuration as seen in the water.
+The max velocity reached is around \textbf{1.4 m/s} lower than the one observed in water \textbf{1.8 m/s}, the acceleration imposed to the flow is around \textbf{175 m/s2} significantly lower than the one measured in water \textbf{300 m/s2}. Figure \ref{fig:Meanvelocityfieldoftheunbucklingphaseinglycerolandwater} shows the mean velocity field during the unbuckling phase in glycerol and its equivalent in water.
+
+\begin{figure}[htbp]%
+	\centering%
+		\begin{subfigure}[h]{0.5\textwidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Post_buckling/B00001.png}%
+					\caption{glycerol vx mean}%
+					\label{fig:vxmeanglycerol}%
+			\end{subfigure}%
+			\begin{subfigure}[h]{0.5\linewidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Post_buckling/B00050.png}%
+					\caption{glycerol vy mean}%
+					\label{fig:vymeanglycerol}%
+			\end{subfigure}%
+			
+			\begin{subfigure}[h]{0.5\textwidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Post_buckling/B00100.png}%
+					\caption{water vx mean}%
+					\label{fig:vxmeanwater}%
+			\end{subfigure}%
+			\begin{subfigure}[h]{0.5\linewidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Post_buckling/B00150.png}%
+					\caption{water vy mean}%
+					\label{fig:vymeanwater}%
+			\end{subfigure}%
+		\caption{Mean velocity field of the unbuckling phase in glycerol and water}
+		\label{fig:Meanvelocityfieldoftheunbucklingphaseinglycerolandwater}%
+\end{figure}
+ 
+\subsection{Undulations}
+\paragraph{}
+Exactly as seen in water, just after the unbuckling sub-phase, starts an undulation phase. This phase in glycerol is clearly damped faster in glycerol with a duration of \textbf{50 ms} compared to \textbf{150 ms}. 
+The flow induced in one ``period'' of undulation is shown in figure \ref{fig:Meanvelocityfieldoftheundulationphaseinglycerolandwater} with its equivalent in water.
+Contrary to the flow in water where  the flow seems to converge towards the top of the ball, in the glycerol, it's composed of two layer. The thin inner layer tends to direct the flow tangentially from the top towards the bottom and in the mean time, an outer layer is formed bringing the fluid from the bottom towards the front and making it diverge from the top, giving the flow the shape of a nozzle.
+\begin{figure}[htbp]%
+	\centering%
+		\begin{subfigure}[h]{0.5\textwidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Post_buckling/B00001.png}%
+					\caption{glycerol vx mean}%
+					\label{fig:vxmeanglycerol}%
+			\end{subfigure}%
+			\begin{subfigure}[h]{0.5\linewidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Post_buckling/B00050.png}%
+					\caption{glycerol vy mean}%
+					\label{fig:vymeanglycerol}%
+			\end{subfigure}%
+			
+			\begin{subfigure}[h]{0.5\textwidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Post_buckling/B00100.png}%
+					\caption{water vx mean}%
+					\label{fig:vxmeanwater}%
+			\end{subfigure}%
+			\begin{subfigure}[h]{0.5\linewidth}%
+					\includegraphics[width=\linewidth]{Figures/glycerol/Buckling/Post_buckling/B00150.png}%
+					\caption{water vy mean}%
+					\label{fig:vymeanwater}%
+			\end{subfigure}%
+			
+		\caption{Mean velocity field of the undulation phase in glycerol and water}
+		\label{fig:Meanvelocityfieldoftheundulationphaseinglycerolandwater}%
+\end{figure}
+
+
+
+\end{document}
+
