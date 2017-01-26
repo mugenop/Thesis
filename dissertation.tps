@@ -71,8 +71,8 @@ Class=LaTeXView
 Document=chapters\chapter1.tex
 
 [Frame3_View0,0]
-TopLine=477
-Cursor=36970
+TopLine=202
+Cursor=17046
 
 [Frame4]
 Flags=0
