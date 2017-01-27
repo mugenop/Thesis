@@ -65,6 +65,7 @@
 \RequirePackage[width=5.75in, letterpaper]{geometry}
 \usepackage{ragged2e}
 \RaggedRight
+\RequirePackage{float}
 \RequirePackage{graphicx}
 \usepackage{fixltx2e}
 \parindent 12pt
@@ -95,6 +96,9 @@
                 margin=0pt,
                 figurewithin=chapter,
                 tablewithin=chapter]{caption}
+
+
+\RequirePackage[perpage]{footmisc}
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 \RequirePackage{microtype}
 \RequirePackage{adjustbox}

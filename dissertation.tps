@@ -12,12 +12,12 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1562
-NormalPos.bottom=539
+NormalPos.bottom=540
 Class=LaTeXView
 Document=dissertation.tex
 
 [Frame0_View0,0]
-TopLine=3
+TopLine=19
 Cursor=555
 
 [Frame1]
@@ -30,13 +30,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1562
-NormalPos.bottom=539
+NormalPos.bottom=540
 Class=LaTeXView
 Document=Dissertate.cls
 
 [Frame1_View0,0]
-TopLine=78
-Cursor=3331
+TopLine=58
+Cursor=2109
 
 [Frame2]
 Flags=0
@@ -48,7 +48,7 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1562
-NormalPos.bottom=539
+NormalPos.bottom=540
 Class=LaTeXView
 Document=frontmatter\personalize.tex
 
@@ -66,13 +66,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1562
-NormalPos.bottom=539
+NormalPos.bottom=540
 Class=LaTeXView
-Document=chapters\chapter1.tex
+Document=dissertation.toc
 
 [Frame3_View0,0]
-TopLine=412
-Cursor=34014
+TopLine=0
+Cursor=0
 
 [Frame4]
 Flags=0
@@ -84,15 +84,15 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1562
-NormalPos.bottom=539
+NormalPos.bottom=540
 Class=LaTeXView
-Document=dissertation.toc
+Document=chapters\chapter1.tex
 
 [Frame4_View0,0]
-TopLine=0
-Cursor=0
+TopLine=35
+Cursor=3399
 
 [SessionInfo]
 FrameCount=5
-ActiveFrame=1
+ActiveFrame=0
 
