@@ -67,6 +67,7 @@
 \RaggedRight
 \RequirePackage{float}
 \RequirePackage{graphicx}
+\RequirePackage{subcaption}
 \usepackage{fixltx2e}
 \parindent 12pt
 \RequirePackage{lettrine}

@@ -12,15 +12,44 @@
   publisher = {Springer},
 }
 
-@article{Knuth1968,
-  title={Semantics of Context-free Languages},
-  author={Knuth, Donald E},
-  journal={Mathematical Systems Theory},
-  volume={2},
-  number={2},
-  pages={127--145},
-  year={1968},
-  publisher={Springer}
+@Article{cqpcritic2011,
+  author  = {P. Marmottant and A. Bouakaz and N. De Jong and C. Quilliet},
+  title   = {Buckling resistance of solid shell bubbles with ultrasound},
+  journal = {Journal of Acoustical Society of America},
+  year    = {2011},
+  volume  = {129},
+  pages   = {1231-1239},
+}
+
+@Article{bunwrapJ,
+  author  = {I, Arganda-Carreras and C. O. S., Sorzano and R., Marabini and J.-M., Carazo and C., Ortiz-de Solorzano and J., Kybic},
+  title   = {Consistent and Elastic Registration of Histological Sections using Vector-Spline Regularization},
+  journal = {Computer Vision Approaches to Medical Image Analysis},
+  year    = {2006},
+  volume  = {4241},
+  pages   = {85-95},
+  note    = {Lecture Notes in Computer Science, Springer Berlin / Heidelberg},
+}
+
+@Article{unwrapJ,
+  author  = {C.Ó., Sánchez Sorzano and P., Thévenaz and M., Unser},
+  title   = {Elastic Registration of Biological Images Using Vector-Spline Regularization},
+  journal = {IEEE Transactions on Biomedical Engineering},
+  year    = {2005},
+  volume  = {52},
+  number  = {4},
+  pages   = {652-663},
+  month   = {04},
+}
+
+@Article{,
+  author  = {Canny, J},
+  title   = {A Computational Approach To Edge Detection},
+  journal = {IEEE Trans. Pattern Analysis and Machine Intelligence},
+  year    = {1986},
+  volume  = {8},
+  number  = {6},
+  pages   = {679-698},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

@@ -5,7 +5,7 @@ The Secret of Happiness lies in looking at all the wonders of the world and neve
 \end{savequote}
 
 \chapter{Materials and methods}
-
+\newpage
 \section{Shell fabrication}
 \subsection{Motivations}
 \paragraph{}
@@ -175,7 +175,7 @@ The purpose of this experiment is to quantify the thrust generated during the bu
 It consists of a cubic tank (see fig.\ref{fig:tank}) made of anodized Aluminum supplied with windows made of polycarbonate polymer. It is dimensioned to withstand an absolute pressure bigger than $3 10^5 Pa$. Its dimensions are consistent with the non-confinement conditions (CITATION) where the characteristic length of the container is close to 10 times the characteristic length of the object to be studied.
 \begin{figure}[H] %
 	\centering%
-  \includegraphics[width=0.73\textwidth]{figures/Chapter_1/cuve_representation.png}
+  \includegraphics[width=0.73\textwidth]{figures/Chapter_1/cuve.pdf}
 	\caption{Schematics of the pressurizeable tank}
 	\label{fig:tank}
 \end{figure}
@@ -306,7 +306,7 @@ This protocol is performed for each step width, and there are 2 of them: 10 minu
    
 \begin{figure}[H] %
 	\centering%
-  \includegraphics[width=0.73\textwidth]{figures/Chapter_1/quasi_static_pressure_cycle.png}
+  \includegraphics[width=\textwidth]{figures/Chapter_1/quasi_static_pressure_cycle.png}
 	\caption{Qualitative representation of pressure cycles applied for the quasi-static experiments}
 	\label{fig:quasi_static_pressure_cycle}
 \end{figure}
@@ -315,7 +315,7 @@ In the second set of experiments, step width is shortened to 20 seconds\footnote
 Figure \ref{fig:quasi_static_pressure_cycle} shows a qualitative example of a pressure cycle applied for the dynamic set of experiments. The parameter $\alpha$ corresponds to the depressurization rate to get from the buckling pressure to near the unbuckling pressure. Three different rates are applied.
 \begin{figure}[H] %
 	\centering%
-  \includegraphics[width=0.73\textwidth]{figures/Chapter_1/dynamic_pressure_cycle.png}
+  \includegraphics[width=\textwidth]{figures/Chapter_1/dynamic_pressure_cycle.png}
 	\caption{Qualitative representation of pressure cycles applied for the dynamic experiments}
 	\label{fig:dynamic_pressure_cycle}
 \end{figure}
@@ -389,9 +389,102 @@ When static pressure is applied inside the tank used for the experiment, its win
 	\caption{Qualitative representation of a barrel distortion}
 	\label{fig:barrel_distortion}
 \end{figure}
- Two possibilities to correct this effect were considered: either modeling the bent window as a lens and characterize it as function of the pressure, or applying a numerical method to find the deformation of the image between the rest state where the relative pressure is zero and a state at pressure P. Once found, this deformation matrix is inversed and we can transform a distorted image to a non-distorted one. The latter solution was adopted, because it is less time-consuming knowing an algorithm has already been implemented in ImageJ registration pluing called "`bUnwrajJ"'.
+ Two possibilities to correct this effect were considered: either modeling the bent window as a lens and characterize it as function of the pressure, or applying a numerical method to find the deformation of the image between the rest state where the relative pressure is zero and a state at pressure P. Once found, this deformation matrix is inverted and we can transform a distorted image to a non-distorted one. The latter solution was adopted, because it is less time-consuming knowing an algorithm has already been implemented in ImageJ registration plugin called "`bUnwrajJ"'.
 To calibrate the correction, a damier was placed at the same position as the spring-ball system, and images were recorded for each pressure step, used during experiments in one fluid\footnote{This operation is renewed each time we fill the tank with a new fluid, because the camera-tank position may change during the emptying phase}.
 
 
 
 
+\subsection{Image treatment}
+\paragraph{}
+ The image treatment is the basis of the measurement conducted in the spring experiment, since every every physical quantity of interest is extracted from the images. But before extracting these quantities from the images, a correction of the windows distortion due to the pressurization of the tank was necessary.
+\subsubsection{Image calibration due to window distortion}
+\paragraph{}
+As mentioned earlier, we faced a problem when pressure was applied inside the tank, inducing an error on the distances measured directly from the distorted images which depends on the camera positon in regard to the window, the spring-ball position in regard to the window and the pressure inside the tank.For example, an estimation of this deformation between at (P = 1000 mbar), by measuring a horizontal central line between the image at (P=0) and at (P=1000 mbar) yields an elongation of:
+\begin{align}
+	\epsilon_{horizontal} = \frac{\Delta L}{L_0} = 2\%
+\end{align}
+\paragraph{Calibration step} 
+To correct it, we calibrated this distortion by taking an image of a damier inside the tank at each pressure step. 
+ From each image, we extracted a deformation matrix that links the rest state at (P=0) to the image at (P=p$_{image}$) and the deformation matrix is inverted to get the transformation needed to transform the image at (P=p$_{image}$) into the image at (P=0), using an algorithm implement in the registration plugin category of ImageJ, called "`bUnwrapJ"'.
+\paragraph{}
+"`bUnwarpJ"' is an algorithm for elastic and consistent image registration developed as an ImageJ plugin. It performs a simultaneous registration of two images, A and B. Image A is elastically deformed in order to look as similar as possible to image B, and, at the same time, the "inverse" transformation (from B to A) is also calculated so a pseudo-invertibility of the final deformation could be guaranteed (fig\ref{scheme_bunwrapJ}).
+
+\begin{figure}[H] %
+	\centering%
+  \includegraphics[width=\textwidth]{figures/Chapter_1/BUnwarpJ_scheme.png}
+	\caption{Illustration of the bUnwarpJ algorithm principle}
+	\label{fig:scheme_bunwrapJ}
+\end{figure}
+
+This image registration algorithm is based on the minimization of an energy functional that includes the dissimilarity between the source and target images -in both directions- $E_{img}$, an optional landmark constraint $E_{\mu}$, a regularization term $(E_{div} + E_{rot})$, and an energy term $E_{cons}$ that accounts for the geometrical consistency between the elastic deformation in both directions. Namely, the energy function is given by:
+\begin{equation*}
+		E = w_iE_{img} + w_{\mu}E_{\mu} + (w_dE_{div} + w_rE_{rot}) + w_cE_{cons} 
+\end{equation*}
+                  
+
+Where the weights of every term are set by the user in the main window of the plugin. The optimization process is a Levenberg-Marquardt minimization enhanced by a Broyden-Fletcher-Goldfarb-Shanno (BFGS) estimate of the local Hessian of the goal function, and both, images and deformations are represented by cubic B-splines \cite{bunwrapJ,unwrapJ}. 
+
+\paragraph{}
+Once the deformation matrix and its inverse extracted from the calibration step, each inverse transformation matrix $A(P)$ is applied to the $image(P)$ recorded during the spring experiment. The resulting image corresponds to an image recorded using a non-deformed tank window.\\
+All this process was automatized, using a script written in ImageJ macro language.
+\subsubsection{Contour extraction algorithm}
+\paragraph{}
+Once the distortion corrected, we needed to extract from each image three physical quantities:
+\begin{enumerate}
+	\item Elongation of the spring.
+	\item Shape and volume of the capsule.
+	\item Gravity center of the capsule.
+\end{enumerate}
+\paragraph{}
+An algorithm was written in python, based on an image treatment library called "`Opencv"', to automatically extract the three quantities for each image, following these steps, enriched by illustrations at each step applied to a raw image, in the buckling state, which represents the most complex  situation (fig.\ref{fig:raw_image}):
+\begin{figure}[H] %
+	\centering%
+  \includegraphics[width=\textwidth]{figures/Chapter_1/raw_image.png}
+	\caption{Raw image used for the illustrations}
+	\label{fig:raw_image}
+\end{figure}
+\paragraph{}
+First, the image is cropped to the boundaries of the displacement of the capsule during the experiment, to reduce memory and space disk consumption.
+\paragraph{}
+Second, the resulting image is filtered (fig.\ref{fig:filtering_image_treatment}), using two types of filters: a Gaussian filter where each point in the input array is convolved with a Gaussian kernel and then summing them all to produce the output array. Gaussian blurring is highly effective in removing Gaussian noise from the image. The second, is a median filter, which runs through each element of the image and replace each pixel with the median of its neighboring pixels. it is highly effective against salt-and-pepper noise in the images.
+The filtering kernel size were kept to a low level, to avoid dilatation of the pixels and an alteration of the capsule's contour.
+
+\begin{figure}[H]%
+	\centering%
+	 \begin{subfigure}[h]{0.48\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/median_b.png}%
+        \caption{Median blurring}%
+				\label{fig:median_f}%
+    \end{subfigure}%
+    \begin{subfigure}[h]{0.48\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/prebuckling_streamlines.png}%
+        \caption{Gaussian blurring}%
+        \label{fig:gaussian_f}%
+    \end{subfigure}%
+		
+		\begin{subfigure}[h]{0.48\textwidth}%
+        \includegraphics[width=\linewidth]{Figures/median_b.png}%
+        \caption{resulting filtered image}%
+				\label{fig:resulting_f}%
+    \end{subfigure}%
+		\caption{Filtering technique and results}%
+		\label{fig:filtering_image_treatment}%
+\end{figure}
+\paragraph{}
+Third, canny edge detector algorithm\cite{canny} is used to find the edges on the image (fig.\ref{fig:canny}). Briefly, this algorithm relies on finding the intensity gradients of the image, thinning the edge, by using the "`non-maximum suppression"' technique, and then applying a double threshold to get rid of the noise.
+\begin{figure}[H] %
+	\centering%
+  \includegraphics[width=\textwidth]{figures/Chapter_1/canny.png}
+	\caption{Canny edge detection}
+	\label{fig:canny}
+\end{figure}
+\paragraph{}
+From the canny image (fig.\ref{canny}), the white pixels are extracted, to get the general contour. Then, the capsule shape is extracted, by first, determining the maximum horizontal distance "`maxD"' between two white points, this distance is close to the maximum width of the ball. Knowing the y-position of "`maxD"', and exploiting the monotonous decrease of the horizontal distance, at higher y (the origin being the top left pixel), we can remove the spring shape by setting a minimum horizontal distance, as shown in figure \ref{fig:ball_shape}.
+
+\begin{figure}[H] %
+	\centering%
+  \includegraphics[width=\textwidth]{figures/Chapter_1/ball_shape.pdf}
+	\caption{Ball shape}
+	\label{fig:ball_shape}
+\end{figure}
