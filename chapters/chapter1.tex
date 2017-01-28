@@ -408,7 +408,7 @@ As mentioned earlier, we faced a problem when pressure was applied inside the ta
 To correct it, we calibrated this distortion by taking an image of a damier inside the tank at each pressure step. 
  From each image, we extracted a deformation matrix that links the rest state at (P=0) to the image at (P=p$_{image}$) and the deformation matrix is inverted to get the transformation needed to transform the image at (P=p$_{image}$) into the image at (P=0), using an algorithm implement in the registration plugin category of ImageJ, called "`bUnwrapJ"'.
 \paragraph{}
-"`bUnwarpJ"' is an algorithm for elastic and consistent image registration developed as an ImageJ plugin. It performs a simultaneous registration of two images, A and B. Image A is elastically deformed in order to look as similar as possible to image B, and, at the same time, the "inverse" transformation (from B to A) is also calculated so a pseudo-invertibility of the final deformation could be guaranteed (fig\ref{scheme_bunwrapJ}).
+"`bUnwarpJ"' is an algorithm for elastic and consistent image registration developed as an ImageJ plugin. It performs a simultaneous registration of two images, A and B. Image A is elastically deformed in order to look as similar as possible to image B, and, at the same time, the "inverse" transformation (from B to A) is also calculated so a pseudo-invertibility of the final deformation could be guaranteed (fig\ref{fig:scheme_bunwrapJ}).
 
 \begin{figure}[H] %
 	\centering%
@@ -440,7 +440,7 @@ Once the distortion corrected, we needed to extract from each image three physic
 An algorithm was written in python, based on an image treatment library called "`Opencv"', to automatically extract the three quantities for each image, following these steps, enriched by illustrations at each step applied to a raw image, in the buckling state, which represents the most complex  situation (fig.\ref{fig:raw_image}):
 \begin{figure}[H] %
 	\centering%
-  \includegraphics[width=\textwidth]{figures/Chapter_1/raw_image.png}
+  \includegraphics[width=0.48\textwidth]{figures/Chapter_1/raw_image.png}
 	\caption{Raw image used for the illustrations}
 	\label{fig:raw_image}
 \end{figure}
@@ -453,18 +453,18 @@ The filtering kernel size were kept to a low level, to avoid dilatation of the p
 \begin{figure}[H]%
 	\centering%
 	 \begin{subfigure}[h]{0.48\textwidth}%
-        \includegraphics[width=\linewidth]{Figures/median_b.png}%
+        \includegraphics[width=\linewidth]{figures/Chapter_1/median_b.png}%
         \caption{Median blurring}%
 				\label{fig:median_f}%
     \end{subfigure}%
     \begin{subfigure}[h]{0.48\textwidth}%
-        \includegraphics[width=\linewidth]{Figures/prebuckling_streamlines.png}%
+        \includegraphics[width=\linewidth]{figures/Chapter_1/gaussian_b.png}%
         \caption{Gaussian blurring}%
         \label{fig:gaussian_f}%
     \end{subfigure}%
 		
 		\begin{subfigure}[h]{0.48\textwidth}%
-        \includegraphics[width=\linewidth]{Figures/median_b.png}%
+        \includegraphics[width=\linewidth]{figures/Chapter_1/resulting_f.png}%
         \caption{resulting filtered image}%
 				\label{fig:resulting_f}%
     \end{subfigure}%
@@ -475,7 +475,7 @@ The filtering kernel size were kept to a low level, to avoid dilatation of the p
 Third, canny edge detector algorithm\cite{canny} is used to find the edges on the image (fig.\ref{fig:canny}). Briefly, this algorithm relies on finding the intensity gradients of the image, thinning the edge, by using the "`non-maximum suppression"' technique, and then applying a double threshold to get rid of the noise.
 \begin{figure}[H] %
 	\centering%
-  \includegraphics[width=\textwidth]{figures/Chapter_1/canny.png}
+  \includegraphics[width=0.48\textwidth]{figures/Chapter_1/canny.png}
 	\caption{Canny edge detection}
 	\label{fig:canny}
 \end{figure}

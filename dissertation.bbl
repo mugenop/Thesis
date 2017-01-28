@@ -1,5 +1,25 @@
 \begin{thebibliography}{}
 
+\bibitem[C.Ó. et~al., 2005]{unwrapJ}
+C.Ó., S.~S., P., T., \& M., U. (2005).
+\newblock Elastic registration of biological images using vector-spline
+  regularization.
+\newblock {\em IEEE Transactions on Biomedical Engineering}, 52(4), 652--663.
+
+\bibitem[Canny, 1986]{canny}
+Canny, J. (1986).
+\newblock A computational approach to edge detection.
+\newblock {\em IEEE Trans. Pattern Analysis and Machine Intelligence}, 8(6),
+  679--698.
+
+\bibitem[I et~al., 2006]{bunwrapJ}
+I, A.-C., C.~O.~S., S., R., M., J.-M., C., C., O.-d.~S., \& J., K. (2006).
+\newblock Consistent and elastic registration of histological sections using
+  vector-spline regularization.
+\newblock {\em Computer Vision Approaches to Medical Image Analysis}, 4241,
+  85--95.
+\newblock Lecture Notes in Computer Science, Springer Berlin / Heidelberg.
+
 \bibitem[Lee et~al., 2003]{NgLee2003}
 Lee, J.~N., Park, C., \& Whitesides, G.~M. (2003).
 \newblock Solvent compatibility of poly(dimethylsiloxane)-based microfluidic
