@@ -82,6 +82,7 @@
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
 \RequirePackage{mathspec}
+\RequirePackage{enumitem}
 \setmathrm{EB Garamond}
 \AtBeginEnvironment{tabular}{\addfontfeature{RawFeature=+tnum}}
 \widowpenalty=300

@@ -491,29 +491,29 @@ From the canny image (fig.\ref{canny}), the white pixels are extracted, to get t
 \paragraph{}
 Once the ball shape defined, its outer contour is fitted with a parametric curve, defined in the polar coordinates system, proceeding as follow:
 \begin{enumerate}
-	\item Define an initial center $M_{c0} (x_{c0},y_{c0})$ to the polar coordinate system, as being the mean value of the experimental points constituting the ball shape.
+	\item Define an initial center 	$M_{c0} (x_{c0},y_{c0})$	to the polar coordinate system, as being the mean value of the experimental points constituting the ball shape.
 	\begin{align*}
 			x_{c0} &= \frac{\sum\limits_{i=1}^N x_i}{N} \\
 			y_{c0} &= \frac{\sum\limits_{i=1}^N y_i}{N} \\
 	\end{align*}
-	Where $x_i$ and $y_i$ are the coordinates of the experimental points, and $N$ being the number of points.
+	Where $x_i$ and $y_i$	are the coordinates of the experimental points, and	$N$	being the number of points.
 	\item Define an iterative process which minimizes the difference between a fitting parametric curve and the experimental points,where at each iteration, the 		following operations are performed: 
 	
 		\begin{enumerate}[label=\alph*)]
 			\item Transform every experimental point from the cartesian coordinates system  $M(x,y)$ to the polar coordinates system $M'(R,\theta)$  as follow:
 				\begin{align*}
 				R_{exp}(\theta)_i &=\sqrt{(x_i- x_c)^2+(y_i-y_c)^2}  \\
-				\theta_{exp}_i &= \arctan(\frac{y_i-y_c}{x_i- x_c}) \\
+				\theta_{exp_i} &= \arctan(\frac{y_i-y_c}{x_i- x_c}) \\
 				\end{align*}
 				Where $x_c$ and $y_c$ are fitting parameters corresponding to the center of the polar coordinates, initialised by $M_{c0} (x_{c0},y_{c0})$.
 			\item Evaluate the fitting parametric curve:
 				\begin{align*}
-					\tilde{R}_(\theta)_i &=\sum\limits_{k=0}^M a_k \sin(\theta_{exp}_i-\theta_0)^k  \\
+					\tilde{R}(\theta)_i &=\sum\limits_{k=0}^M a_k \sin(\theta_{exp_i}-\theta_0)^k  \\
 				\end{align*}
-				for the fitting parameters $\theta_0$\footnote{$\theta_0$ represents the angle formed bet ween the symetry axis of the experimental points and the y-axis.} 			 and $a_k$ coefficients, with $k={0,...,M}$, $M$ being the degree of the polynomial.
-			\item Measure the distance $R_exp(\theta)_i-\tilde{R}_(\theta)_i$ and iterate.
+				for the fitting parameters $\theta_0$\footnote{$\theta_0$ represents the angle formed bet ween the symmetry axis of the experimental points and the y-axis.} 			 and $a_k$ coefficients, with $k={0,...,M}$, $M$ being the degree of the polynomial.
+			\item Measure the distance $R_{exp}(\theta)_i-\tilde{R}_(\theta)_i$ and iterate.
 		\end{enumerate}
-	The minimization is done using "`Levenberg-Marquardt"' method, commonly known as "`least_squares"' minimization method.
+	The minimization is done using $"`Levenberg-Marquardt"'$ method, commonly known as $"`least-squares"'$ minimization method.
 	\item The iterative process stops when reaching a residual smaller than a given threshold.	
 \end{enumerate}
 \paragraph{}
@@ -526,7 +526,7 @@ Once the ball shape defined, its outer contour is fitted with a parametric curve
 Once the outer contour fitted (fig.\ref{fig:outer_contour}), the experimental points defining the concavity are extracted from the image automatically. A region of interest (ROI) where the concavity occurs is defined around the maximum diameter region (fig\ref{fig:concavity_extraction}. Canny edge detector, is then applied to the ROI.
 \begin{figure}[H] %
 	\centering%
-  \includegraphics[width=0.48\textwidth]{figures/Chapter_1/concavity_extraction.png}
+  \includegraphics[width=\textwidth]{figures/Chapter_1/concavity_extraction.png}
 	\caption{Extraction of the concavity experimental points}
 	\label{fig:concavity_extraction}
 \end{figure}
@@ -534,19 +534,19 @@ Once the outer contour fitted (fig.\ref{fig:outer_contour}), the experimental po
 To create a complete fit between the outer contour and a fit of the concavity, we need first, to cut the outer contour where it ceases to belong to the shape generatrix, which generates the physical surface of the concave capsule. This limit is set by the point of the parametric outer curve where the tangent is horizontal.
 Practically, it means, find the point $M(R_{h},\theta_h)$, such as the the following condition is respected:
 \begin{equation}
-	\tan(\theta+\alpha) &=0\\
+	\tan(\theta+\alpha) =0
 	\label{eq:tangent_horizontal}
 \end{equation}
-Where $\alpha$^is the angle defined between the tangent line $T$ with the vector $\vec{OM}$ (see fig.\ref{fig:Illustration_tangent}), defined as such:
+Where $\alpha$ is the angle defined between the tangent line $T$ with the vector $\vec{OM}$ (see fig.\ref{fig:Illustration_tangent}), defined as such:
 \begin{equation}
-	\tan(\alpha) &=|{\frac {\tilde{R}(\theta )}{\tilde{R}'(\theta )}}|\\
+	\tan(\alpha) =|{\frac {\tilde{R}(\theta )}{\tilde{R}'(\theta )}}|
 	\label{eq:tangent}
 \end{equation}
 \begin{figure}[H] %
 	\centering%
-  \includegraphics[width=0.48\textwidth]{figures/Chapter_1/outer_contour.png}
-	\caption{Fitted outer contour in green, and center of the parametric curve in blue}
-	\label{fig:outer_contour}
+  \includegraphics[width=0.48\textwidth]{figures/Chapter_1/tan_alpha.png}
+	\caption{Definition of the horizontal tangent}
+	\label{fig:Illustration_tangent}
 \end{figure}
 Integrating \eqref{eq:tangent} in \eqref{eq:tangent_horizontal}, gives a condition an equation on theta:
 \begin{align*}
