@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9.6200 64-bit) (preloaded format=xelatex 2017.1.2)  30 JAN 2017 13:18
+This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9.6200 64-bit) (preloaded format=xelatex 2017.1.2)  30 JAN 2017 13:42
 entering extended mode
 **./dissertation.tex
 (dissertation.tex
@@ -999,11 +999,8 @@ Package: quotchap 2012/10/20 v1.1 Decorative Chapter Headings with Quotes
 )
 \mybibindent=\skip118
 Package hyperref Info: Option `colorlinks' set `true' on input line 202.
-) (dissertation.aux (chapters/chapter1.aux
-
-LaTeX Warning: Label `fig:outer_contour' multiply defined.
-
-) (chapters/appendixA.aux) (endmatter/colophon.aux))
+) (dissertation.aux (chapters/chapter1.aux)
+(chapters/appendixA.aux) (endmatter/colophon.aux))
 \openout1 = `dissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -1408,35 +1405,32 @@ Overfull \hbox (0.69656pt too wide) in paragraph at lines 517--518
 File: figures/Chapter_1/outer_contour.png Graphic file (type QTm)
  <use  "figures/Chapter_1/outer_contour.png" >
 File: figures/Chapter_1/concavity_extraction.png Graphic file (type QTm)
- <use  "figures/Chapter_1/concavity_extraction.png" > [41]
-
-LaTeX Warning: Reference `fig:Illustration_tangent' on page 42 undefined on input line 540.
-
-[42]
+ <use  "figures/Chapter_1/concavity_extraction.png" > [41] [42]
 File: figures/Chapter_1/tan_alpha.png Graphic file (type QTm)
- <use  "figures/Chapter_1/tan_alpha.png" > [43] [44]
-Overfull \hbox (22.14539pt too wide) in paragraph at lines 577--578
+
+<use  "figures/Chapter_1/tan_alpha.png" > [43] [44]
+Overfull \hbox (22.14539pt too wide) in paragraph at lines 578--579
 \EU1/lmr/m/n/10.95 Where $\OML/cmm/m/it/10.95 a; b; c; d$ \EU1/lmr/m/n/10.95 are the fit parameters, and $\OML/cmm/m/it/
 10.95 x[]; y[]$ \EU1/lmr/m/n/10.95 are the coordinates of the point $\OML/cmm/m/it/10.95 M\OT1/cmr/m/n/10.95 (\OML/cmm/m
 /it/10.95 R[]; ^^R[]\OT1/cmr/m/n/10.95 )$ 
  []
 
-[45]
-Underfull \hbox (badness 10000) in paragraph at lines 580--580
+
+Underfull \hbox (badness 10000) in paragraph at lines 581--581
 [][]\EU1/lmr/m/n/10 The calculus of these two quantities being complex, is not developed here and can be
  []
 
 File: figures/Chapter_1/outer_contour_complete.png Graphic file (type QTm)
-<use  "figures/Chapter_1/outer_contour_complete.png" >) [46]
+<use  "figures/Chapter_1/outer_contour_complete.png" > [45] [46]) [47]
 \openout2 = `chapters/appendixA.aux'.
 
  (chapters/appendixA.tex
 Appendix A.
-[47
+[48
 
 
 
-] [48]
+] [49]
 Overfull \hbox (9.11023pt too wide) in paragraph at lines 13--14
 \EU1/lmr/m/n/10.95 quis justo. Sed vel ipsum in purus tincidunt pharetra. Sed pulvinar, felis id consectetuer 
  []
@@ -1446,7 +1440,7 @@ Overfull \hbox (12.62523pt too wide) in paragraph at lines 13--14
 \EU1/lmr/m/n/10.95 malesuada, enim nisl mattis elit, a facilisis tortor nibh quis leo. Sed augue lacus, pretium 
  []
 
-) [49] [50] (endmatter/personalize.tex) (dissertation.bbl) [51
+) [50] [51] (endmatter/personalize.tex) (dissertation.bbl) [52
 
 
 
@@ -1531,7 +1525,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--16
 \EU1/lmr/m/n/10.95 or from its lead author, Jordan Suchow,
  []
 
-) [52
+) [53
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 44.
@@ -1543,17 +1537,14 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 44.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
  28446 strings out of 428408
  497067 string characters out of 3160622
- 568808 words of memory out of 3000000
+ 568938 words of memory out of 3000000
  31406 multiletter control sequences out of 15000+200000
  13892 words of font info for 89 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  50i,12n,110p,10431b,599s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on dissertation.pdf (59 pages).
+Output written on dissertation.pdf (60 pages).
