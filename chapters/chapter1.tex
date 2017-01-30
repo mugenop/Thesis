@@ -549,22 +549,23 @@ Where $\alpha$ is the angle defined between the tangent line $T$ with the vector
 	\label{fig:Illustration_tangent}
 \end{figure}
 Integrating \eqref{eq:tangent} in \eqref{eq:tangent_horizontal}, gives a condition an equation on theta:
-\begin{align*}
-	\tan(\theta+\alpha) &=0\\
-	\\Rightarrow\\
-	\frac{\tan(\theta)+\tan(\alpha)}{1-\tan(\theta)\tan(\alpha)} &= 0\\
-	\\Rightarrow\\
-	\tan(\theta)+\tan(\alpha) &= 0\\
-	\\Rightarrow\\
-	\tan(\theta)+|{\frac {\tilde{R}(\theta )}{\tilde{R}'(\theta )}}|&=0
-	\\Rightarrow\\
-	\tan(\theta)+|{\frac {\sum\limits_{k=0}^M a_k \sin(\theta)^k  )}{\cos(\theta) \sum\limits_{k=1}^M k a_k \sin(\theta)^(k-1) )}}|&=0
-\end{align*}
+\begin{center}
+	\begin{align*}
+		\tan(\theta+\alpha) &=0\\
+		\Rightarrow\\
+		\frac{\tan(\theta)+\tan(\alpha)}{1-\tan(\theta)\tan(\alpha)} &= 0\\
+		\Rightarrow\\
+		\tan(\theta)+\tan(\alpha) &= 0\\
+		\Rightarrow\\
+		\tan(\theta)+|{\frac {\tilde{R}(\theta )}{\tilde{R}'(\theta )}}|&=0
+		\Rightarrow\\
+		\tan(\theta)+|{\frac {\sum\limits_{k=0}^M a_k \sin(\theta)^k  )}{\cos(\theta) \sum\limits_{k=1}^M k a_k \sin(\theta)^(k-1) )}}|&=0
+	\end{align*}
+\end{center}
 The point $M(R_{h},\theta_h)$ is determined by minimizing this final expression.\\
 The outer contour belonging to the shape generatrix is defined as:
 \begin{align*}
 	\tilde{R}(\theta) &= \sum\limits_{k=0}^M a_k \sin(\theta)^k, \intertext{with } \theta \in[-\pi-\theta_h,\theta_h]
-	\theta
 \end{align*}
 Now, we need to fit the concavity experimental points with a functional which guaranties the continuity and differentiability at the $M(R_{h},\theta_h)$ point.\\
 To do so, we define a fitting functional as follows:
@@ -575,7 +576,7 @@ d &= -c x_{c}^2 - b x_{c}^4 -ax_{c}^6+ y_c\\
 \intertext{and}
 c &= -2 b x_{c}^2-3 a x_{c}^4
 \end{align*}
-Where $a,b,c,d$ are the fit parameters, and $x_c,y_c$ are the coordinates of the point $M(R_{h},\theta_h)$ in the cartesian coordiantes system, based around the center of the polar coordinate system, previously defined.\\
+Where $a,b,c,d$ are the fit parameters, and $x_c,y_c$ are the coordinates of the point $M(R_{h},\theta_h)$ in the cartesian coordiantes system, based around the center of the polar coordinate system, previously defined. Then, the extracted concavity experimental points are fitted \\
 \paragraph{}
 The combination of the two fits, determines an analytical description of the generatrix (fig.\ref{fig:fit_complet}), allowing the analytical calculus of the volume and the center of gravity of the capsule\footnote{The calculus of these two quantities being complex, is not developed here and can be found in the annexe.}. 
 %as follow:\\
@@ -608,6 +609,7 @@ The combination of the two fits, determines an analytical description of the gen
 \end{figure}
 \paragraph{Note}
 In the case of a convex shape, only the outer contour fit is considered.
-
-
+\newpage
+\section{Frictionless rail}
+\subsection{Brief introduction and motives}
 
