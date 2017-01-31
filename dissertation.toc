@@ -85,15 +85,15 @@
 \contentsline {subsection}{\numberline {0.3.2}Equipment}{50}{subsection.0.3.2}
 \contentsline {subsubsection}{Air bearing system}{50}{subsection.0.3.2}
 \contentsline {paragraph}{}{50}{subsection.0.3.2}
-\contentsline {paragraph}{}{50}{table.caption.29}
-\contentsline {subsubsection}{Spherical shells}{51}{table.caption.29}
-\contentsline {paragraph}{}{51}{table.caption.29}
-\contentsline {paragraph}{}{51}{table.caption.29}
-\contentsline {paragraph}{}{51}{table.caption.29}
-\contentsline {subsubsection}{Pressure controller}{52}{table.caption.29}
-\contentsline {paragraph}{}{52}{table.caption.29}
-\contentsline {subsubsection}{Tank}{52}{table.caption.29}
-\contentsline {paragraph}{}{52}{table.caption.29}
-\contentsline {subsubsection}{Camera,lenses and light sources}{52}{table.caption.29}
+\contentsline {paragraph}{}{51}{table.caption.30}
+\contentsline {subsubsection}{Spherical shells}{51}{table.caption.30}
+\contentsline {paragraph}{}{51}{table.caption.30}
+\contentsline {paragraph}{}{51}{table.caption.30}
+\contentsline {paragraph}{}{51}{table.caption.30}
+\contentsline {subsubsection}{Pressure controller}{52}{table.caption.30}
+\contentsline {paragraph}{}{52}{table.caption.30}
+\contentsline {subsubsection}{Tank}{52}{table.caption.30}
+\contentsline {paragraph}{}{52}{table.caption.30}
+\contentsline {subsubsection}{Camera,lenses and light sources}{52}{table.caption.30}
 \contentsline {chapter}{Appendix \numberline {A}Some extra stuff}{53}{Appendix.1.A}
-\contentsline {chapter}{References}{57}{chapter*.30}
+\contentsline {chapter}{References}{57}{chapter*.31}

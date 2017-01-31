@@ -630,8 +630,15 @@ The advantage of this experiment is that it allows to directly illustrate the sw
 \subsection{Equipment}
 \subsubsection{Air bearing system}
 \paragraph{}
-The air bearing rail system (fig.\ref{}), is composed of two main components made of black anodized aluminum. The first component is 600mm long and 75mm T-shaped rail, which serves as a guide to the second component, which is the truck. The truck is designed to slide along the guide without solid friction. This is possible thanks to microscopic holes present in the inner surface of the truck. These holes allow pressurized air to stream on the surface of the guide and create a cushion air, which prevents the surfaces of the guide and the truck to be in contact. The pressurized air provided to the truck through its inlet, sets the load capacity.
-In the case of the experiment, the input pressure was of 6 bars, allowing the loads precised in \ref{tab:pressure_truck}, which shows that it is more than enough, compared to the forces involved. For example, the max buoyancy force encountered is of 2N, and the weight of the truck is 13N.
+The air bearing rail system (fig.\ref{fig:pic_frictionless}), is composed of two main components made of black anodized aluminum. The first component is 600mm long and 75mm T-shaped rail, which serves as a guide to the second component, which is the truck. The truck is designed to slide along the guide without solid friction. This is possible thanks to microscopic holes present in the inner surface of the truck. These holes allow pressurized air to stream on the surface of the guide and create a cushion air, which prevents the surfaces of the guide and the truck to be in contact. The pressurized air provided to the truck through its inlet, sets the load capacity.
+\begin{figure}[H] %
+	\centering%
+	\includegraphics[width=0.48\textwidth]{figures/Chapter_1/Airbearing.png}
+	\caption{Illustration of the air bearing system}
+	\label{fig:pic_frictionless}
+\end{figure}
+In the case of the experiment, the input pressure was of 6 bars, allowing the loads precised in \ref{tab:pressure_truck}, which shows that it is more than enough, compared to the forces involved. For example, the max buoyancy force encountered is of 2N, and the weight of the truck is 13N.\\
+A flexible tube is used to link the air pressure source to the truck pressure input. The tube is suspended at a 2m height and left loose, to avoid any bending or tension force which might displace the truck and lead to a measurement error.
 \begin{table}[H]
 	\centering
 		\begin{adjustbox}{width=\textwidth}
@@ -647,7 +654,26 @@ In the case of the experiment, the input pressure was of 6 bars, allowing the lo
 	\label{tab:pressure_truck}
 \end{table}
 \paragraph{}
+The rail is mounted on two slides, which can translate vertically on two rigid extruded aluminium profiles(fig.\ref{fig:setup_rail}). This allows to set the rail at the horizontal plane, using an electronic spirit level. This operation is necessary, to ensure that no drift is produced, which may lead to unsatisfactory measuring precision.
+\begin{figure}[H] %
+	\centering%
+	\includegraphics[width=0.48\textwidth]{figures/Chapter_1/Airbearing.png}
+	\caption{Picture representing the experimental setup to mount the rail}
+	\label{fig:setup_rail}
+\end{figure}
+
+\paragraph{}
 All technical details associated to the air bearing system can be found in the annex.
+\subsubsection{Mounting support}
+\paragraph{}
+To link the spherical shell to the truck, an L-shaped mounting support was realised made of Aluminum (fig.\ref{fig:mounting support}. This support is supplied with an M6 tapped hole to fix it to the truck and a M4 tapped hole to connect it to the spherical shell through a suction cup. The support weighs 220g, in addition to the 1300 g of the truck. Other materials and designs were considered to make a lighter support, but we found out that the thrust produced during the buckling phase, was able to bend the support, which alters the displacement produced and introduces a bias in the experiment and its physical interpretation.
+\begin{figure}[H] %
+	\centering%
+	\includegraphics[width=0.48\textwidth]{figures/Chapter_1/Airbearing.png}
+	\caption{Schematics of the mounting support}
+	\label{fig:mounting support}
+\end{figure}
+
 \subsubsection{Spherical shells}
 \paragraph{}
 The spherical shells used in this experiment are 3 shells cast in the 'Dragon skin \textregistered 30' material with three thicknesses: 2 mm, 5 mm and 6.5 mm. A 2mm thick shell, cast in the "`AJO 121"' material and a 2mm thick shell, cast in the "`AJO 122"' material. All the shells have an external radius 25 mm. 
@@ -667,4 +693,40 @@ The tank used in this experiment, is an open recipient, with 340mm by 170mm rect
 \subsubsection{Camera,lenses and light sources}
 The equipment used for the experiment is the same as in the spring experiment (\ref{sssection:CLLS}). In addition, a macro lense with a fixed focal length $f= 100$ mm with a maximum aperture of f/2.0 was used to zoom over a region of interest, without losing in spatial resolution.
   
+\subsection{Experimental process}
+\paragraph{}
+This experimental setup has a rich potential, allowing the exploration of a multitude of physical quantities, and different configurations can be imagined to enrich it even more. We tried however, to focus our experimental investigations on the effect of primary physical quantities over the swimming. The quantities explored are:
+\begin{enumerate}
+	\item The amount of elastic energy stored prior to buckling, by varying the thickness of the shell, keeping the outer radius constant, and this is performed with the set of three shells cast out of "`Drangon skin"'\textregistered material.
+	\item The effect of solid dissipation on the swimming efficiency, by varying the rebound resilience of the material in which the shell is cast. This quantity refers to the restitution rate of the stored elastic energy. To isolate its effect, two materials were chosen with the specificity of sharing the same elastic modulus, and two shell with an identical were cast.
+	\item During preliminary experimentations, it was noticed that, when at proximity to a wall, with the buckling spot facing it, the swimming induced by the buckling and unbuckling phases is modified. To study this effect, two series of experiments are conducted, one far from the wall, to characterize the swimming in bulk, and the second one near the wall to study the effect of directional confinement.\footnote{Only the frontal wall proximity is investigated, the lateral, rear or any other angular configurations are to be studied in the future}. 
+\end{enumerate}
+\paragraph{}
+All the enumerated experiments above, are conducted for different viscosities of the swimming medium, to vary the $Re$ number characterizing the flow regime. To do so, seven "`water-glycerol"' solutions were prepared, with viscosities ranging from 0.001 Pa.s with (100\% Water-0\% glycerol) solution  to 1.3 Pa.s with a (0\% Water-100\% glycerol) solution, with a targeted viscosity step of half a decade, taking advantage of the miscibility of the (water-glycerol) couple. To target the desired viscosity, the volume fraction of each liquid needs to be calculated precisely. Knowing that the viscosity of a water-glycerol solution evolves in a non-linear way\cite{viscositynonlinearCheng}. A way to approach the targeted viscosity, the volume fractions were calculated using an empirical formula found in the literature\cite{viscositynonlinearCheng}. To verify the viscosity of the solution, a sample is collected at the end of the experiment and its viscosity is measured at the experiment temperature.\\
+In addition, experiments are conducted in a liquid called "`UCON Lubricant 75-H-90,000 "`, which has a viscosity of 37 Pa.s at room temperature, providing another decade to the viscosity range explored. All the water-glycerol solutions are transparent, and the "`UCON Lubricant"' presents a yellowish coloration which does not prevent the visualization during the experiment. 
+Table\ref{tab:viscosities} summarizes the solutions in which the experiments are conducted.
+\begin{table}[H]
+	\centering
+		\begin{adjustbox}{width=\textwidth}
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				Solution number & liquid volume fractions & tageted viscosity at 20°C (Pa.s)\\
+				\hline
+				1&100\% Water-0\% glycerol&0.001\\
+				2&59\% Water-41\% glycerol&0.005\\
+				3&47\% Water-53\% glycerol&0.01\\
+				4&26\% Water-74\% glycerol&0.05\\
+				5&19\% Water-81\% glycerol&0.1\\
+				6&6.4\% Water-93.6\% glycerol&0.5\\
+				7&0\% Water-100\% glycerol&0.5\\
+				8&0\% 100\% Ucon oil&37\\
+			\end{tabular}
+		\end{adjustbox}
+	\caption{Summary of the solutions prepared.}
+	\label{tab:pressure_truck}
+\end{table}
+  
+\subsubsection{Experimental protocol}
+\paragraph{}
+Once the volume fractions for a targeted viscosity are calculated, the corresponding solution is prepared , and an experimental protocol is followed for each one of the 5 capsules:
 
