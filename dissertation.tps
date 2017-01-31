@@ -17,7 +17,7 @@ Class=LaTeXView
 Document=dissertation.tex
 
 [Frame0_View0,0]
-TopLine=4
+TopLine=20
 Cursor=555
 
 [Frame1]
@@ -89,10 +89,10 @@ Class=LaTeXView
 Document=chapters\chapter1.tex
 
 [Frame4_View0,0]
-TopLine=736
-Cursor=48475
+TopLine=812
+Cursor=57813
 
 [SessionInfo]
 FrameCount=5
-ActiveFrame=4
+ActiveFrame=0
 

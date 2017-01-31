@@ -83,7 +83,7 @@ The typical mechanical properties of the resulting rubber are:
 
 \paragraph{Half shell casting}
 \begin{enumerate}
-	\item Begin by determining the mass of a shell with a outer radius of $R_{out}= 50 mm$ and a thickness $th$ which gives an internal radius $R_{int} = R_{out}-th$, The mass\footnote{In practice, this mass is increased by 50\% to take into account the eventual loss during the preparation.} of a hollow sphere is given by the following formula:
+	\item Begin by determining the mass of a shell with a outer radius of $R_{out}= 25 mm$ and a thickness $th$ which gives an internal radius $R_{int} = R_{out}-th$, The mass\footnote{In practice, this mass is increased by 50\% to take into account the eventual loss during the preparation.} of a hollow sphere is given by the following formula:
 		\[Mass_{shell} = \frac{4\pi}{3}\rho_{material} (R_{out}^3-R_{int}^3) \]
 
 	\item In a beaker, we weigh 50\% of the shell mass of component A which is the silicon polymer chain. We stir thoroughly and add 50\% of the shell mass of component B, which constitutes the cross-linking agent, we stir thoroughly.
@@ -156,7 +156,7 @@ This is the protocol followed which solved partially the problems previously sta
 	\item Encapsulate the shell inside the two female molds and exert pressure using the mechanical press.
 	\item Put the press inside the oven at 115°C for 10 minutes. Remove it and let it cool at room temperature.\footnote{The capsules produced using this protocol have an internal pressure close to $75\%$ of the atmospheric pressure.}
 \end{enumerate}
-
+\newpage
 \section{Spring experiment}
 \subsection{Brief introduction and motives}
 
@@ -203,7 +203,7 @@ It was also provided with threaded ends to fit M6 and M4 screws. The M6 end is d
 \subsubsection{Spherical shells}
 \label{sec:Spherical_shells}
 \paragraph{}
-The spherical shells used in this experiment are shells cast in the 'Dragon skin \textregistered 30' material. The external radius is kept constant at 5 cm and three thicknesses were explored: 2 mm, 5 mm and 6.5 mm.
+The spherical shells used in this experiment are shells cast in the 'Dragon skin \textregistered 30' material. The external radius is kept constant at 25 mm and three thicknesses were explored: 2 mm, 5 mm and 6.5 mm.
 The choice of these thicknesses is primarily directed by the fact that we wanted to explore the effect of stored elastic energy on the buckling mechanism and the thrust induced during the deflation and the re-inflation of the capsule. Taking into account that the stored elastic energy before the advent of the buckling instability is proportional to the ratio between the thickness and the shell radius squared \cite{cqpcritic2011} $P_c \propto (\frac{d}{R})^2$, the resulting range of variation of this geometric ratio in this experiment, ranges from $6.4 10^{-3}$ to $6.76 10^{-2}$.
 A lower value of this parameter was tried (taking a thickness of 1 mm) but it resulted in a spontaneous buckling when immersed, due to the static pressure.
 A higher value of of this parameter was tried (taking a thickness of 7.5 mm) but it was not possible to reach the pressure high enough to produce a buckling in the range of the operable pressure [0, 2] bars.
@@ -213,6 +213,7 @@ Special measure were taken to conduct experiments on the 2mm thick shell, due to
 One of the properties of the material used is its semi-transparency when light is shone on it. which is an important feature to determine the volume of the concave shapes resulting after the buckling.
 
 \subsubsection{Pressure controller}
+\label{sssection:pressure_controller}
 \paragraph{}
 Since deflation and re-inflation cycles of the shell are actuated by applying a difference of pressure between the inside and outside, it was necessary to use a pressure controller.
 \paragraph{}
@@ -236,6 +237,7 @@ The air filters used consist in a 5$\mu$m pore size pneumatic filter which remov
 This pressure controller is not supposed to be used in such conditions, operating on rather large air volumes. One of its inconveniences was its time response with a max air-flux dimensioned for micro-fluidic experiments. We bought a pressure controller intended to work with large volumes but it was not supplied with neither any power supply nor any software and necessary electronics to control it with a computer. The fact that we were not investigating the actuation frequency role in the physics and the impossibility to control negative relative pressures, comforted us into using the plug and play solution "`OB1"'.
 
 \subsubsection{Camera,lenses and light sources}
+\label{sssection:CLLS}
 \paragraph{Camera:}
 Taking into account the fast nature of the instability, where the shells undertakes a deformation of almost a radius, in less than 5 ms, it was necessary to use a high-speed camera.
 The camera used for this purpose is the Phantom\textcopyright Miro 310, its main characteristics are the following:
@@ -480,11 +482,11 @@ Third, canny edge detector algorithm\cite{canny} is used to find the edges on th
 	\label{fig:canny}
 \end{figure}
 \paragraph{}
-From the canny image (fig.\ref{canny}), the white pixels are extracted, to get the general contour. Then, the capsule shape is extracted, by first, determining the maximum horizontal distance "`maxD"' between two white points, this distance is close to the maximum width of the ball. Knowing the y-position of "`maxD"', and exploiting the monotonous decrease of the horizontal distance, at higher y (the origin being the top left pixel), we can remove the spring shape by setting a minimum horizontal distance, as shown in figure \ref{fig:ball_shape}.
+From the canny image (fig.\ref{fig:canny}), the white pixels are extracted, to get the general contour. Then, the capsule shape is extracted, by first, determining the maximum horizontal distance "`maxD"' between two white points, this distance is close to the maximum width of the ball. Knowing the y-position of "`maxD"', and exploiting the monotonous decrease of the horizontal distance, at higher y (the origin being the top left pixel), we can remove the spring shape by setting a minimum horizontal distance, as shown in figure \ref{fig:ball_shape}.
 
 \begin{figure}[H] %
 	\centering%
-  \includegraphics[width=\textwidth]{figures/Chapter_1/ball_shape.png}
+  \includegraphics[width=0.48\textwidth]{figures/Chapter_1/ball_shape.png}
 	\caption{Ball shape}
 	\label{fig:ball_shape}
 \end{figure}
@@ -549,24 +551,19 @@ Where $\alpha$ is the angle defined between the tangent line $T$ with the vector
 	\label{fig:Illustration_tangent}
 \end{figure}
 Integrating \eqref{eq:tangent} in \eqref{eq:tangent_horizontal}, gives a condition an equation on theta:
-\begin{center}
-	\begin{align*}
-		\tan(\theta+\alpha) &=0\\
-		\Rightarrow\\
-		\frac{\tan(\theta)+\tan(\alpha)}{1-\tan(\theta)\tan(\alpha)} &= 0\\
-		\Rightarrow\\
-		\tan(\theta)+\tan(\alpha) &= 0\\
-		\Rightarrow\\
-		\tan(\theta)+|{\frac {\tilde{R}(\theta )}{\tilde{R}'(\theta )}}|&=0
-		\Rightarrow\\
-		\tan(\theta)+|{\frac {\sum\limits_{k=0}^M a_k \sin(\theta)^k  )}{\cos(\theta) \sum\limits_{k=1}^M k a_k \sin(\theta)^(k-1) )}}|&=0
-	\end{align*}
-\end{center}
+	\begin{gather*}
+		\tan(\theta+\alpha) =0\\
+		\Rightarrow\frac{\tan(\theta)+\tan(\alpha)}{1-\tan(\theta)\tan(\alpha)} = 0\\
+		\Rightarrow\tan(\theta)+\tan(\alpha) = 0\\
+		\Rightarrow\tan(\theta)+|{\frac {\tilde{R}(\theta )}{\tilde{R}'(\theta )}}|=0\\
+		\Rightarrow\tan(\theta)+|{\frac {\sum\limits_{k=0}^M a_k \sin(\theta)^k  )}{\cos(\theta) \sum\limits_{k=1}^M k a_k \sin(\theta)^{(k-1)} )}}|=0
+	\end{gather*}
 The point $M(R_{h},\theta_h)$ is determined by minimizing this final expression.\\
 The outer contour belonging to the shape generatrix is defined as:
-\begin{align*}
-	\tilde{R}(\theta) &= \sum\limits_{k=0}^M a_k \sin(\theta)^k, \intertext{with } \theta \in[-\pi-\theta_h,\theta_h]
-\end{align*}
+\begin{equation*}
+	\tilde{R}(\theta) = \sum\limits_{k=0}^M a_k \sin(\theta)^k
+\end{equation*}
+With $\theta \in[-\pi-\theta_h,\theta_h]$\\
 Now, we need to fit the concavity experimental points with a functional which guaranties the continuity and differentiability at the $M(R_{h},\theta_h)$ point.\\
 To do so, we define a fitting functional as follows:
 \begin{align*}
@@ -576,9 +573,12 @@ d &= -c x_{c}^2 - b x_{c}^4 -ax_{c}^6+ y_c\\
 \intertext{and}
 c &= -2 b x_{c}^2-3 a x_{c}^4
 \end{align*}
-Where $a,b,c,d$ are the fit parameters, and $x_c,y_c$ are the coordinates of the point $M(R_{h},\theta_h)$ in the cartesian coordiantes system, based around the center of the polar coordinate system, previously defined. Then, the extracted concavity experimental points are fitted \\
+Where $a,b,c,d$ are the fit parameters, and $x_c,y_c$ are the coordinates of the point $M(R_{h},\theta_h)$ in the cartesian coordiantes system, based around the center of the polar coordinate system, previously defined. Then, the extracted concavity experimental points are fitted with the 6-degree polynomial, using the $"`Levenberg-Marquardt"'$ method. \\
 \paragraph{}
 The combination of the two fits, determines an analytical description of the generatrix (fig.\ref{fig:fit_complet}), allowing the analytical calculus of the volume and the center of gravity of the capsule\footnote{The calculus of these two quantities being complex, is not developed here and can be found in the annexe.}. 
+\paragraph{}
+As precised earlier, the example treated here is the most complexe. In the case of a convex shape(non buckled shape), only the outer contour fit is considered, and $\theta_h$ is equal to $\frac{\pi}{2}$.
+
 %as follow:\\
 %For the volume:
 %\begin{align*}
@@ -608,8 +608,63 @@ The combination of the two fits, determines an analytical description of the gen
 	\label{fig:fit_complet}
 \end{figure}
 \paragraph{Note}
-In the case of a convex shape, only the outer contour fit is considered.
+\paragraph{}
 \newpage
 \section{Frictionless rail}
 \subsection{Brief introduction and motives}
+\paragraph{}
+The purpose of this experiment is to characterize the swimming induced by the shell deformation, actuated by pressure cycles. The setup consists of attaching a spherical capsule to a support, itself mounted on an frictionless air bearing, which can slide horizontally on a rail, allowing a 1-D displacement. The shell is immersed in a liquid, as represented in figure \ref{fig:experimental_setup_frictionless_rail}. Contrary to the spring experiment where the shell deformation is actuated by applying a positive relative pressure, inside a tank, in the Frictionless rail experiment, this option was not chosen, due to the complexity of the experimental setup it would have required. Instead, the shape deformation cycles are actuated by applying negative pressure cycles to the air volume enclosed in the spherical capsule. This is done by connecting the enclosed volume to a pressure controller, through a flexible pipe. In order to have a better control over the experimentation, a weakness is introduced, by reducing the thickness locally by 0.2 mm, which allows to define where the instability will occur. The buckling spot is oriented a direction parallel to the rail, to ensure the capture of the full displacement during the buckling and unbuckling phase. The position of the support and the shell deformation are captured using a high speed camera. Several control parameters were explored:
+\begin{itemize}
+	\item The thickness of the capsule's shell, to vary the elastic energy stored by it.
+	\item The dissipation property of the material in which the spherical capsules are cast.
+	\item The viscosity of the swimming medium.
+	\item And, the proximity to a wall.
+\end{itemize}
+The advantage of this experiment is that it allows to directly illustrate the swimming, to quantify it and to measure the thrust during the buckling and unbuckling phase.
+\begin{figure}[H] %
+	\centering%
+	\includegraphics[width=\textwidth]{figures/Chapter_1/schematic_experimental_setup_fr.png}
+	\caption{Schematic representation of the frictionless rail experimental setup}
+	\label{fig:experimental_setup_frictionless_rail}
+\end{figure}
+\subsection{Equipment}
+\subsubsection{Air bearing system}
+\paragraph{}
+The air bearing rail system (fig.\ref{}), is composed of two main components made of black anodized aluminum. The first component is 600mm long and 75mm T-shaped rail, which serves as a guide to the second component, which is the truck. The truck is designed to slide along the guide without solid friction. This is possible thanks to microscopic holes present in the inner surface of the truck. These holes allow pressurized air to stream on the surface of the guide and create a cushion air, which prevents the surfaces of the guide and the truck to be in contact. The pressurized air provided to the truck through its inlet, sets the load capacity.
+In the case of the experiment, the input pressure was of 6 bars, allowing the loads precised in \ref{tab:pressure_truck}, which shows that it is more than enough, compared to the forces involved. For example, the max buoyancy force encountered is of 2N, and the weight of the truck is 13N.
+\begin{table}[H]
+	\centering
+		\begin{adjustbox}{width=\textwidth}
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				Input pressure (bar) & horizontal load (N)&Vertical load (N)& maximum moment force in the three directions (Nm) \\
+				\hline
+				6&473&709&2.8\\
+				\hline
+			\end{tabular}
+		\end{adjustbox}
+	\caption{Load capacity for a 6 bar pressure}
+	\label{tab:pressure_truck}
+\end{table}
+\paragraph{}
+All technical details associated to the air bearing system can be found in the annex.
+\subsubsection{Spherical shells}
+\paragraph{}
+The spherical shells used in this experiment are 3 shells cast in the 'Dragon skin \textregistered 30' material with three thicknesses: 2 mm, 5 mm and 6.5 mm. A 2mm thick shell, cast in the "`AJO 121"' material and a 2mm thick shell, cast in the "`AJO 122"' material. All the shells have an external radius 25 mm. 
+The first set of shells cast in the 'Dragon skin \textregistered 30' material is designed to study the effect of stored elastic energy over the swimming.
+The second set of shells cast in the "`AJO 121"' material and the "`AJO 122"' is intended to study the effect of material dissipation over the swimming, taking into account that the two materials used, have approximately, the same elastic modulus.
+\paragraph{}
+A 2 mm hole is drilled in each shell and a nozzle is connected to it, to connect the inner volume to the pressure controller through a flexible tube.
+\paragraph{}
+An imperfection is introduced over the two sets of shells, by locally reducing the thickness of 0.2mm over a circle of 10mm diameter. This imperfection is introduced to have the same buckling scenario for every shell and avoid having a buckling occuring where the pressurization nozzle is located.
+In theory, this imperfection affects the critical buckling pressure\cite{Preis}, though, it is not a concern in the case of this experiment, plus the the reduction of thickness is relatively small.
+\subsubsection{Pressure controller}
+\paragraph{}
+The pressure controller used in this experiment has been presented earlier in the spring experiment (\ref{sssection:pressure_controller}). This time, it is operated on the [-1,1] bar channel and required the use of a vacuum pump to reach -1 bar.
+\subsubsection{Tank}
+\paragraph{}
+The tank used in this experiment, is an open recipient, with 340mm by 170mm rectangular base and 250 mm height, made out of glass.  
+\subsubsection{Camera,lenses and light sources}
+The equipment used for the experiment is the same as in the spring experiment (\ref{sssection:CLLS}). In addition, a macro lense with a fixed focal length $f= 100$ mm with a maximum aperture of f/2.0 was used to zoom over a region of interest, without losing in spatial resolution.
+  
 
