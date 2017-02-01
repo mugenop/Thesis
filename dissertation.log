@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2016.4.3)  31 JAN 2017 15:06
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2016.4.3)  1 FEB 2017 03:19
 entering extended mode
 **./dissertation.tex
 (dissertation.tex
@@ -1568,7 +1568,7 @@ File: figures/Chapter_1/dynamic_pressure_cycle.png Graphic file (type QTm)
 *************************************************
 File: figures/Chapter_1/barrel_effect.png Graphic file (type QTm)
 <use  "figures/Chapter_1/barrel_effect.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 395--395
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 [][]\EU1/lmr/m/n/10 This operation is renewed each time we fill the tank with a
  new fluid, because the
  []
@@ -1583,7 +1583,7 @@ File: figures/Chapter_1/median_b.png Graphic file (type QTm)
 
 <use  "figures/Chapter_1/median_b.png" >
 LaTeX Font Info:    Font shape `EU1/LatoRegular(0)/bx/n' will be
-(Font)              scaled to size 9.19962pt on input line 459.
+(Font)              scaled to size 9.19962pt on input line 457.
 File: figures/Chapter_1/gaussian_b.png Graphic file (type QTm)
 
 <use  "figures/Chapter_1/gaussian_b.png" >
@@ -1593,7 +1593,7 @@ File: figures/Chapter_1/resulting_f.png Graphic file (type QTm)
 File: figures/Chapter_1/canny.png Graphic file (type QTm)
 
 <use  "figures/Chapter_1/canny.png" >
-Overfull \hbox (5.47295pt too wide) in paragraph at lines 477--483
+Overfull \hbox (5.47295pt too wide) in paragraph at lines 475--481
 [] [][] \EU1/lmr/m/n/10.95 Third, canny edge detector algorithm$[]$ is used to 
 find the edges on the image (fig.[][]15[][]). 
  []
@@ -1601,13 +1601,13 @@ find the edges on the image (fig.[][]15[][]).
 [37]
 File: figures/Chapter_1/ball_shape.png Graphic file (type QTm)
  <use  "figures/Chapter_1/ball_shape.png" > [38] [39] [40]
-Underfull \hbox (badness 10000) in paragraph at lines 515--515
+Underfull \hbox (badness 10000) in paragraph at lines 513--513
 [][]$\OML/cmm/m/it/10 ^^R[]$ \EU1/lmr/m/n/10 represents the angle formed bet we
 en the symmetry axis of the experimental points
  []
 
 
-Overfull \hbox (0.69656pt too wide) in paragraph at lines 519--520
+Overfull \hbox (0.69656pt too wide) in paragraph at lines 517--518
 []\EU1/lmr/m/n/10.95 The iterative process stops when reaching a residual small
 er than a given thresh- 
  []
@@ -1620,7 +1620,7 @@ File: figures/Chapter_1/concavity_extraction.png Graphic file (type QTm)
 File: figures/Chapter_1/tan_alpha.png Graphic file (type QTm)
 
 <use  "figures/Chapter_1/tan_alpha.png" > [44] [45]
-Overfull \hbox (22.14539pt too wide) in paragraph at lines 575--576
+Overfull \hbox (22.14539pt too wide) in paragraph at lines 573--574
 \EU1/lmr/m/n/10.95 Where $\OML/cmm/m/it/10.95 a; b; c; d$ \EU1/lmr/m/n/10.95 ar
 e the fit parameters, and $\OML/cmm/m/it/10.95 x[]; y[]$ \EU1/lmr/m/n/10.95 are
  the coordinates of the point $\OML/cmm/m/it/10.95 M\OT1/cmr/m/n/10.95 (\OML/cm
@@ -1628,7 +1628,7 @@ m/m/it/10.95 R[]; ^^R[]\OT1/cmr/m/n/10.95 )$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
+Underfull \hbox (badness 10000) in paragraph at lines 576--576
 [][]\EU1/lmr/m/n/10 The calculus of these two quantities being complex, is not 
 developed here and can be
  []
@@ -1641,44 +1641,100 @@ QTm)
 <use  "figures/Chapter_1/schematic_experimental_setup_fr.png" >
 File: figures/Chapter_1/Airbearing.png Graphic file (type QTm)
 
-<use  "figures/Chapter_1/Airbearing.png" > [49]
+<use  "figures/Chapter_1/Airbearing.png" > [49] [50]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 644; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 645; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 * 
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[50] [51]
-Overfull \hbox (1.76283pt too wide) in paragraph at lines 674--675
+File: figures/Chapter_1/Airbearing.png Graphic file (type QTm)
+<use  "figures/Chapter_1/Airbearing.png" >
+File: figures/Chapter_1/Support.png Graphic file (type QTm)
+
+<use  "figures/Chapter_1/Support.png" > [51] [52] [53]
+Overfull \hbox (1.76283pt too wide) in paragraph at lines 694--695
 \EU1/lmr/m/n/10.95 The equipment used for the experiment is the same as in the 
 spring experiment ([][]0.2.2[][]). 
  []
 
-) [52]
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 702--702
+[][]\EU1/lmr/m/n/10 Only the frontal wall proximity is investigated, the latera
+l, rear or any other angular
+ []
+
+[55]
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 711; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+* 
+* The current font is "\EU1/lmr/m/n/12 ".
+* The requested feature is "RawFeature=+tnum".
+*************************************************
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 738--738
+[][]\EU1/lmr/m/n/10 The unbuckling $\OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 P$ \EU1
+/lmr/m/n/10 can be positive sometimes for small thicknesses, due to the fact th
+at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 738--738
+\EU1/lmr/m/n/10 the shell collapses completely on itself and obstructs the hole
+ which communicates with the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 738--738
+\EU1/lmr/m/n/10 pressure controller. To force the shape to unfold, pressurized 
+air is injected inside the capsule
+ []
+
+File: figures/Chapter_1/cycles_lp_00241.png Graphic file (type QTm)
+<use  "figures/Chapter_1/cycles_lp_00241.png" >
+File: figures/Chapter_1/cycles_lp_00001.png Graphic file (type QTm)
+
+<use  "figures/Chapter_1/cycles_lp_00001.png" > [57]
+File: figures/Chapter_1/pressure_cycle_fr.png Graphic file (type QTm)
+
+<use  "figures/Chapter_1/pressure_cycle_fr.png" > [58]
+File: figures/Chapter_1/cycles_pp_00220.png Graphic file (type QTm)
+
+<use  "figures/Chapter_1/cycles_pp_00220.png" >
+File: figures/Chapter_1/cycles_pp_00001.png Graphic file (type QTm)
+
+<use  "figures/Chapter_1/cycles_pp_00001.png" > [59]
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 789; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+* 
+* The current font is "\EU1/lmr/m/n/12 ".
+* The requested feature is "RawFeature=+tnum".
+*************************************************
+[60]
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
+[][]\EU1/lmr/m/n/10 In the case of the frictionless rail experiment, it was imp
+ossible to retrieve the position of
+ []
+
+[61]) [62]
 \openout2 = `chapters/appendixA.aux'.
 
  (chapters/appendixA.tex
 Appendix A.
-[53
+) [63
 
 
 
-] [54]
-Overfull \hbox (9.11023pt too wide) in paragraph at lines 13--14
-\EU1/lmr/m/n/10.95 quis justo. Sed vel ipsum in purus tincidunt pharetra. Sed p
-ulvinar, felis id consectetuer 
- []
-
-
-Overfull \hbox (12.62523pt too wide) in paragraph at lines 13--14
-\EU1/lmr/m/n/10.95 malesuada, enim nisl mattis elit, a facilisis tortor nibh qu
-is leo. Sed augue lacus, pretium 
- []
-
-) [55] [56] (endmatter/personalize.tex) (dissertation.bbl) [57
+] (endmatter/personalize.tex) (dissertation.bbl) [64
 
 
 
@@ -1766,7 +1822,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--16
 \EU1/lmr/m/n/10.95 or from its lead author, Jordan Suchow,
  []
 
-) [58
+) [65
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 44.
@@ -1775,18 +1831,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 44.
 (endmatter/colophon.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 44.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 44.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 28259 strings out of 428702
- 494224 string characters out of 3160180
- 564574 words of memory out of 3000000
- 31192 multiletter control sequences out of 15000+200000
+ 28284 strings out of 428702
+ 494869 string characters out of 3160180
+ 565281 words of memory out of 3000000
+ 31211 multiletter control sequences out of 15000+200000
  13908 words of font info for 91 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
  49i,12n,107p,10431b,591s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on dissertation.pdf (65 pages).
+Output written on dissertation.pdf (72 pages).

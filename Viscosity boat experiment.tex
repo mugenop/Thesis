@@ -1,0 +1,238 @@
+%% Based on a TeXnicCenter-Template by Tino Weinkauf.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,twoside,10pt]{report}
+% Alternative Options:
+%	Paper Size: a4paper / a5paper / b5paper / letterpaper / legalpaper / executivepaper
+% Duplex: oneside / twoside
+% Base Font Size: 10pt / 11pt / 12pt
+
+
+%% Language %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[USenglish]{babel} %francais, polish, spanish, ...
+\usepackage[T1]{fontenc}
+\usepackage[ansinew]{inputenc}
+
+\usepackage{lmodern} %Type1-font for non-english texts and characters
+
+
+%% Packages for Graphics & Figures %%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx} %%For loading graphic files
+%\usepackage{subfig} %%Subfigures inside a figure
+%\usepackage{pst-all} %%PSTricks - not useable with pdfLaTeX
+
+%% Please note:
+%% Images can be included using \includegraphics{Dateiname}
+%% resp. using the dialog in the Insert menu.
+%% 
+%% The mode "LaTeX => PDF" allows the following formats:
+%%   .jpg  .png  .pdf  .mps
+%% 
+%% The modes "LaTeX => DVI", "LaTeX => PS" und "LaTeX => PS => PDF"
+%% allow the following formats:
+%%   .eps  .ps  .bmp  .pict  .pntg
+
+
+%% Math Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+
+%% Line Spacing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{setspace}
+%\singlespacing        %% 1-spacing (default)
+%\onehalfspacing       %% 1,5-spacing
+%\doublespacing        %% 2-spacing
+
+
+%% Other Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{a4wide} %%Smaller margins = more text per page.
+%\usepackage{fancyhdr} %%Fancy headings
+%\usepackage{longtable} %%For tables, that exceed one page
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Remarks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Edit the used packages and their options (see above).
+% 2. If you want, add a BibTeX-File to the project
+%    (e.g., 'literature.bib').
+% 3. Happy TeXing!
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Options / Modifications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{options} %You need a file 'options.tex' for this
+%% ==> TeXnicCenter supplies some possible option files
+%% ==> with its templates (File | New from Template...).
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\pagestyle{empty} %No headings for the first pages.
+
+
+%% Title Page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ==> Write your text here or include other files.
+
+%% The simple version:
+\title{Experiment protocol}
+\author{Adel Djellouli}
+%\date{} %%If commented, the current date is used.
+\maketitle
+
+%% The nice version:
+%\input{titlepage} %%You need a file 'titlepage.tex' for this.
+%% ==> TeXnicCenter supplies a possible titlepage file
+%% ==> with its templates (File | New from Template...).
+
+
+%% Inhaltsverzeichnis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents %Table of contents
+\cleardoublepage %The first chapter should start on an odd page.
+
+\pagestyle{plain} %Now display headings: headings / fancy / ...
+
+
+
+%% Chapters %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ==> Write your text here or include other files.
+
+%\input{intro} %You need a file 'intro.tex' for this.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ==> Some hints are following:
+
+\chapter{Boat experiment varying the viscosity, the geometric properties and material properties}
+
+\section{Introduction}
+\subsection{Purpose}
+\paragraph{}
+The purpose of this experiment is to investigate the swimming of spherical shells according to their geometric/material properties and in different rheological configurations.
+\subsection{Experimental setup}
+\paragraph{}
+The experimental setup to be used is a frictionless rail to which we attach a rigid support that allows to keep the shell immersed under liquid surface and direct the buckling spot as to get a parallel motion to the rail.
+\paragraph{Note:}
+This direction has to be validated as being the most efficient, this is why a perpendicular direction will be investigated also.
+
+\newpage
+\section{Modus operandi}
+\subsection{Preliminary setup}
+Different verifications/installations have to be made:
+
+\begin{enumerate}
+	\item Fix the position of the rail by using on one end a fixed support to which we add a guide for stable positioning.
+	\item Add an elevator to tune the horizontality of the rail, measured by a ``niveau a bulle'', also supplied with positioning guides.
+	\item Ensure that the setup has a fixed position by linking all the components together.
+	\item Verify the stability and the non flexure of the support during the buckling.
+\end{enumerate}
+\newpage
+\subsection{Experiment protocol}
+
+\paragraph{}
+Three thicknesses will be used in 7 different viscosity conditions.\\
+Two material shells will also be studied.\\
+For each liquid instance, this is the protocol to be followed:
+
+\begin{enumerate}
+	\item Open off the rail pressure inlet.
+	\item Check the orthogonality of the ball by making it buckle once.
+  \item Check the horizontality of the rail.
+	
+	
+	\item Measure the temperature of the liquid.
+	\item Perform a 20 pressure cycle and record with 24 FPS at 20 mm from the border and record an image with the ball touching the wall.
+	\item SHUT OFF THE LIGHT WHILE SAVING.
+	\item Measure the temperature of the liquid.
+	\item Shut off the rail pressure inlet.
+	
+	\item Open off the rail pressure inlet.
+	\item Measure the temperature of the liquid.
+	\item Perform a cycle of pressure with high FPS (to be determined), three times and record.
+	\item SHUT OFF THE LIGHT WHILE SAVING.
+	\item Measure the temperature of the liquid.
+	\item Shut off the rail pressure inlet.
+	
+	\item Open off the rail pressure inlet.
+	\item Measure the temperature of the liquid.
+	\item Perform a ``pichnette'' experiment with spherical shape and record.
+	\item SHUT OFF THE LIGHT WHILE SAVING.
+	\item Measure the temperature of the liquid.
+	\item Shut off the rail pressure inlet.
+	
+	\item Open off the rail pressure inlet.
+	\item Measure the temperature of the liquid.
+	\item Perform a ``pichnette'' experiment with buckled shape and record.
+	\item SHUT OFF THE LIGHT WHILE SAVING.
+	\item Measure the temperature of the liquid.
+	\item Shut off the rail pressure inlet.
+	
+	\item Change the shell
+\end{enumerate}
+
+\paragraph{}
+At the end of each liquid instance, take a sample of the liquid and label it.\\
+When the iteration is finished, add the water volume to get the new viscosity and let it rest for an hour to make sure there are no bubbles.\\
+
+\paragraph{}
+Deadline: 19/09/16.
+\newpage
+\noindent
+\textbf{Viscosity:} \\\\
+\textbf{Ball thickness:}\\\\
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|l|l|}
+	\hline
+  Step & Temperature\\
+	\hline
+	\multicolumn{2}{|c|}{STEP 1 } \\
+	\hline
+  Begin multi-cycle & \\
+	\hline
+	End multi-cycle & \\
+	\hline
+	\multicolumn{2}{|c|}{STEP 2 } \\
+	\hline
+  Begin uni-cycle 1 & \\
+	\hline
+	End uni-cycle 1 & \\
+  \hline
+	Begin uni-cycle 2 & \\
+	\hline
+	End uni-cycle 2 & \\
+	\hline
+	Begin uni-cycle 3 & \\
+	\hline
+	End uni-cycle 3 & \\
+	\hline
+	\multicolumn{2}{|c|}{STEP 3 } \\
+	\hline
+	Begin pichnette-cycle sphere & \\
+	\hline
+	End pichnette-cycle sphere & \\
+  \hline
+	Begin pichnette-cycle buckled & \\
+	\hline
+	End pichnette-cycle buckled & \\
+	\hline
+\end{tabular}
+}
+
+
+
+\end{document}
+

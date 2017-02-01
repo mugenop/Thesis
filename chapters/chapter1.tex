@@ -370,11 +370,9 @@ The tables \ref{tab:Experimental_pressure_cycle_parameters_in_glycerol},\ref{tab
 				\hline
 				Capsules & Buckling pressure (mbar) & Unbuckling pressure (mbar) & Depressurization rates (mbar.s$^{-1}$) & Temperature (Celsius) \\
 				\hline
-				$\frac{d}{R} = $ & [100,110]& [70,80] & -1, -1, -2 & [23.5,25]\\
-				\hline
-				$\frac{d}{R} = $ & [850,900] & [380,480] & -1,-2,-2.5 & [24.5,26]\\
-				\hline
-				$\frac{d}{R} = $ & 1570 & 790 & -1 & 23 \\
+				$\frac{d}{R} = 0.0833 $ & [100,110]& [70,80] & -1, -1, -2 & [23.5,25]\\
+				$\frac{d}{R} = 0.222 $ & [850,900] & [380,480] & -1,-2,-2.5 & [24.5,26]\\
+				$\frac{d}{R} = 0.300 $ & 1570 & 790 & -1 & 23 \\
 				\hline
 			\end{tabular}
 		\end{adjustbox}
@@ -578,6 +576,8 @@ Where $a,b,c,d$ are the fit parameters, and $x_c,y_c$ are the coordinates of the
 The combination of the two fits, determines an analytical description of the generatrix (fig.\ref{fig:fit_complet}), allowing the analytical calculus of the volume and the center of gravity of the capsule\footnote{The calculus of these two quantities being complex, is not developed here and can be found in the annexe.}. 
 \paragraph{}
 As precised earlier, the example treated here is the most complexe. In the case of a convex shape(non buckled shape), only the outer contour fit is considered, and $\theta_h$ is equal to $\frac{\pi}{2}$.
+\paragraph{}
+The estimation of the error over the shape detection is set to the pixel level, and is around 0.1mm
 
 %as follow:\\
 %For the volume:
@@ -666,12 +666,12 @@ The rail is mounted on two slides, which can translate vertically on two rigid e
 All technical details associated to the air bearing system can be found in the annex.
 \subsubsection{Mounting support}
 \paragraph{}
-To link the spherical shell to the truck, an L-shaped mounting support was realised made of Aluminum (fig.\ref{fig:mounting support}. This support is supplied with an M6 tapped hole to fix it to the truck and a M4 tapped hole to connect it to the spherical shell through a suction cup. The support weighs 220g, in addition to the 1300 g of the truck. Other materials and designs were considered to make a lighter support, but we found out that the thrust produced during the buckling phase, was able to bend the support, which alters the displacement produced and introduces a bias in the experiment and its physical interpretation.
+To link the spherical shell to the truck, an L-shaped mounting support was realised made of Aluminum (fig.\ref{fig:mounting_support}. This support is supplied with an M6 tapped hole to fix it to the truck and a M4 tapped hole to connect it to the spherical shell through a suction cup. The support weighs 220g, in addition to the 1300 g of the truck. Other materials and designs were considered to make a lighter support, but we found out that the thrust produced during the buckling phase, was able to bend the support, which alters the displacement produced and introduces a bias in the experiment and its physical interpretation.
 \begin{figure}[H] %
 	\centering%
-	\includegraphics[width=0.48\textwidth]{figures/Chapter_1/Airbearing.png}
+	\includegraphics[width=0.48\textwidth]{figures/Chapter_1/Support.png}
 	\caption{Schematics of the mounting support}
-	\label{fig:mounting support}
+	\label{fig:mounting_support}
 \end{figure}
 
 \subsubsection{Spherical shells}
@@ -719,14 +719,100 @@ Table\ref{tab:viscosities} summarizes the solutions in which the experiments are
 				5&19\% Water-81\% glycerol&0.1\\
 				6&6.4\% Water-93.6\% glycerol&0.5\\
 				7&0\% Water-100\% glycerol&0.5\\
-				8&0\% 100\% Ucon oil&37\\
+				8&100\% Ucon oil&37\\
+				\hline
 			\end{tabular}
 		\end{adjustbox}
 	\caption{Summary of the solutions prepared.}
-	\label{tab:pressure_truck}
+	\label{tab:viscosities}
 \end{table}
   
 \subsubsection{Experimental protocol}
 \paragraph{}
-Once the volume fractions for a targeted viscosity are calculated, the corresponding solution is prepared , and an experimental protocol is followed for each one of the 5 capsules:
+Once the volume fractions for a targeted viscosity are calculated, a 20L solution is prepared, and an experimental protocol is followed for each one of the 5 capsules:
+\paragraph{Preliminary settings}
+First, the spherical shell is connected to the mounting support via a suction cup that is, on one hand, glued to the spherical shell and on the other hand screwed to the M4 tapped hole in the mounting hole.\\
+The system "`support-capsule"' is immersed at mid height of the liquid. This step is followed by a horizontality check of the fictionless rail, using an electronic spirit level, allowing a 0.01\textdegree precision.\\
+Then, rail pressure inlet is supplied with a 6 bar air pressure, and the truck is positioned at the middle of the 340 mm long tank.\\
+\paragraph{Multiple pressure cycles}
+To study the displacement produced by the shape deformation, 20 successive pressure cycles of a period of 15s, are applied to the volume enclosed in the spherical shell, and images of the "`support-capsule"' system are recorded at 24 FPS (fig.\ref{fig:illustration_frictionless_rail}).The pressure cycles applied begin by 5s descending pressure ramp until reaching the buckling critical $\Delta P$, followed by a plateau at a the same pressure for 2.5s. The pressure is increased through a 6.5s ascending pressure ramp, until reaching the unbuckling $\Delta P$\footnote{The unbuckling $\Delta P$ can be positive sometimes for small thicknesses, due to the fact that the shell collapses completely on itself and obstructs the hole which communicates with the pressure controller. To force the shape to unfold, pressurized air is injected inside the capsule inner volume.} and is followed by a 1s plateau (fig.\ref{fig:pressure_cycle_fr}.\\
+Temperature measurement are performed at the beginning and at the end of the pressure cycles.
+\begin{figure}[H]%
+	\centering%
+	 \begin{subfigure}[h]{0.48\textwidth}%
+        \includegraphics[width=\linewidth]{figures/Chapter_1/cycles_lp_00241.png}%
+        \caption{Deflated state}%
+    \end{subfigure}%
+    \begin{subfigure}[h]{0.48\textwidth}%
+        \includegraphics[width=\linewidth]{figures/Chapter_1/cycles_lp_00001.png}%
+        \caption{Inflated state}%
+    \end{subfigure}%
+		\caption{Illustration of the recorded images during the two plateaux of the pressure cycle}
+		\label{fig:illustration_frictionless_rail}
+\end{figure}
+ \begin{figure}[H]%
+	\centering%
+	\includegraphics[width=\textwidth]{figures/Chapter_1/pressure_cycle_fr.png}
+	\caption{Qualitative representation of the pressure cycles}
+	\label{fig:pressure_cycle_fr}
+\end{figure}
 
+\paragraph{}
+To study the displacement produced by the shape deformation near a wall, the "`support-capsule"' is brought at a distance where the tip of the spherical shell is at 25mm from the wall. 20 successive pressure cycles of a period of 15s, are applied to the volume enclosed in the spherical shell, and images of the "`support-capsule"' system are recorded at 24 FPS (fig.\ref{fig:illustration_frictionless_rail_wall}).\\
+Temperature measurement are performed at the beginning and at the end of the pressure cycles.
+\begin{figure}[H]%
+	\centering%
+	 \begin{subfigure}[h]{0.48\textwidth}%
+        \includegraphics[width=\linewidth]{figures/Chapter_1/cycles_pp_00220.png}%
+        \caption{Deflated state}%
+    \end{subfigure}%
+    \begin{subfigure}[h]{0.48\textwidth}%
+        \includegraphics[width=\linewidth]{figures/Chapter_1/cycles_pp_00001.png}%
+        \caption{Inflated state}%
+    \end{subfigure}%
+		\caption{Illustration of the recorded images during the two plateaux of the pressure cycle, near a wall}
+		\label{fig:illustration_frictionless_rail_wall}
+\end{figure}
+\paragraph{}
+The spherical shell is brought in contact with the wall and a reference image is recorded. This configuration will be defined at the zero in the position axis, and all the distances measured will be done relatively to this configuration.
+\paragraph{High temporal resolution recordings}
+In order to quantify the shape deformation cycle, a high temporal resolution is needed. To do so, the truck is brought back to the middle of the tank, a pressure cycle is applied (with the same settings as in the previous step), and images are recorded at 600FPS. This operation is iterated three times.\\
+Temperature measurement are performed at the beginning and at the end of the each iteration.
+\paragraph{Drag-coefficient measurements}
+In order to extract the thrust produced during the buckling and unbuckling phases, it is necessary to measure the drag force, independently. To do so, the truck is brought to the middle of the tank and is given an initial velocity. Images are recorded at 600 FPS. This is done in two constant deformation configurations: a spherical shape configuration to account for the drag coefficient when the shell is unbuckled, and a collapsed concave configuration to account for the drag coefficient when the shell is buckled.\\
+Temperature measurement are performed at the beginning and at the end of the each iteration.
+\paragraph{}
+Table\ref{tab:pressure_cycle_configuration} summarizes the pressure cycle settings for all the studied spherical shells.
+\begin{table}[H]
+	\centering
+		\begin{adjustbox}{width=\textwidth}
+			\begin{tabular}{|c|c|c|c|c|}
+				\hline
+				Capsules & Buckling pressure (mbar) & Unbuckling pressure (mbar)&period (s)\\
+				\hline
+				$\frac{d}{R} = 0.083 $ & -100& 100 & 15\\
+				$\frac{d}{R} = 0.222 $ & -600& 0 & 15\\
+				$\frac{d}{R} = 0.300 $ & -1000 &  0 & 15\\
+				\hline
+				"`AJO 121"'& -200 & 100 & 15\\
+				"`AJO 122"'& -350 & 100 & 15\\
+				\hline
+			\end{tabular}
+		\end{adjustbox}
+	\caption{Experimental pressure cycle parameters for the frictionless rail experiment}
+	\label{tab:pressure_cycle_configuration}
+\end{table}
+\subsection{Image treatment}
+\paragraph{}
+The image treatment needed for the frictionless rail is relatively lighter compared to the one needed for the spring experiment. It can be summarized as follows:
+\begin{enumerate}
+	\item The first step is to define a reference for the position of the support in the tank. As introduced in the experimental process, a reference image is taken where the front of the shell is in contact with the wall. The position of the support in this configuration is retrieved, using the Canny edge detector algorithm (introduced earlier, in the image treatment section of spring experiment).
+	
+	\item From the multiple cycles set of experiments, the successive position of the support, after buckling and unbuckling phases are retrieved, using the Canny edge detector algorithm.
+	
+	\item From the high-resolution set of experiments, the temporal evolution of the height $H(t)$ of the apparent shape is retrieved\footnote{In the case of the frictionless rail experiment, it was impossible to retrieve the position of the shell's center of gravity.}, using the Canny edge detector algorithm.
+	\item From the drag-coefficient measurements set of experiments, the position of the support is tracked through time.
+\end{enumerate}
+\paragraph{}
+Overall, the estimation of the error over the position detection is set to the pixel level, and is around 0.19mm. The net displacement per cycle is measured by taking the initial position of the support and the position of the support at the end of the 20 cycles, divided by the number of cycles. In this case, the error is set to 0.0095mm. The measurement of the displacement induced by the buckling and the displacement induced by the unbuckling , corresponds to the mean value of these displacements over 20 cycles, and the error is set to the standard deviation of the measurement sample.
+ 

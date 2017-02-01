@@ -77,6 +77,7 @@
 \contentsline {paragraph}{}{43}{figure.caption.25}
 \contentsline {paragraph}{}{46}{figure.caption.26}
 \contentsline {paragraph}{}{46}{figure.caption.26}
+\contentsline {paragraph}{}{47}{figure.caption.26}
 \contentsline {paragraph}{Note}{47}{figure.caption.27}
 \contentsline {paragraph}{}{47}{figure.caption.27}
 \contentsline {section}{\numberline {0.3}Frictionless rail}{48}{section.0.3}
@@ -86,14 +87,32 @@
 \contentsline {subsubsection}{Air bearing system}{50}{subsection.0.3.2}
 \contentsline {paragraph}{}{50}{subsection.0.3.2}
 \contentsline {paragraph}{}{51}{table.caption.30}
-\contentsline {subsubsection}{Spherical shells}{51}{table.caption.30}
-\contentsline {paragraph}{}{51}{table.caption.30}
-\contentsline {paragraph}{}{51}{table.caption.30}
-\contentsline {paragraph}{}{51}{table.caption.30}
-\contentsline {subsubsection}{Pressure controller}{52}{table.caption.30}
-\contentsline {paragraph}{}{52}{table.caption.30}
-\contentsline {subsubsection}{Tank}{52}{table.caption.30}
-\contentsline {paragraph}{}{52}{table.caption.30}
-\contentsline {subsubsection}{Camera,lenses and light sources}{52}{table.caption.30}
-\contentsline {chapter}{Appendix \numberline {A}Some extra stuff}{53}{Appendix.1.A}
-\contentsline {chapter}{References}{57}{chapter*.31}
+\contentsline {paragraph}{}{51}{figure.caption.31}
+\contentsline {subsubsection}{Mounting support}{52}{figure.caption.31}
+\contentsline {paragraph}{}{52}{figure.caption.31}
+\contentsline {subsubsection}{Spherical shells}{53}{figure.caption.32}
+\contentsline {paragraph}{}{53}{figure.caption.32}
+\contentsline {paragraph}{}{53}{figure.caption.32}
+\contentsline {paragraph}{}{53}{figure.caption.32}
+\contentsline {subsubsection}{Pressure controller}{54}{figure.caption.32}
+\contentsline {paragraph}{}{54}{figure.caption.32}
+\contentsline {subsubsection}{Tank}{54}{figure.caption.32}
+\contentsline {paragraph}{}{54}{figure.caption.32}
+\contentsline {subsubsection}{Camera,lenses and light sources}{54}{figure.caption.32}
+\contentsline {subsection}{\numberline {0.3.3}Experimental process}{54}{subsection.0.3.3}
+\contentsline {paragraph}{}{54}{subsection.0.3.3}
+\contentsline {paragraph}{}{55}{Item.47}
+\contentsline {subsubsection}{Experimental protocol}{57}{table.caption.33}
+\contentsline {paragraph}{}{57}{table.caption.33}
+\contentsline {paragraph}{Preliminary settings}{57}{table.caption.33}
+\contentsline {paragraph}{Multiple pressure cycles}{57}{table.caption.33}
+\contentsline {paragraph}{}{58}{figure.caption.35}
+\contentsline {paragraph}{}{59}{figure.caption.36}
+\contentsline {paragraph}{High temporal resolution recordings}{59}{figure.caption.36}
+\contentsline {paragraph}{Drag-coefficient measurements}{60}{figure.caption.36}
+\contentsline {paragraph}{}{60}{figure.caption.36}
+\contentsline {subsection}{\numberline {0.3.4}Image treatment}{61}{subsection.0.3.4}
+\contentsline {paragraph}{}{61}{subsection.0.3.4}
+\contentsline {paragraph}{}{62}{Item.51}
+\contentsline {chapter}{Appendix \numberline {A}Some extra stuff}{63}{Appendix.1.A}
+\contentsline {chapter}{References}{64}{chapter*.38}

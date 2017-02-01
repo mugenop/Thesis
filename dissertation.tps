@@ -18,7 +18,7 @@ Document=dissertation.tex
 
 [Frame0_View0,0]
 TopLine=20
-Cursor=555
+Cursor=424
 
 [Frame1]
 Flags=0
@@ -89,8 +89,8 @@ Class=LaTeXView
 Document=chapters\chapter1.tex
 
 [Frame4_View0,0]
-TopLine=812
-Cursor=57813
+TopLine=891
+Cursor=62311
 
 [SessionInfo]
 FrameCount=5
