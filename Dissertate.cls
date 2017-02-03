@@ -21,12 +21,12 @@
 % Line spacing: dsingle/ddouble
 %   Whether to use single- or doublespacing.
 \newtoggle{DissertateSingleSpace}
-\togglefalse{DissertateSingleSpace}
+%\togglefalse{DissertateSingleSpace}
 \DeclareOption{dsingle}{
     \toggletrue{DissertateSingleSpace}
     \ClassWarning{Dissertate}{Single-spaced mode on.}
 }
-\DeclareOption{ddouble}{\togglefalse{DissertateSingleSpace}}
+%\DeclareOption{ddouble}{\togglefalse{DissertateSingleSpace}}
 
 \ProcessOptions\relax
 

@@ -6,17 +6,21 @@ The Secret of Happiness lies in looking at all the wonders of the world and neve
 
 \chapter{Materials and methods}
 \newpage
+\paragraph{}
+To investigate the physics of swimming through shell buckling, a technique to realize the shells and  three experimental setups were fully developed: an experiment where shells are attached to a spring used as a force sensor while controlling the pressure externally, another experiment where shells are linked to a freely moving frictionless rail. These experiments are completed with particle-image velocimetry measurements, to quantify the flow in different configurations. In the following chapter, the experimental methodology followed in each case, will be exposed. 
 \section{Shell fabrication}
 \subsection{Motivations}
 \paragraph{}
-This study requires a full control over the geometry, the material and the manufacturing process to ensure the reproducibility of the experiments.\\
-Further more, two constraints were to take into account: the ability to induce the buckling within a pressure range of -1 bar and 1 bar and the ability to apply several cycles without damaging the shell. 
-\paragraph{}This implies that the material to be used needs to have a high tensile strength to withstand the deformation cycle without entering the plastic domain and a rigidity small enough to trigger a buckling in the imposed pressure range and a feasible $(\frac{d}{R})$ range i.e $d > 1 mm$ and $R < 50 mm$. Visco-elastic polymers called elastomers qualify to these prerequisites and have been chosen for the shell manufacturing.
+Studying swimming through shell buckling requires a full control over the geometry, the material and the manufacturing process, to ensure the reproducibility of the experiments.\\
+Further more, two constraints were to take into account: the ability to induce the buckling within a relative pressure range of -1 bar and 2 bar and the ability to apply several cycles without damaging the shell. 
 \paragraph{}
-Before deciding to manufacture spherical hollow shells, we tried different kind of commercial "`balls"'. It was not conclusive because the process of fabrication was not intended to be reproducible in terms of material composition, thickness or diameter. This is why it was decided to manufacture them.
+This implies that first, the material to be used needs to have a high tensile strength to withstand the deformation cycle without entering the plastic domain and second, a rigidity small enough to trigger a buckling in the imposed pressure range. Visco-elastic polymers called elastomers qualify to these prerequisites and have been chosen for the shell manufacturing.
+\paragraph{}
+Before deciding to manufacture spherical hollow shells, we tried different kind of commercial "`balls"'. It was not conclusive because the process of fabrication was not intended to be reproducible in terms of material composition, thickness or outer radius. This is why it was decided to manufacture shell prototypes.
 \paragraph{}
 Several techniques were considered to manufacture polymer-based spherical hollow shells, including 3D-printing, rotational molding, processes involving high-pressure vulcanization. These techniques would have required either buying expensive equipments or subcontracting to a company with inconveniences of time delay, loss of control over the process and expensive cost of prototyping. 
 The most suitable solution was the more common bi-molding process where the two halves of an object are cast and then assembled. The main advantages being the cost and the low-time consumption, plus a total control over the process, which includes the choice of materials, the reproducibility and more freedom over the geometry.
+This adds a constraint to the shell manufacturing: a feasible $(\frac{d}{R})$ range i.e $d > 1 mm$ and $R < 50 mm$. A thickness lower than 1mm and it becomes hard to manipulate the cast half capsules during the gluing step. A radius larger than 50mm would be inconvenient because it would require larger experimental setups.
 \subsection{Molding equipments}
 
 \paragraph{Female mold:}
@@ -31,7 +35,7 @@ A groove was added to store any potential material surplus. Two female molds are
 
 
 \paragraph{Translation guide sleeve:}
-It is a hollow cylinder with an inner radius $R_{in} = R_{cylinder} = 30 mm$, and a thickness of $5 mm$. where the female mold is slid in. It is slightly higher than the female mold by $5 mm$. One extremity is provided with an inner chamfer of $5°$ which ensures the concentricity between the female mold and the male mold.
+It is a hollow cylinder with an inner radius $R_{in} = R_{cylinder} = 30 mm$, and a thickness of $5 mm$. where the female mold is slid in. It is slightly higher than the female mold by $5 mm$. One extremity is provided with an inner chamfer of 5\textdegree which ensures the concentricity between the female mold and the male mold.
 \begin{figure}[H] %
 	\centering%
   \includegraphics[width=0.48\textwidth]{figures/Chapter_1/sleeve_translation.jpg}
@@ -42,22 +46,22 @@ It is a hollow cylinder with an inner radius $R_{in} = R_{cylinder} = 30 mm$, an
 \paragraph{Male mold:}
 Figure \ref{fig:male_mold} shows the design of the male mold which consists of half a sphere of radius $R_{int}<R_{out}$, which is changed to cast different thicknesses. It is supplied with a shouldering which acts as a travel stop, its flanks have a slight angle of 5 providing a translation guide and preventing an over-center locking in combination with the guiding sleeve previously presented. The cylindrical part over the shouldering helps manipulating the mold during the casting process. Three radii have been used: $R_{int} = 18.5 mm, 20 mm, 23 mm$. 
 \footnote{All the molding parts presented are made of Aluminum "`Fortal"'. The female and male molds were machined using a CNC (computerized numerical control)  machine and with a precision of $tol =\pm 0.01 mm$. The surface roughness obtained was of $R_a = 0.04$ which indicates a very good finishing.
-This choice of manufacturing was unavoidable since no other alternative could produce spherical shapes with such precision conditions.}
+This choice of manufacturing was unavoidable since no other alternative could produce spherical shapes with such a precision.}
 \begin{figure}[H] %
 	\centering%
   \includegraphics[width=0.48\textwidth]{figures/Chapter_1/male_mold.jpg}
-	\caption{longitudinal section of the male mold}
+	\caption{Front view of an example of the male molds used}
 	\label{fig:male_mold}
 \end{figure}
 
 \paragraph{Gluing sleeve:}
-It is a hollow cylinder with an inner radius $R_{in} = R_{cylinder} = 30 mm$, a thickness of $5 mm$ and a height of $50 mm$. It is used during the gluing process to ensure the concentricity of the two halves of the sphere contained in the female molds which face each other.
+It is a hollow cylinder with an inner radius $R_{in} = R_{cylinder} = 30 mm$, a thickness of $5 mm$ and a height of $50 mm$. It is used during the gluing process where the female molds containing the two halves of the sphere, are faced to each other and slid inside the gluing sleeve, to ensure the concentricity.
 
 \paragraph{Mechanical press:}
-It's a simple press consisting of two metallic plates supplied with a set of threaded rods and hexagonal nuts used to apply pressure over female/male molds during the casting step to prevent bubbles from appearing during the casting step. It is also used during the gluing step on the female/female molds to ensure the contact between the two half spheres to be glued together.
+It's a simple press consisting of two metallic plates supplied with a set of threaded rods and hexagonal nuts used to apply pressure over female/male molds during the casting step, preventing air bubbles from getting traped, during the casting step. It is also used during the gluing step on the female/female molds, to ensure the contact between the two half spheres to be glued together.
 
 \paragraph{Pasta machine:}
-This machine (fig\ref{fig:pasta_maker}) consists on two rotating cylinders, with an adjustable inter-space which allows to produce layers with the desired thickness.
+This machine (fig\ref{fig:pasta_maker}) consists in two rotating cylinders, with an adjustable inter-space. It was used to produce thin layers of a polymeric material.
 \begin{figure}[H] %
 	\centering%
   \includegraphics[width=0.48\textwidth]{figures/Chapter_1/rolling_machine.png}
@@ -67,101 +71,108 @@ This machine (fig\ref{fig:pasta_maker}) consists on two rotating cylinders, with
 
 \newpage
 \subsection{Materials and protocols}
-Three materials were used in the experiments done during the study: "`Dragon Skin\textregistered 30"' which has a specific molding protocol and AJO 121 and AJO 122 which have a common molding protocol.
+Three materials were chosen to produce the shells used in the experiments done during this study: "`Dragon Skin\textregistered 30"' which has a specific molding protocol and AJO 121 and AJO 122 which have a common molding protocol.
 
 \subsubsection{Dragon skin\textregistered 30} 
 \paragraph{}
-This material is typically used to make special effects.In the case of our study, it was used to investigate the effect of the $\frac{d}{R}$ on the swimming mechanism. Its exact chemical constitution is not known, but what can be said is that it is cure liquid silicone compound, which consists of two liquid components named A and B. Component \emph{A} represents the silicon polymer chains with eventually the presence of fillers to enhance its mechanical properties. Component \emph{B} is the cross-linking agent providing bonds that link one polymer chain to another, decreasing the flexibility of the polymer chain and increasing its rigidity. Mixing these two components at room temperature, it creates a solid that takes the shape of the container it was poured in.
+This material is typically used to make special effects.In the case of our study, it was used to investigate the effect of the $\frac{d}{R}$ parameter, on the swimming mechanism. Its exact chemical constitution is not known, but what can be said is that it is cure liquid silicone compound, which consists of two liquid components named A and B, highly viscous. Component \emph{A} represents the silicon polymer chains, with eventually the presence of fillers to enhance its mechanical properties. Component \emph{B} is the cross-linking agent providing bonds that link one polymer chain to another, decreasing the flexibility of the polymer chain and increasing its rigidity. By Mixing these two components at room temperature, it creates a semi-transparent solid that takes the shape of the container it was poured in.
 The typical mechanical properties of the resulting rubber are:
 \begin{itemize}
-	\item Shore A Hardness : 30 
-	\item Specific gravity : 1.08 
 	\item 100\% elastic modulus : 0.6 MPa
 	\item Elongation at break : 364\%
+	\item Shore A Hardness : 30 
+	\item Specific gravity : 1.08 
 	\item cure time (at room temperature) : 16 hours
 \end{itemize}
 
 \paragraph{Half shell casting}
+To produce a shell with a certain thickness $d$, made of Dragon skin\textregistered 30 material, these are the steps we followed: 
 \begin{enumerate}
-	\item Begin by determining the mass of a shell with a outer radius of $R_{out}= 25 mm$ and a thickness $th$ which gives an internal radius $R_{int} = R_{out}-th$, The mass\footnote{In practice, this mass is increased by 50\% to take into account the eventual loss during the preparation.} of a hollow sphere is given by the following formula:
+	\item We Begin by determining the mass of a shell with a outer radius of $R_{out}= 25 mm$ and a thickness $d$ which gives an internal radius $R_{int} = R_{out}-d$, The mass\footnote{In practice, this mass is increased by 50\% to take into account the eventual loss during the preparation.} of a hollow sphere is given by the following formula:
 		\[Mass_{shell} = \frac{4\pi}{3}\rho_{material} (R_{out}^3-R_{int}^3) \]
 
 	\item In a beaker, we weigh 50\% of the shell mass of component A which is the silicon polymer chain. We stir thoroughly and add 50\% of the shell mass of component B, which constitutes the cross-linking agent, we stir thoroughly.
-	\item The mixture is then degassed thanks to a vacuum pump.
-	\item The female and male are cleaned using acetone and 50\% of the degassed mixture is poured in the two female molds.
+	\item The mixture is then degassed using a vacuum pump.
+	\item The female and male are cleaned using acetone and 50\% of the degassed mixture is poured in each one of the two female molds.
 	\item We degas again to make sure no air was entrapped during the previous step.
-	\item Each female mold is slid in the translation guide sleeve and the male mold corresponding to the desired $R_{int}$ is gently slid inside the female mold to prevent air from getting trapped.
+	\item Each female mold is slid in the translation guide sleeve and the male mold with an internal radius $ R_{int}$ which corresponds to the desired thickness $d$ defined as $d = R_{out}-R_{int}$, is gently slid inside the female mold to prevent air from getting trapped.
 	\item The female-male molds assembly is then pressed and locked using the press.\footnote{This step is necessary to ensure that no bubbles get trapped during the assembly.}
 	\item The press is then put into an oven at 65°C to speed up the cross-linking process reducing it from 16 hours to only 20 minutes.
 	
 \end{enumerate}
 
 \paragraph{Half spheres gluing:}
-Once the two halves of a hollow sphere of the desired $R_{int}$ are cast. We need to glue the two halves together to obtain a complete hollow sphere of thickness $th$.
-This part is critical: if the sewing is weak, it will tear apart during the buckling phase. if the sewing is thick, it means that the shape is no longer spherical. If the gluing material is not the same, we lose the homogeneity of the material and potentially create a weak zone at the sewing, which would accelerate the weakening of this zone and ultimately tear apart.
+Once the two halves of a hollow sphere of the desired thickness $d$, are cast. Next step is to glue the two halves together to obtain a complete hollow sphere.
+This part is critical: if the sewing is weak, it will tear apart during the buckling phase. if the sewing is thick, it means that the shape is no longer spherical. If the gluing material is not the same, we lose the homogeneity of the material and potentially create a weak zone at the sewing.
 \paragraph{} 
-To efficiently glue the two halves and avoid the problems stated previously. We used the same material to perform the gluing, but for that it was necessary to decrease the viscosity of the mixture and enhance its wetting properties. For this purpose, we mixed "`Pentane"' which is an organic solvent \cite{NgLee2003} with a solubility parameter similar to that of PDMS.
+To efficiently glue the two halves and avoid the problems stated previously. We used the same material to perform the gluing, but for that it was necessary to decrease the viscosity of the mixture and enhance its wetting properties. For this purpose, we mixed "`Pentane"' which is an organic solvent \cite{NgLee2003} with the highest solubility parameter for PDMS, assuming it would also work well for the Dragon skin\textregistered 30 material .
 The following describes the protocol of gluing:
 \begin{enumerate}
 	\item Prepare 10g of a mixture A+B of the Dragon skin\textregistered 30 and degas it.
 	\item Add 5 ml of "`Pentane"' to the mixture and stir to obtain a diluted mixture that is neither too liquid nor too viscous and pump the resulting liquid inside a syringe.
-	\item Use an abrasive such as sandpaper over the gluing area of the two halves casts to make the surface rougher.
+	\item Use an abrasive such as sandpaper over the gluing area of the two casts, to make the surface rougher.
 	\item Put back each cast in the female mold and align it correctly so that the gluing area is horizontal.
 	\item Pour uniformly a layer of the diluted mixture using the syringe needle on the gluing area of both casts.
 	\item Put one female mold inside the gluing sleeve, facing upward then slide the second one facing downward until the two gluing areas are in contact.
 	\item Ensure the contact by using the mechanical press and let the cross-linking happen at room temperature for 16 hours.\footnote{This time we don't use the oven to ensure that the pressure inside the spherical hollow shell is the atmospheric pressure.}
-	\item After the curing time, remove the residual thin skin circling around the sewing area.
+	\item After the curing time, the shell is produced and the last step is remove the residual thin skin circling around the sewing area.
 \end{enumerate}
   
 
 \subsubsection{AJO121/122}
 \paragraph{}
-The two remaining materials \emph{AJO 121} and \emph{AJO 122} were samples kindly supplied by "`\textbf{BLUESTAR silicones\textcopyright}"'.Both are hot curing silicone rubbers after addition of a vulcanization agent. The typical applications of these materials are: molding and injection molding process for technical parts (sealing gaskets,grommets), extrusion profiles (windows profiles, sleeves, tubes) and calendering operations for manufactured hoses. They were chosen to investigate the effect of solid dissipation characterized by the rebound resilience property. This pair of materials present the particularity of sharing the same elastic energy storage capacity characterized by the elastic modulus.In the case of the samples provided by "`\textbf{BLUESTAR silicones\textcopyright}"', both material present a soft white paste-like texture. The exact chemical composition of the pastes were not disclosed but what we know is that the curing agent, which is 1.25 \% of \textbf{2,4-dichlorobenzoyl peroxide}, was already mixed with the silicone polymer. The vulcanization process is temperature-controlled and is induced at 115°C.\\
+The two remaining materials \emph{AJO 121} and \emph{AJO 122} were samples kindly supplied by "`\textbf{BLUESTAR silicones\textcopyright}"'.Both are hot curing silicone rubbers after addition of a vulcanization agent. The typical applications of these materials are: molding and injection molding process for technical parts. They were chosen to investigate the effect of solid dissipation characterized by the rebound resilience property. This pair of materials present the particularity of sharing the same value for the elastic modulus, which means that the elastic energy stored when a stress is applied, is exactly the same. Both materials present a soft white paste-like texture. The exact chemical compositions of the pastes were not disclosed but what we know is that the curing agent, which is 1.25 \% of \textbf{2,4-dichlorobenzoyl peroxide}, was already mixed with the silicone polymer. The vulcanization process is temperature-controlled and is induced at 115°C.\\
 
 The typical mechanical properties of the resulting rubbers are:
 \begin{itemize}
 	\item 100\% elastic modulus AJO121 / AJO122 : 2.2 MPa / 2.3 MPa
 	\item Rebound resilience AJO121 / AJO122 : 45\% / 65\%
+	\item Elongation at break AJO121 / AJO122 : 560\% / 366\%
 	\item Shore A AJO121 / AJO122 : 60 / 59 
 	\item Specific gravity : 1.16
-	\item Elongation at break AJO121 / AJO122 : 560\% / 366\%
 	\item cure time (at 115°C) : 10 minutes
 \end{itemize}
 
 \paragraph{Half shell casting:}
+To produce a shell with a certain thickness $d$, made of \emph{AJO 121} and \emph{AJO 122}, these are the steps we followed: 
 \begin{enumerate}
-	\item Begin by determining the mass of a shell with a outer radius of $R_{out}= 50 mm$ and a thickness $th$ which gives an internal radius $R_{int} = R_{out}-th$, The mass of a hollow sphere is given by the following formula:
+	\item We begin by determining the mass of a shell with a outer radius of $R_{out}= 50 mm$ and a thickness $th$ which gives an internal radius $R_{int} = R_{out}-th$, The mass of a hollow sphere is given by the following formula:
 		\[Mass_{shell} = \frac{4\pi}{3}\rho_{material} (R_{out}^3-R_{int}^3) \]
 
-	\item Weight the calculated mass from the paste and divide it in two equal parts.
+	\item We weigh the calculated mass from the paste-like material and divide it in two equal parts.
 	\item Press each part at the center of the female mold.
 	\item Each female mold is slid in the translation guide sleeve and the male mold corresponding to the desired $R_{int}$ is slid inside the female mold.
 	\item The female-male molds assembly is then pressed and locked using the press.
-	\item The press is then put into an oven at 115°C to trigger the vulcanization process, during 8 minutes \footnote{This period was reduced to 8 minutes instead of 10 minutes to avoid reaching the maximum of the cross-linking, in order to complete the gluing}.
+	\item The press is then put into an oven at 115°C to trigger the vulcanization process, during 10 minutes.
 	\item A post-curing at 200°C is needed to optimize the mechanical properties of the material, to evaporate remaining volatile substances (sub-products linked to the peroxide) and allow the sublimation of the 2,4 Dichlorobenzoic acid which manifests as a white powder at the surface of the material, at the end of the previous step.
 \end{enumerate}
 
 \paragraph{Half spheres gluing:}
-The gluing using the AJO materials was very challenging for different reasons. First, the paste-like nature of the material which was not soluble in any organic solvent without compromising the vulcanization agent already mixed with the raw polymer. It also made manipulating it harder, contrary to the liquid nature of the "`Dragon Skin\textregistered 30"'. Second, we were not able to glue together two flat surfaces, due to the fact that the cross-linking process reached a maximum with the prescribed time and temperature and no biding was possible afterward.
-This is the protocol followed which solved partially the problems previously stated:
+After casting the two halves of the spherical capsule, the next step is to glue them together, but the gluing using the AJO materials was very challenging for different reasons. First, the paste-like nature of the material which was not soluble in any organic solvent without compromising the vulcanization agent already mixed with the raw polymer. It also made manipulating it harder, contrary to the liquid nature of the "`Dragon Skin\textregistered 30"'. Second, we were not able to glue together two flat surfaces, due to the fact that the cross-linking process reached a maximum with the prescribed time and temperature and leaving no room for an additional cross-linking.
+After several trials, we came up with a protocol which allows to glue the two half spheres, following these steps:
 
 \begin{enumerate}
-	\item Prepare two thin layers (0.1 mm) using the "`pasta maker"' machine. Adjust their width to 10 mm and the length to $2\pi R_{out} \approx 157 mm$.
-	\item Use an abrasive such as sandpaper over the gluing area of the two halves casts to make the surface rougher.
+	\item Two thin layers (0.1 mm) are prepared using the "`pasta maker"' machine (fig.\ref{pasta_maker}). Their width is set to 10 mm and the length to $2\pi R_{out} \approx 157 mm$.
+	\item Sandpaper is used over the gluing area of the two casts to make the surface rougher.
 	\item Put back one cast in the female mold and align it correctly so that the gluing area is horizontal.
 	\item Put uniformly a first layer on the gluing area of one cast and make sure it adhered to the surface, cut the residual width using a scalpel.
 	\item Connect the remaining half (without the female mold) with the first and press to get and adhesion.
-	\item Put one female mold inside the gluing sleeve, facing upward then slide the second one facing downward until the two gluing areas are in contact.
 	\item Remove the female mold gently and roll the second layer around the sewing perimeter, taking care not to disconnect the two halves while doing so.
 	\item Encapsulate the shell inside the two female molds and exert pressure using the mechanical press.
 	\item Put the press inside the oven at 115°C for 10 minutes. Remove it and let it cool at room temperature.\footnote{The capsules produced using this protocol have an internal pressure close to $75\%$ of the atmospheric pressure.}
+	\item The process ends by extracting the shell out of the female molds.
 \end{enumerate}
+\paragraph{}
+To summarize, two molding protocols were developed, the first one followed to realize  3 shells with a thickness of 2 mm, 5 mm and 6.5 mm, using the "`Dragon Skin\textregistered 30" material.\\
+The second, was followed to realize two shells with the same thickness, one using \emph{AJO 121} which has a low rebound resilience coefficient, and one in \emph{AJO 122} which has a high rebound resilience coefficient. \\
+The external radius of all the shells produced for the experiments is kept constant at 25 mm.
 \newpage
 \section{Spring experiment}
 \subsection{Brief introduction and motives}
 
 \paragraph{}
-The purpose of this experiment is to quantify the thrust generated during the buckling and unbuckling phases when the pressure cycle is imposed externally, using a force sensor. The advantages of this method is that all the forces that are involved can be quantified using the recording images of the experiment. To do so, the capsule is attached to a spring and immersed in a tank filled with a Newtonian liquid characterized with a density $\rho$ and a viscosity $\mu$. The spring plays the role of a force sensor and prevents the spherical shell from floating to the surface due to buoyancy effects.  The buckling spot is directed in the vertical direction, to get a 1-D displacement\footnote{In theory, the buckling can happen anywhere on the capsule. In practice, the buckling happens at the same spot if the boundary conditions are not changed. This is due to the presence of a weakness in the material which decides of the buckling spot.}. Pressure cycles are applied by pressurizing the air above the liquid in which the shell is immersed. Figure \ref{fig:spring_experiment_schematic} is a representation of the spring experiment.
+The purpose of this experiment is to quantify the thrust generated during the buckling and unbuckling phases when the pressure cycle is imposed externally, using a force sensor. The advantages of this method is that all the forces that are involved can be quantified using the recording images of the experiment. To do so, the capsule is attached to a spring and immersed in a tank filled with a Newtonian liquid characterized with a density $\rho$ and a viscosity $\mu$. The spring plays the role of a force sensor and prevents the spherical shell from floating to the surface due to buoyancy effects.  The buckling spot is directed in the vertical direction, to get a 1-D displacement.In theory, the buckling can happen anywhere randomly on the capsule ***(CITATION)***. In practice, the buckling happens at the same spot if the boundary conditions are not changed. This is due to the presence of a localized weakness in the material which determines the buckling spot.\\
+Pressure cycles are applied by pressurizing the air above the liquid in which the shell is immersed. Figure \ref{fig:spring_experiment_schematic} is a representation of the spring experiment.
 \begin{figure}[H] %
 	\centering%
   \includegraphics[width=0.73\textwidth]{figures/Chapter_1/schematic_experimental_setup.png}
@@ -172,7 +183,7 @@ The purpose of this experiment is to quantify the thrust generated during the bu
 \subsection{Equipment}
 \subsubsection{Tank}
 \paragraph{}
-It consists of a cubic tank (see fig.\ref{fig:tank}) made of anodized Aluminum supplied with windows made of polycarbonate polymer. It is dimensioned to withstand an absolute pressure bigger than $3 10^5 Pa$. Its dimensions are consistent with the non-confinement conditions (CITATION) where the characteristic length of the container is close to 10 times the characteristic length of the object to be studied.
+It consists of a cubic tank (see fig.\ref{fig:tank}) made of anodized Aluminum supplied with windows made of polycarbonate polymer. It is dimensioned to withstand an absolute pressure of $3 10^5 Pa$. Its dimensions are consistent with the non-confinement conditions ***(CITATION)*** where the characteristic length of the container is close to 10 times the characteristic length of the object to be studied.
 \begin{figure}[H] %
 	\centering%
   \includegraphics[width=0.73\textwidth]{figures/Chapter_1/cuve.pdf}
@@ -181,11 +192,12 @@ It consists of a cubic tank (see fig.\ref{fig:tank}) made of anodized Aluminum s
 \end{figure}
 \subsubsection{Spring}
 \paragraph{}
-As described earlier, the spring is used as a force sensor. The spring also allows to keep the spherical shell immersed in the liquid.
-At rest, its elongation is directly proportional to the force $F_{measured} = K \Delta x$, where k is the stiffness coefficient.
+As described earlier, the spring is used as a force sensor. 
+When the system "`shell-spring"' is static, its elongation is directly proportional to the tension force $Tension(X) = K \Delta x$, where k is the stiffness coefficient. In the case of our study, the spring is solicited in traction\footnote{At any moment, during the experiment, the elongation of the spring is bigger than the length at rest with no mass attached.}. 
+The spring also allows to keep the spherical shell immersed in the liquid.
 \paragraph{}
-In the case of our study, the spring is solicited in traction. Taking into account that the outer radius for all the capsules studied was fixed at 50 mm and that the buoyancy force is significantly larger than the weight, only one spring stiffness was needed to carry out the experiment.
-The spring was dimensioned to have a total length of 200 mm at rest in water. Knowing that after the buckling, the equilibrium state reached is lower due the decrease in volume (by $\approx 20\%$, determined by preliminary results), a constraint was added to avoid the case where the spring rings would be in contact with each other which would bias the force measurement.
+Taking into account that the outer radius for all the capsules studied was fixed at 25 mm and that the buoyancy force is significantly larger than the weight, only one spring stiffness was needed to carry out the experiment.
+The spring-shell system was dimensioned to have a total length of 200 mm, at rest, in water. Knowing that after the buckling, the equilibrium state reached is lower due the decrease in volume (by $\approx 20\%$, determined by preliminary results), a constraint was added to avoid the case where the spring rings would be in contact with each other which would bias the force measurement.
 \paragraph{}
 The characteristics provided by the manufacturer concerning the spring used in this experiment are:
 \
@@ -205,17 +217,17 @@ It was also provided with threaded ends to fit M6 and M4 screws. The M6 end is d
 \paragraph{}
 The spherical shells used in this experiment are shells cast in the 'Dragon skin \textregistered 30' material. The external radius is kept constant at 25 mm and three thicknesses were explored: 2 mm, 5 mm and 6.5 mm.
 The choice of these thicknesses is primarily directed by the fact that we wanted to explore the effect of stored elastic energy on the buckling mechanism and the thrust induced during the deflation and the re-inflation of the capsule. Taking into account that the stored elastic energy before the advent of the buckling instability is proportional to the ratio between the thickness and the shell radius squared \cite{cqpcritic2011} $P_c \propto (\frac{d}{R})^2$, the resulting range of variation of this geometric ratio in this experiment, ranges from $6.4 10^{-3}$ to $6.76 10^{-2}$.
-A lower value of this parameter was tried (taking a thickness of 1 mm) but it resulted in a spontaneous buckling when immersed, due to the static pressure.
-A higher value of of this parameter was tried (taking a thickness of 7.5 mm) but it was not possible to reach the pressure high enough to produce a buckling in the range of the operable pressure [0, 2] bars.
+A lower value of this parameter was tried (taking a thickness of 1 mm) but it resulted in a spontaneous buckling when immersed, due to the static pressure gradient.
+A higher value of of this parameter was tried (taking a thickness of 7.5 mm) but it was not possible to reach the pressure high enough to produce a buckling in the range of the operable relative pressure [0, 2] bars.
 \paragraph{}
-Special measure were taken to conduct experiments on the 2mm thick shell, due to the fact that once attached to the suction cup that ensures the link with the spring, the shell gets deformed at the attaching point by buoyancy effects which lower locally the curvature radius, creating a weak spot \cite{cqpcritic2011}. An imperfection was introduced at the casting, by reducing locally the thickness of the shell. Practically, the shell thickness was reduced of 0.1 mm over a circular surface with a 10 mm diameter.
+Special measure were taken to conduct experiments on the 2mm thick shell, due to the fact that once attached to the suction cup that ensures the link with the spring, the shell gets deformed at the attaching point by buoyancy effects which lower locally the curvature radius, creating a weak spot \cite{cqpcritic2011}. An imperfection was introduced at the casting, by reducing locally the thickness of the shell. Practically, the shell thickness was reduced of 0.2 mm over a circular surface with a 10 mm diameter.
 \paragraph{}
-One of the properties of the material used is its semi-transparency when light is shone on it. which is an important feature to determine the volume of the concave shapes resulting after the buckling.
+One of the properties of the material used is its semi-transparency when light is shone on it. This feature was used to determine the volume of the concave shapes resulting after the buckling.
 
 \subsubsection{Pressure controller}
 \label{sssection:pressure_controller}
 \paragraph{}
-Since deflation and re-inflation cycles of the shell are actuated by applying a difference of pressure between the inside and outside, it was necessary to use a pressure controller.
+Since deflation and re-inflation cycles of the shell are actuated by applying a difference of pressure between the inside of the shell and outside, it was necessary to use a pressure controller.
 \paragraph{}
 A pressure controller is not an air compressor, it needs a high pressure input. The user sets the pressure wanted using a piece of software which in turn, communicates with the hardware assigning the desired command. The pressure controller then, opens its valves and regulates the in/out air flux until the desired pressure is reached, using a pressure sensor which measures a relative pressure to the reference: the room atmospheric pressure.
 \paragraph{}
@@ -226,7 +238,7 @@ As stated earlier, a pressure source is necessary to be able to use the "`OB1"' 
 The pressure is controlled thanks to a very user-friendly interface, which allows to apply different kind of pressure signals such as: constant, ramp, sinusoidal, square signals. It also allows programing sequences using the previously stated signals, but also wait time, triggers and loops. This particular function was helpful to implement reproducible pressure cycles during the spring experiment.
 \paragraph{}
 To ensure the proper functioning of the pressure controller, two air filters were used: one upstream, to filter the air between the pressured air supply and the "`OB1"' and one downstream to filter the air between the "`OB1"' and the tank, where liquid vapor can affect the equipments of the "`OB1"' during the pressure regulation phase.
-The air filters used consist in a 5$\mu$m pore size pneumatic filter which removes liquid and solid contaminants. It is supplied with drain that can be opened as needed to drain condensed contaminants.
+The air filter used consist in a 5$\mu$m pore size pneumatic filter which removes liquid and solid contaminants. It is supplied with drain that can be opened as needed to drain condensed contaminants.
 \begin{figure}[H] %
 	\centering%
   \includegraphics[width=0.48\textwidth]{figures/Chapter_1/OB1.png}
@@ -251,20 +263,20 @@ The camera used for this purpose is the Phantom\textcopyright Miro 310, its main
 \paragraph{}
 It is supplied with a software which allows the control of these parameters and also triggering and storing images.
 \paragraph{Lenses:}
-A lens with high iris opening value is necessary to capture images at high speed with low light exposure. It was necessary to capture a large field which contains an object of 50 mm plus part of a spring which moves during the process. This is why a fixed focal length $f= 50$ mm with a maximum aperture of f/1.4 was selected, from the lens manufacturer Zeiss\textcopyright.
+A lens with high iris opening value is necessary to capture images at high speed with low light exposure. It was necessary to capture a large field which contains an object of 50 mm plus part of a spring which moves during the process. This is why a fixed focal length $f= 50$ mm with a maximum aperture of f/1.4 was selected.
 
 \paragraph{Light source:}
 Three parameters were to take into account for the choice of light sources:
 \begin{enumerate}
-	\item A stable source of light with no variation of light intensity was required to be able to use the 2D image registration algorithm "`UnwrapJ"' to correct the deformation of the tank windows due to pressure.
+	\item A stable source of light with no variation of light intensity was required to be able to use the 2D image registration algorithm "`UnwrapJ"', to correct the deformation of the tank windows, due to pressure.
 	\item A powerful intensity is required to be able to record at high speed.
-	\item A homogenous light source is needed to be able to correctly extract the edges of the shell from the images.	
+	\item A homogenous light source is needed to be able to correctly extract the edges of the shell from the images (no light gradient).	
 \end{enumerate}
 To do so, two 30x30 daylight balanced led-based panels were used providing 6560 lumen, disposed as shown in figure \ref{fig:schematics_spring}. The one at the back is tuned at full power to highlight the complete ball-spring system and a filter is added to diffuse light and avoid seeing the individual leds. The one upfront is used with 25\% of its power, in order to see the concavity, once the shell is buckled.
 \begin{figure}[H] %
 	\centering%
   \includegraphics[width=0.73\textwidth]{figures/Chapter_1/schematic_experimental_setup_light_lenses.png}
-	\caption{Representation of the light and camera dispositon}
+	\caption{Representation of the light and camera disposition}
 	\label{fig:schematics_spring}
 \end{figure}
 \newpage
@@ -276,11 +288,11 @@ Theoretically, the buckling instability nucleates randomly  on the surface of th
 To properly conduct a force measurement, using a spring, it is necessary to align the buckling spot in the spring axis to obtain a 1-D displacement. To do so, a series of preliminary experiments are conducted to determine precisely the buckling spot:
 First, mark the shell surface with 12 distinctive symbols, then put the marked ball inside the tank and apply a pressure to induce the buckling instability. Once buckled, define the closest symbol to the concavity center resulting from the buckling. Link the shell to the suction cup fixed on the spring, in a way to have the buckling spot aligned to the spring and mark the position of the guessed buckling spot and the attaching area and pressurize the the tank to trigger the buckling again. Measure the angle between the spring axis and the concavity and repeat the operation until a 90° angle is achieved. 
 \paragraph{}
-This step also allows to determine the critical pressure at which the buckling and unbuckling occur.
+This step also allows to determine the experimental critical pressure at which the buckling and unbuckling occur.
 \subsubsection{Experimental protocol}
 \paragraph{}
 We used three fluids in this experiment, and in each fluid, three capsules were investigated \ref{sec:Spherical_shells}.
-The main characteristics of the fluids used are shown in table \ref{tab:fluid_carac_spring}. The following experimental protocol is applied for each fluid.
+The main characteristics of the fluids used are shown in table \ref{tab:fluid_carac_spring}. 
 \begin{table}[H]
 	\centering
 		\begin{tabular}{|l|c|r|}
@@ -294,12 +306,12 @@ The main characteristics of the fluids used are shown in table \ref{tab:fluid_ca
 			Air &  1.2 & 10$^{-6}$\\
 			\hline
 		\end{tabular}
-	
 	\caption{Fluids used in the experiments and their main properties at room temperature.}
 	\label{tab:fluid_carac_spring}
 \end{table}
+The following experimental protocol is applied for each fluid.
 \paragraph{Quasi-static experiments:}
-We noticed, during the first experiments done with the spring that the shape of a shell submitted to a constant pressure P, continues to slightly evolve in time due to the relaxation of the material through creep. To investigate this effect, quasi-static experiments were conducted by submitting the shell to a pressure cycle which evolves at a slow rate. Practically, a step-like cycle was applied knowing the buckling and unbuckling critical pressures.\\
+We noticed, during the first experiments done with the spring that the shape of a shell submitted to a constant pressure P, continues to slightly evolve in time due to the relaxation of the material through creep. To investigate the relevance of this effect on the buckling/unbuckling dynamics, quasi-static experiments were conducted by submitting the shell to a pressure cycle which evolves at a slow rate. Practically, a step-like cycle was applied knowing the buckling and unbuckling critical pressures.\\
 Figure \ref{fig:quasi_static_pressure_cycle} shows a qualitative example of such step-like cycle where the step width represents the amount of time waited at each pressure step\footnote{by varying this step width, we can evaluate its importance and how it impacts the instability dynamics}.
 First, an image is recorded at (P=0), then the pressure is increased by a pressure step and is kept constant during a time $T=step width$, at the end of this time an image is recorded. This process is repeated until nearing the pressure at which the buckling occurs which can slightly vary from an experiment to another, the pressure is then gradually increased by smaller steps\footnote{The smaller steps are necessary in order to keep the pressure constant at the buckling and unbuckling phases, to independently study the buckling and unbuckling dynamics.}
  and when arriving to a critical pressure where the buckling occurs, the camera is triggered and a movie is recorded at 5000 FPS \footnote{Figure \ref{fig:quasi_static_pressure_cycle} shows a longer time at the buckling and unbuckling phases to count for the time necessary to save the resulting movies, which takes about 8 minutes}. An image is taken at the end of the buckling phase, in order to record the state to which the capsule has relaxed to, following the buckling.
@@ -330,11 +342,11 @@ The tables \ref{tab:Experimental_pressure_cycle_parameters_in_glycerol},\ref{tab
 				\hline
 				Capsules & Buckling pressure (mbar) & Unbuckling pressure (mbar) & Depressurization rates (mbar.s$^{-1}$) & Temperature (Celsius) \\
 				\hline
-				$\frac{d}{R} = $ & 100 & [70,80] & -1, -10, -20 & [20,21.5]\\
+				$\frac{d}{R} = 0.08$ & 100 & [70,80] & -1, -10, -20 & [20,21.5]\\
 				\hline
-				$\frac{d}{R} = $ & [780,790] & [380,390] & -1, -10, -15 & [24.5,26]\\
+				$\frac{d}{R} = 0.22$ & [780,790] & [380,390] & -1, -10, -15 & [24.5,26]\\
 				\hline
-				$\frac{d}{R} = $ & [1350,1450] & [620,660] & 100 mbar steps, -1, -10 & [25,26]\\
+				$\frac{d}{R} = 0.30$ & [1350,1450] & [620,660] & 100 mbar steps, -1, -10 & [25,26]\\
 				\hline
 			\end{tabular}
 		\end{adjustbox}
@@ -350,11 +362,11 @@ The tables \ref{tab:Experimental_pressure_cycle_parameters_in_glycerol},\ref{tab
 				\hline
 				Capsules & Buckling pressure (mbar) & Unbuckling pressure (mbar) & Depressurization rates (mbar.s$^{-1}$) & Temperature (Celsius) \\
 				\hline
-				$\frac{d}{R} = $ & [100,110]& [75,85] & -1, -10, -20 & [23,23.5]\\
+				$\frac{d}{R} = 0.08 $ & [100,110]& [75,85] & -1, -10, -20 & [23,23.5]\\
 				\hline
-				$\frac{d}{R} = $ & 780 & [360,370] & -1, -10, -20 & [20,23.2]\\
+				$\frac{d}{R} = 0.22$ & 780 & [360,370] & -1, -10, -20 & [20,23.2]\\
 				\hline
-				$\frac{d}{R} = $ &  \multicolumn{4}{c|}{Experiments were not possible due to the non visibility of the buckling concavity in water.}\\
+				$\frac{d}{R} = 0.30$ &  \multicolumn{4}{c|}{Experiments were not possible due to the non visibility of the buckling concavity in water.}\\
 				\hline
 			\end{tabular}
 		\end{adjustbox}
@@ -370,9 +382,9 @@ The tables \ref{tab:Experimental_pressure_cycle_parameters_in_glycerol},\ref{tab
 				\hline
 				Capsules & Buckling pressure (mbar) & Unbuckling pressure (mbar) & Depressurization rates (mbar.s$^{-1}$) & Temperature (Celsius) \\
 				\hline
-				$\frac{d}{R} = 0.0833 $ & [100,110]& [70,80] & -1, -1, -2 & [23.5,25]\\
-				$\frac{d}{R} = 0.222 $ & [850,900] & [380,480] & -1,-2,-2.5 & [24.5,26]\\
-				$\frac{d}{R} = 0.300 $ & 1570 & 790 & -1 & 23 \\
+				$\frac{d}{R} = 0.08$ & [100,110]& [70,80] & -1, -1, -2 & [23.5,25]\\
+				$\frac{d}{R} = 0.22$ & [850,900] & [380,480] & -1,-2,-2.5 & [24.5,26]\\
+				$\frac{d}{R} = 0.30$ & 1570 & 790 & -1 & 23 \\
 				\hline
 			\end{tabular}
 		\end{adjustbox}
@@ -382,31 +394,31 @@ The tables \ref{tab:Experimental_pressure_cycle_parameters_in_glycerol},\ref{tab
 
 
 \paragraph{Distortion correction:}
-When static pressure is applied inside the tank used for the experiment, its windows made out of polycarbonate bend. This bending creates a sort of a barrel distortion which depends on the pressure applied inside the tank (fig.\ref{fig:barrel_distortion}). This distortion alters the images recorded during the experiment and ultimately any distance measurements extracted from them.
+When static pressure is applied inside the tank used for the experiment, its windows made out of polycarbonate, bend. This bending creates a sort of a barrel distortion which depends on the pressure applied inside the tank (fig.\ref{fig:barrel_distortion}). This distortion alters the images recorded during the experiment and ultimately any distance measurements extracted from them.
 \begin{figure}[H] %
 	\centering%
   \includegraphics[width=0.48\textwidth]{figures/Chapter_1/barrel_effect.png}
 	\caption{Qualitative representation of a barrel distortion}
 	\label{fig:barrel_distortion}
 \end{figure}
- Two possibilities to correct this effect were considered: either modeling the bent window as a lens and characterize it as function of the pressure, or applying a numerical method to find the deformation of the image between the rest state where the relative pressure is zero and a state at pressure P. Once found, this deformation matrix is inverted and we can transform a distorted image to a non-distorted one. The latter solution was adopted, because it is less time-consuming knowing an algorithm has already been implemented in ImageJ registration plugin called "`bUnwrajJ"'.
-To calibrate the correction, a damier was placed at the same position as the spring-ball system, and images were recorded for each pressure step, used during experiments in one fluid\footnote{This operation is renewed each time we fill the tank with a new fluid, because the camera-tank position may change during the emptying phase}.
+ Two possibilities to correct this effect were considered: either modeling the bent window as a lens and characterize it as function of the pressure, or applying a numerical method to find the deformation of the image between the rest state where the relative pressure is zero and a state at pressure P. Once found, this deformation matrix is inverted and we can transform a distorted image to a non-distorted one. The latter solution was adopted, because it is less time-consuming, knowing that an algorithm has already been implemented in the ImageJ registration plugins, called "`bUnwrajJ"'.
+To calibrate the correction, the spring-ball system is removed and a damier is placed at the same position as the spring-ball system. Iimages are recorded for each pressure step, used during experiments in one fluid\footnote{This operation is renewed each time we fill the tank with a new fluid, because the camera-tank position may change during the emptying phase}.
 
 
 
 
 \subsection{Image treatment}
 \paragraph{}
- The image treatment is the basis of the measurement conducted in the spring experiment, since every every physical quantity of interest is extracted from the images. But before extracting these quantities from the images, a correction of the windows distortion due to the pressurization of the tank was necessary.
+ The image treatment is the basis of the measurements extracted from the spring experiment, since every physical quantity of interest is extracted from the images. But before extracting these quantities from the images, a correction of the windows distortion due to the pressurization of the tank was necessary.
 \subsubsection{Image calibration due to window distortion}
 \paragraph{}
-As mentioned earlier, we faced a problem when pressure was applied inside the tank, inducing an error on the distances measured directly from the distorted images which depends on the camera positon in regard to the window, the spring-ball position in regard to the window and the pressure inside the tank.For example, an estimation of this deformation between at (P = 1000 mbar), by measuring a horizontal central line between the image at (P=0) and at (P=1000 mbar) yields an elongation of:
+As mentioned earlier, we faced a problem when pressure was applied inside the tank, inducing an error on the distances measured directly from the distorted images which depends on the camera position in regard to the window, the spring-ball position in regard to the window and the pressure inside the tank.For example, an estimation of this deformation at (P = 1000 mbar), by measuring a horizontal central line between the image at (P=0) and at (P=1000 mbar) yields an elongation of:
 \begin{align}
 	\epsilon_{horizontal} = \frac{\Delta L}{L_0} = 2\%
 \end{align}
 \paragraph{Calibration step} 
 To correct it, we calibrated this distortion by taking an image of a damier inside the tank at each pressure step. 
- From each image, we extracted a deformation matrix that links the rest state at (P=0) to the image at (P=p$_{image}$) and the deformation matrix is inverted to get the transformation needed to transform the image at (P=p$_{image}$) into the image at (P=0), using an algorithm implement in the registration plugin category of ImageJ, called "`bUnwrapJ"'.
+ From each damier image, we extracted a deformation matrix that links the rest state at (P=0) to the damier image at (P=p$_{image}$) and the deformation matrix is inverted to get the transformation needed to transform the damier image at (P=p$_{image}$) into the damier image at (P=0), using an algorithm implemented in the registration plugin category of ImageJ, called "`bUnwrapJ"'.
 \paragraph{}
 "`bUnwarpJ"' is an algorithm for elastic and consistent image registration developed as an ImageJ plugin. It performs a simultaneous registration of two images, A and B. Image A is elastically deformed in order to look as similar as possible to image B, and, at the same time, the "inverse" transformation (from B to A) is also calculated so a pseudo-invertibility of the final deformation could be guaranteed (fig\ref{fig:scheme_bunwrapJ}).
 
@@ -437,7 +449,7 @@ Once the distortion corrected, we needed to extract from each image three physic
 	\item Gravity center of the capsule.
 \end{enumerate}
 \paragraph{}
-An algorithm was written in python, based on an image treatment library called "`Opencv"', to automatically extract the three quantities for each image, following these steps, enriched by illustrations at each step applied to a raw image, in the buckling state, which represents the most complex  situation (fig.\ref{fig:raw_image}):
+An algorithm was written in Python, based on an image treatment library called "`Opencv"', to automatically extract the three quantities for each image, following these steps, enriched by illustrations for each step, applied to a raw image, in the buckling state, which represents the most complex  situation (fig.\ref{fig:raw_image}):
 \begin{figure}[H] %
 	\centering%
   \includegraphics[width=0.48\textwidth]{figures/Chapter_1/raw_image.png}
@@ -472,7 +484,7 @@ The filtering kernel size were kept to a low level, to avoid dilatation of the p
 		\label{fig:filtering_image_treatment}%
 \end{figure}
 \paragraph{}
-Third, canny edge detector algorithm\cite{canny} is used to find the edges on the image (fig.\ref{fig:canny}). Briefly, this algorithm relies on finding the intensity gradients of the image, thinning the edge, by using the "`non-maximum suppression"' technique, and then applying a double threshold to get rid of the noise.
+Third, Canny edge detector algorithm\cite{canny} is used to find the edges on the image (fig.\ref{fig:canny}). Briefly, this algorithm relies on finding the intensity gradients of the image, thinning the edge, by using the "`non-maximum suppression"' technique, and then applying a double threshold to get rid of the noise.
 \begin{figure}[H] %
 	\centering%
   \includegraphics[width=0.48\textwidth]{figures/Chapter_1/canny.png}
@@ -500,12 +512,12 @@ Once the ball shape defined, its outer contour is fitted with a parametric curve
 	\item Define an iterative process which minimizes the difference between a fitting parametric curve and the experimental points,where at each iteration, the 		following operations are performed: 
 	
 		\begin{enumerate}[label=\alph*)]
-			\item Transform every experimental point from the cartesian coordinates system  $M(x,y)$ to the polar coordinates system $M'(R,\theta)$  as follow:
+			\item Transform every experimental point from the Cartesian coordinates system  $M(x,y)$ to the polar coordinates system $M'(R,\theta)$  as follow:
 				\begin{align*}
 				R_{exp}(\theta)_i &=\sqrt{(x_i- x_c)^2+(y_i-y_c)^2}  \\
 				\theta_{exp_i} &= \arctan(\frac{y_i-y_c}{x_i- x_c}) \\
 				\end{align*}
-				Where $x_c$ and $y_c$ are fitting parameters corresponding to the center of the polar coordinates, initialised by $M_{c0} (x_{c0},y_{c0})$.
+				Where $x_c$ and $y_c$ are fitting parameters corresponding to the center of the polar coordinates, initialized by $M_{c0} (x_{c0},y_{c0})$.
 			\item Evaluate the fitting parametric curve:
 				\begin{align*}
 					\tilde{R}(\theta)_i &=\sum\limits_{k=0}^M a_k \sin(\theta_{exp_i}-\theta_0)^k  \\
@@ -531,7 +543,7 @@ Once the outer contour fitted (fig.\ref{fig:outer_contour}), the experimental po
 	\label{fig:concavity_extraction}
 \end{figure}
 \paragraph{}
-To create a complete fit between the outer contour and a fit of the concavity, we need first, to cut the outer contour where it ceases to belong to the shape generatrix, which generates the physical surface of the concave capsule. This limit is set by the point of the parametric outer curve where the tangent is horizontal.
+To create a complete fit between the outer contour and a fit of the concavity, we need first, to cut the outer contour where it ceases to belong to the shape generatrix, which generates the physical surface of the concave capsule, when integrated around the y-axis. This limit is set by the point of the parametric outer curve where the tangent is horizontal.
 Practically, it means, find the point $M(R_{h},\theta_h)$, such as the the following condition is respected:
 \begin{equation}
 	\tan(\theta+\alpha) =0
@@ -548,7 +560,7 @@ Where $\alpha$ is the angle defined between the tangent line $T$ with the vector
 	\caption{Definition of the horizontal tangent}
 	\label{fig:Illustration_tangent}
 \end{figure}
-Integrating \eqref{eq:tangent} in \eqref{eq:tangent_horizontal}, gives a condition an equation on theta:
+Integrating \eqref{eq:tangent} in \eqref{eq:tangent_horizontal}, gives a condition on theta:
 	\begin{gather*}
 		\tan(\theta+\alpha) =0\\
 		\Rightarrow\frac{\tan(\theta)+\tan(\alpha)}{1-\tan(\theta)\tan(\alpha)} = 0\\
@@ -575,7 +587,7 @@ Where $a,b,c,d$ are the fit parameters, and $x_c,y_c$ are the coordinates of the
 \paragraph{}
 The combination of the two fits, determines an analytical description of the generatrix (fig.\ref{fig:fit_complet}), allowing the analytical calculus of the volume and the center of gravity of the capsule\footnote{The calculus of these two quantities being complex, is not developed here and can be found in the annexe.}. 
 \paragraph{}
-As precised earlier, the example treated here is the most complexe. In the case of a convex shape(non buckled shape), only the outer contour fit is considered, and $\theta_h$ is equal to $\frac{\pi}{2}$.
+As precised earlier, the example treated here is the most complexe. In the case of a convex shape(non-buckled shape), only the outer contour fit is considered, and $\theta_h$ is equal to $\frac{\pi}{2}$.
 \paragraph{}
 The estimation of the error over the shape detection is set to the pixel level, and is around 0.1mm
 
@@ -607,13 +619,13 @@ The estimation of the error over the shape detection is set to the pixel level, 
 	\caption{Fitted outer contour in blue, fitted concavity in red, and experimental concavity points in yellow}
 	\label{fig:fit_complet}
 \end{figure}
-\paragraph{Note}
-\paragraph{}
 \newpage
 \section{Frictionless rail}
 \subsection{Brief introduction and motives}
 \paragraph{}
-The purpose of this experiment is to characterize the swimming induced by the shell deformation, actuated by pressure cycles. The setup consists of attaching a spherical capsule to a support, itself mounted on an frictionless air bearing, which can slide horizontally on a rail, allowing a 1-D displacement. The shell is immersed in a liquid, as represented in figure \ref{fig:experimental_setup_frictionless_rail}. Contrary to the spring experiment where the shell deformation is actuated by applying a positive relative pressure, inside a tank, in the Frictionless rail experiment, this option was not chosen, due to the complexity of the experimental setup it would have required. Instead, the shape deformation cycles are actuated by applying negative pressure cycles to the air volume enclosed in the spherical capsule. This is done by connecting the enclosed volume to a pressure controller, through a flexible pipe. In order to have a better control over the experimentation, a weakness is introduced, by reducing the thickness locally by 0.2 mm, which allows to define where the instability will occur. The buckling spot is oriented a direction parallel to the rail, to ensure the capture of the full displacement during the buckling and unbuckling phase. The position of the support and the shell deformation are captured using a high speed camera. Several control parameters were explored:
+**** INTRODUIRE LA RAISON QUI NOUS A POUSSé à FAIRE LA MNIP RAIL ET PARLER BRIEVEMENT DE LA MANIP BATEAU A L'INTERFACE.*****
+\paragraph{}
+The purpose of this experiment is to characterize the swimming induced by the shell deformation, actuated by pressure cycles. The setup consists in attaching a spherical capsule to a support, itself mounted on an frictionless air bearing, which can slide horizontally on a rail, allowing a 1-D displacement. The shell is immersed in a liquid, as represented in figure \ref{fig:experimental_setup_frictionless_rail}. Contrary to the spring experiment where the shell deformation is actuated by applying a positive relative pressure inside a tank, in the Frictionless rail experiment, this option was not chosen, due to the complexity of the experimental setup it would have required. Instead, the shape deformation cycles are actuated by applying negative pressure cycles to the air volume enclosed in the spherical capsule. This is done by connecting the enclosed volume to a pressure controller, through a flexible pipe. In order to have a better control over the experimentation, a weakness is introduced, by reducing the thickness locally by 0.2 mm, which allows to define where the instability will occur. The buckling spot is oriented in a direction parallel to the rail, to ensure the capture of the full displacement during the buckling and unbuckling phase. The position of the support and the shell deformation are captured using a high-speed camera. Several control parameters were explored:
 \begin{itemize}
 	\item The thickness of the capsule's shell, to vary the elastic energy stored by it.
 	\item The dissipation property of the material in which the spherical capsules are cast.
@@ -630,14 +642,14 @@ The advantage of this experiment is that it allows to directly illustrate the sw
 \subsection{Equipment}
 \subsubsection{Air bearing system}
 \paragraph{}
-The air bearing rail system (fig.\ref{fig:pic_frictionless}), is composed of two main components made of black anodized aluminum. The first component is 600mm long and 75mm T-shaped rail, which serves as a guide to the second component, which is the truck. The truck is designed to slide along the guide without solid friction. This is possible thanks to microscopic holes present in the inner surface of the truck. These holes allow pressurized air to stream on the surface of the guide and create a cushion air, which prevents the surfaces of the guide and the truck to be in contact. The pressurized air provided to the truck through its inlet, sets the load capacity.
+The air bearing rail system (fig.\ref{fig:pic_frictionless}), is composed of two main components made of black anodized aluminum. The first component is a 600mm long and 75mm large T-shaped rail, which serves as a guide to the second component, being the truck. The truck is designed to slide along the guide without solid friction. This is possible thanks to microscopic holes present in the inner surface of the truck. These holes allow pressurized air to stream on the surface of the guide and create a cushion air, which prevents the surfaces of the guide and the truck from being in contact. The air pressure which is provided to the truck through its inlet, sets the load capacity.
 \begin{figure}[H] %
 	\centering%
 	\includegraphics[width=0.48\textwidth]{figures/Chapter_1/Airbearing.png}
 	\caption{Illustration of the air bearing system}
 	\label{fig:pic_frictionless}
 \end{figure}
-In the case of the experiment, the input pressure was of 6 bars, allowing the loads precised in \ref{tab:pressure_truck}, which shows that it is more than enough, compared to the forces involved. For example, the max buoyancy force encountered is of 2N, and the weight of the truck is 13N.\\
+In the case of the experiment, the input pressure was of 5 bars. This pressure allows the loads precised in \ref{tab:pressure_truck}. These maximum loads are big compared to the forces involved in the experiment. For example, the max buoyancy force plus the weight of the truck give a total of 11N.\\
 A flexible tube is used to link the air pressure source to the truck pressure input. The tube is suspended at a 2m height and left loose, to avoid any bending or tension force which might displace the truck and lead to a measurement error.
 \begin{table}[H]
 	\centering
@@ -650,7 +662,7 @@ A flexible tube is used to link the air pressure source to the truck pressure in
 				\hline
 			\end{tabular}
 		\end{adjustbox}
-	\caption{Load capacity for a 6 bar pressure}
+	\caption{Load capacity for a 5 bar pressure}
 	\label{tab:pressure_truck}
 \end{table}
 \paragraph{}
@@ -666,7 +678,7 @@ The rail is mounted on two slides, which can translate vertically on two rigid e
 All technical details associated to the air bearing system can be found in the annex.
 \subsubsection{Mounting support}
 \paragraph{}
-To link the spherical shell to the truck, an L-shaped mounting support was realised made of Aluminum (fig.\ref{fig:mounting_support}. This support is supplied with an M6 tapped hole to fix it to the truck and a M4 tapped hole to connect it to the spherical shell through a suction cup. The support weighs 220g, in addition to the 1300 g of the truck. Other materials and designs were considered to make a lighter support, but we found out that the thrust produced during the buckling phase, was able to bend the support, which alters the displacement produced and introduces a bias in the experiment and its physical interpretation.
+To link the spherical shell to the truck, a L-shaped mounting support was realized made of Aluminum (fig.\ref{fig:mounting_support}. This support is supplied with a M6 tapped hole to fix it to the truck and a M4 tapped hole to connect it to the spherical shell, through a suction cup. The support weighs 220g, in addition to the 1300 g of the truck. Other materials and designs were considered to make a lighter support, but we found out that the thrust produced during the buckling phase, was able to bend the support, which alters the displacement produced and introduces a bias in the experiment and its physical interpretation.
 \begin{figure}[H] %
 	\centering%
 	\includegraphics[width=0.48\textwidth]{figures/Chapter_1/Support.png}
@@ -680,9 +692,9 @@ The spherical shells used in this experiment are 3 shells cast in the 'Dragon sk
 The first set of shells cast in the 'Dragon skin \textregistered 30' material is designed to study the effect of stored elastic energy over the swimming.
 The second set of shells cast in the "`AJO 121"' material and the "`AJO 122"' is intended to study the effect of material dissipation over the swimming, taking into account that the two materials used, have approximately, the same elastic modulus.
 \paragraph{}
-A 2 mm hole is drilled in each shell and a nozzle is connected to it, to connect the inner volume to the pressure controller through a flexible tube.
+A 2 mm hole is drilled in each shell and a nozzle is plugged in it, to connect the inner volume to the pressure controller through a flexible tube.
 \paragraph{}
-An imperfection is introduced over the two sets of shells, by locally reducing the thickness of 0.2mm over a circle of 10mm diameter. This imperfection is introduced to have the same buckling scenario for every shell and avoid having a buckling occuring where the pressurization nozzle is located.
+An imperfection is introduced over the two sets of shells, by locally reducing the thickness of 0.2mm over a circle of 10mm diameter. This imperfection is introduced in order to have the same buckling scenario for every shell and avoid having a buckling occurring where the pressurization nozzle is located.
 In theory, this imperfection affects the critical buckling pressure\cite{Preis}, though, it is not a concern in the case of this experiment, plus the the reduction of thickness is relatively small.
 \subsubsection{Pressure controller}
 \paragraph{}
@@ -691,18 +703,18 @@ The pressure controller used in this experiment has been presented earlier in th
 \paragraph{}
 The tank used in this experiment, is an open recipient, with 340mm by 170mm rectangular base and 250 mm height, made out of glass.  
 \subsubsection{Camera,lenses and light sources}
-The equipment used for the experiment is the same as in the spring experiment (\ref{sssection:CLLS}). In addition, a macro lense with a fixed focal length $f= 100$ mm with a maximum aperture of f/2.0 was used to zoom over a region of interest, without losing in spatial resolution.
+The equipment used for the experiment is the same as in the spring experiment (\ref{sssection:CLLS}). In addition, a macro lens with a fixed focal length $f= 100$ mm with a maximum aperture of f/2.0 was used to zoom over a region of interest, without losing in spatial resolution.
   
 \subsection{Experimental process}
 \paragraph{}
 This experimental setup has a rich potential, allowing the exploration of a multitude of physical quantities, and different configurations can be imagined to enrich it even more. We tried however, to focus our experimental investigations on the effect of primary physical quantities over the swimming. The quantities explored are:
 \begin{enumerate}
-	\item The amount of elastic energy stored prior to buckling, by varying the thickness of the shell, keeping the outer radius constant, and this is performed with the set of three shells cast out of "`Drangon skin"'\textregistered material.
-	\item The effect of solid dissipation on the swimming efficiency, by varying the rebound resilience of the material in which the shell is cast. This quantity refers to the restitution rate of the stored elastic energy. To isolate its effect, two materials were chosen with the specificity of sharing the same elastic modulus, and two shell with an identical were cast.
-	\item During preliminary experimentations, it was noticed that, when at proximity to a wall, with the buckling spot facing it, the swimming induced by the buckling and unbuckling phases is modified. To study this effect, two series of experiments are conducted, one far from the wall, to characterize the swimming in bulk, and the second one near the wall to study the effect of directional confinement.\footnote{Only the frontal wall proximity is investigated, the lateral, rear or any other angular configurations are to be studied in the future}. 
+	\item The effect of the amount of elastic energy stored prior to buckling on the swimming efficiency. This is done by varying the thickness of the shell, keeping the outer radius constant, and this is performed with the set of three shells cast out of "`Drangon skin"'\textregistered material.
+	\item The effect of solid dissipation on the swimming efficiency, by varying the rebound resilience of the material in which the shell is cast. This quantity refers to the restitution rate of the stored elastic energy. To isolate its effect, two materials were chosen with the specificity of sharing the same elastic modulus, and two shells with an identical thickness were cast.
+	\item During preliminary experimentation, it was noticed that, when at proximity to a wall, with the buckling spot facing it, the swimming induced by the buckling and unbuckling phases is modified. To study this effect, two series of experiments are conducted, one far from the wall, to characterize the swimming in bulk, and the second one near the wall to study the effect of directional confinement.\footnote{Only the frontal wall proximity is investigated, the lateral, rear or any other angular configurations are to be studied in the future}. 
 \end{enumerate}
 \paragraph{}
-All the enumerated experiments above, are conducted for different viscosities of the swimming medium, to vary the $Re$ number characterizing the flow regime. To do so, seven "`water-glycerol"' solutions were prepared, with viscosities ranging from 0.001 Pa.s with (100\% Water-0\% glycerol) solution  to 1.3 Pa.s with a (0\% Water-100\% glycerol) solution, with a targeted viscosity step of half a decade, taking advantage of the miscibility of the (water-glycerol) couple. To target the desired viscosity, the volume fraction of each liquid needs to be calculated precisely. Knowing that the viscosity of a water-glycerol solution evolves in a non-linear way\cite{viscositynonlinearCheng}. A way to approach the targeted viscosity, the volume fractions were calculated using an empirical formula found in the literature\cite{viscositynonlinearCheng}. To verify the viscosity of the solution, a sample is collected at the end of the experiment and its viscosity is measured at the experiment temperature.\\
+All the enumerated experiments above, are conducted for different viscosities of the swimming medium, to vary the $Re$ number characterizing the flow regime. To do so, seven "`water-glycerol"' solutions were prepared, with viscosities ranging from 0.001 Pa.s with (100\% Water-0\% glycerol) solution  to 1.3 Pa.s with a (0\% Water-100\% glycerol) solution, with a targeted viscosity step of half a decade, taking advantage of the miscibility of the (water-glycerol) couple. To target the desired viscosity, the volume fraction of each liquid needs to be calculated precisely, because the viscosity of a water-glycerol solution evolves in a non-linear way\cite{viscositynonlinearCheng}. To approach the targeted viscosity, the volume fractions were calculated using an empirical formula found in the literature\cite{viscositynonlinearCheng}. To verify the viscosity of the solution, a sample is collected at the end of the experiment and its viscosity is measured at the experiment temperature.\\
 In addition, experiments are conducted in a liquid called "`UCON Lubricant 75-H-90,000 "`, which has a viscosity of 37 Pa.s at room temperature, providing another decade to the viscosity range explored. All the water-glycerol solutions are transparent, and the "`UCON Lubricant"' presents a yellowish coloration which does not prevent the visualization during the experiment. 
 Table\ref{tab:viscosities} summarizes the solutions in which the experiments are conducted.
 \begin{table}[H]
@@ -729,13 +741,13 @@ Table\ref{tab:viscosities} summarizes the solutions in which the experiments are
   
 \subsubsection{Experimental protocol}
 \paragraph{}
-Once the volume fractions for a targeted viscosity are calculated, a 20L solution is prepared, and an experimental protocol is followed for each one of the 5 capsules:
+Once the volume fractions for a targeted viscosity are calculated, a 20L solution is prepared, and an experimental protocol is followed for each one of the 5 capsules to be studied:
 \paragraph{Preliminary settings}
 First, the spherical shell is connected to the mounting support via a suction cup that is, on one hand, glued to the spherical shell and on the other hand screwed to the M4 tapped hole in the mounting hole.\\
-The system "`support-capsule"' is immersed at mid height of the liquid. This step is followed by a horizontality check of the fictionless rail, using an electronic spirit level, allowing a 0.01\textdegree precision.\\
-Then, rail pressure inlet is supplied with a 6 bar air pressure, and the truck is positioned at the middle of the 340 mm long tank.\\
+The system "`support-capsule"' is immersed at the liquid's mid height. This step is followed by a horizontality check of the fictionless rail, using a spirit level, allowing a 0.001 rad precision.\\
+Then, rail pressure inlet is supplied with a 5 bar air pressure, and the truck is positioned at the middle of the 340 mm long tank.\\
 \paragraph{Multiple pressure cycles}
-To study the displacement produced by the shape deformation, 20 successive pressure cycles of a period of 15s, are applied to the volume enclosed in the spherical shell, and images of the "`support-capsule"' system are recorded at 24 FPS (fig.\ref{fig:illustration_frictionless_rail}).The pressure cycles applied begin by 5s descending pressure ramp until reaching the buckling critical $\Delta P$, followed by a plateau at a the same pressure for 2.5s. The pressure is increased through a 6.5s ascending pressure ramp, until reaching the unbuckling $\Delta P$\footnote{The unbuckling $\Delta P$ can be positive sometimes for small thicknesses, due to the fact that the shell collapses completely on itself and obstructs the hole which communicates with the pressure controller. To force the shape to unfold, pressurized air is injected inside the capsule inner volume.} and is followed by a 1s plateau (fig.\ref{fig:pressure_cycle_fr}.\\
+To study the displacement produced by the shape deformation, 20 successive pressure cycles of a period of 15s, are applied to the volume enclosed in the spherical shell, and images of the "`support-capsule"' system are recorded at 24 FPS (fig.\ref{fig:illustration_frictionless_rail}).The pressure cycles applied begin by  a 5s descending pressure ramp until reaching the buckling critical $\Delta P$, followed by a plateau at a the same pressure for 2.5s. The pressure is increased through a 6.5s ascending pressure ramp, until reaching the unbuckling $\Delta P$\footnote{The unbuckling $\Delta P$ can be positive sometimes for small thicknesses, due to the fact that the shell collapses completely on itself and obstructs the hole which communicates with the pressure controller. To force the shape to unfold, pressurized air is injected inside the capsule inner volume.} and is followed by a 1s plateau (fig.\ref{fig:pressure_cycle_fr}.\\
 Temperature measurement are performed at the beginning and at the end of the pressure cycles.
 \begin{figure}[H]%
 	\centering%
@@ -774,9 +786,9 @@ Temperature measurement are performed at the beginning and at the end of the pre
 		\label{fig:illustration_frictionless_rail_wall}
 \end{figure}
 \paragraph{}
-The spherical shell is brought in contact with the wall and a reference image is recorded. This configuration will be defined at the zero in the position axis, and all the distances measured will be done relatively to this configuration.
+The spherical shell is brought in contact with the wall and a reference image is recorded. This configuration will be defined as the zero in the position axis, and all the distances measured will be done relatively to this configuration.
 \paragraph{High temporal resolution recordings}
-In order to quantify the shape deformation cycle, a high temporal resolution is needed. To do so, the truck is brought back to the middle of the tank, a pressure cycle is applied (with the same settings as in the previous step), and images are recorded at 600FPS. This operation is iterated three times.\\
+In order to quantify the shape deformation cycle, a high temporal resolution is needed. To do so, the truck is brought back to the middle of the tank, a pressure cycle is applied (with the same settings as in the previous step), and images are recorded at 600FPS. This operation is iterated three times to have an estimation of the error. \\
 Temperature measurement are performed at the beginning and at the end of the each iteration.
 \paragraph{Drag-coefficient measurements}
 In order to extract the thrust produced during the buckling and unbuckling phases, it is necessary to measure the drag force, independently. To do so, the truck is brought to the middle of the tank and is given an initial velocity. Images are recorded at 600 FPS. This is done in two constant deformation configurations: a spherical shape configuration to account for the drag coefficient when the shell is unbuckled, and a collapsed concave configuration to account for the drag coefficient when the shell is buckled.\\
@@ -790,9 +802,9 @@ Table\ref{tab:pressure_cycle_configuration} summarizes the pressure cycle settin
 				\hline
 				Capsules & Buckling pressure (mbar) & Unbuckling pressure (mbar)&period (s)\\
 				\hline
-				$\frac{d}{R} = 0.083 $ & -100& 100 & 15\\
-				$\frac{d}{R} = 0.222 $ & -600& 0 & 15\\
-				$\frac{d}{R} = 0.300 $ & -1000 &  0 & 15\\
+				$\frac{d}{R} = 0.08 $ & -100& 100 & 15\\
+				$\frac{d}{R} = 0.22 $ & -600& 0 & 15\\
+				$\frac{d}{R} = 0.30 $ & -1000 &  0 & 15\\
 				\hline
 				"`AJO 121"'& -200 & 100 & 15\\
 				"`AJO 122"'& -350 & 100 & 15\\
@@ -808,11 +820,20 @@ The image treatment needed for the frictionless rail is relatively lighter compa
 \begin{enumerate}
 	\item The first step is to define a reference for the position of the support in the tank. As introduced in the experimental process, a reference image is taken where the front of the shell is in contact with the wall. The position of the support in this configuration is retrieved, using the Canny edge detector algorithm (introduced earlier, in the image treatment section of spring experiment).
 	
-	\item From the multiple cycles set of experiments, the successive position of the support, after buckling and unbuckling phases are retrieved, using the Canny edge detector algorithm.
+	\item From the multiple cycles set of experiments, the successive position of the system, after buckling and unbuckling phases are retrieved, by detecting the edge of the support, using the Canny edge detector algorithm.
 	
-	\item From the high-resolution set of experiments, the temporal evolution of the height $H(t)$ of the apparent shape is retrieved\footnote{In the case of the frictionless rail experiment, it was impossible to retrieve the position of the shell's center of gravity.}, using the Canny edge detector algorithm.
+	\item From the high-resolution set of experiments, the temporal evolution of the height $H(t)$ of the apparent shape is retrieved, using the Canny edge detector algorithm.***image***
 	\item From the drag-coefficient measurements set of experiments, the position of the support is tracked through time.
 \end{enumerate}
 \paragraph{}
+The displacements measured in this experiment, does not correspond exactly to the displacement of the system's center of gravity. This is due to the fact that, using this setup, it was not possible to track the shell's center of gravity. Knowing that, the only part of the system that gets deformed is the shell, and that it weighs more than 50 times less than the "`support/truck"' rigid sub-system, we can safely say that any shift of the system's center of gravity due to the deformation is small and within the margin of error.To quantify it, we use this formula:
+ ****Put the formula of center of gravity as function of d/R****
+***   
 Overall, the estimation of the error over the position detection is set to the pixel level, and is around 0.19mm. The net displacement per cycle is measured by taking the initial position of the support and the position of the support at the end of the 20 cycles, divided by the number of cycles. In this case, the error is set to 0.0095mm. The measurement of the displacement induced by the buckling and the displacement induced by the unbuckling , corresponds to the mean value of these displacements over 20 cycles, and the error is set to the standard deviation of the measurement sample.
+
+\section{Particle-image velocimetry measurements}
+\subsection{Brief introduction and motives}
+\paragraph{}
+
+
  
