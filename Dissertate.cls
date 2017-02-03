@@ -21,12 +21,12 @@
 % Line spacing: dsingle/ddouble
 %   Whether to use single- or doublespacing.
 \newtoggle{DissertateSingleSpace}
-%\togglefalse{DissertateSingleSpace}
+\togglefalse{DissertateSingleSpace}
 \DeclareOption{dsingle}{
     \toggletrue{DissertateSingleSpace}
     \ClassWarning{Dissertate}{Single-spaced mode on.}
 }
-%\DeclareOption{ddouble}{\togglefalse{DissertateSingleSpace}}
+\DeclareOption{ddouble}{\togglefalse{DissertateSingleSpace}}
 
 \ProcessOptions\relax
 
@@ -36,8 +36,8 @@
     \newcommand{\dnormalspacing}{1.2}
     \newcommand{\dcompressedspacing}{1.0}
 }{
-    \newcommand{\dnormalspacing}{2.0}
-    \newcommand{\dcompressedspacing}{1.2}
+    \newcommand{\dnormalspacing}{1.2}
+    \newcommand{\dcompressedspacing}{1.0}
 }
 
 % Block quote with compressed spacing
