@@ -9,6 +9,12 @@ Arganda-Carreras, I., Sorzano, C. O.~S., Marabini, R., Carazo, J.-M., Ortiz-de
   85--95.
 \newblock Lecture Notes in Computer Science, Springer Berlin / Heidelberg.
 
+\bibitem[Boutier, 2013]{PIV_Wiley}
+Boutier, A., Ed. (2013).
+\newblock {\em Laser Metrology in Fluid Mechanics: Granulometry, Temperature
+  and Concentration Measurements}.
+\newblock WILEY.
+
 \bibitem[Canny, 1986]{canny}
 Canny, J. (1986).
 \newblock A computational approach to edge detection.
@@ -19,6 +25,13 @@ Canny, J. (1986).
 Cheng, N.~S. (2008).
 \newblock Formula for viscosity of glycerol-water mixture.
 \newblock {\em Industrial and Engineering Chemistry Research}, 47, 3285--3288.
+
+\bibitem[Lee et~al., 2016]{lee16}
+Lee, A., L\'opez~Jim\'enez, F., Marthelot, J., Hutchinson, J., \& Reis, P.~M.
+  (2016).
+\newblock The geometric role of precisely engineered imperfections on the
+  critical buckling load of spherical elastic shells.
+\newblock {\em ASME. J. Appl. Mech.}, 83, 111005--111005--11.
 
 \bibitem[López~Jiménez et~al., 2017]{Preis}
 López~Jiménez, F., Marthelot, J., Lee, A., Hutchinson, J., \& Reis, P.
@@ -43,5 +56,16 @@ Sánchez~Sorzano, C., Thévenaz, P., \& Unser, M. (2005).
 \newblock Elastic registration of biological images using vector-spline
   regularization.
 \newblock {\em IEEE Transactions on Biomedical Engineering}, 52(4), 652--663.
+
+\bibitem[Tropea et~al., 2007]{PIV_springer}
+Tropea, C., Yarin, A.~L., \& Foss, J.~F. (2007).
+\newblock {\em Handbook of experimental fluid mechanics}.
+\newblock Springer.
+
+\bibitem[Zhang \& Ru, 2016]{zhang16}
+Zhang, L. \& Ru, C.~Q. (2016).
+\newblock Imperfection sensitivity of pressured buckling of biopolymer
+  spherical shells.
+\newblock {\em Phys. Rev. E}, 93, 062403.
 
 \end{thebibliography}

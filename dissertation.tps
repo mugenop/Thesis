@@ -17,7 +17,7 @@ Class=LaTeXView
 Document=dissertation.tex
 
 [Frame0_View0,0]
-TopLine=20
+TopLine=0
 Cursor=424
 
 [Frame1]
@@ -50,11 +50,11 @@ NormalPos.top=26
 NormalPos.right=1562
 NormalPos.bottom=513
 Class=LaTeXView
-Document=frontmatter\personalize.tex
+Document=dissertation.toc
 
 [Frame2_View0,0]
-TopLine=10
-Cursor=811
+TopLine=0
+Cursor=0
 
 [Frame3]
 Flags=0
@@ -68,11 +68,11 @@ NormalPos.top=26
 NormalPos.right=1562
 NormalPos.bottom=513
 Class=LaTeXView
-Document=dissertation.toc
+Document=chapters\chapter1.tex
 
 [Frame3_View0,0]
-TopLine=0
-Cursor=0
+TopLine=141
+Cursor=11696
 
 [Frame4]
 Flags=0
@@ -86,13 +86,13 @@ NormalPos.top=26
 NormalPos.right=1562
 NormalPos.bottom=513
 Class=LaTeXView
-Document=chapters\chapter1.tex
+Document=chapters\appendixA.tex
 
 [Frame4_View0,0]
-TopLine=891
-Cursor=62311
+TopLine=100
+Cursor=7384
 
 [SessionInfo]
 FrameCount=5
-ActiveFrame=0
+ActiveFrame=3
 

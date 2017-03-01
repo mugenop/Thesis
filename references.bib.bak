@@ -70,4 +70,37 @@
   pages   = {3285-3288},
 }
 
+@Book{PIV_springer,
+  title     = {Handbook of experimental fluid mechanics},
+  publisher = {Springer},
+  year      = {2007},
+  author    = {Cameron Tropea and Alexander L. Yarin and John F. Foss},
+}
+
+@Book{PIV_WIley,
+  title     = {Laser Metrology in Fluid Mechanics: Granulometry, Temperature and Concentration Measurements},
+  publisher = {WILEY},
+  year      = {2013},
+  author    = {Alain Boutier},
+  editor    = {Alain Boutier},
+}
+
+@Article{lee16,
+  author  = {Lee, A. and L\'opez Jim\'enez, F. and Marthelot, J and Hutchinson, J.W. and Reis, P. M.},
+  title   = {The Geometric Role of Precisely Engineered Imperfections on the Critical Buckling Load of Spherical Elastic Shells},
+  journal = {ASME. J. Appl. Mech.},
+  year    = {2016},
+  volume  = {83},
+  pages   = {111005-111005-11},
+}
+
+@Article{zhang16,
+  author  = {Zhang, Lei and Ru, C. Q.},
+  title   = {Imperfection sensitivity of pressured buckling of biopolymer spherical shells},
+  journal = {Phys. Rev. E},
+  year    = {2016},
+  volume  = {93},
+  pages   = {062403},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

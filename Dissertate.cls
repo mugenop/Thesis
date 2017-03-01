@@ -21,12 +21,12 @@
 % Line spacing: dsingle/ddouble
 %   Whether to use single- or doublespacing.
 \newtoggle{DissertateSingleSpace}
-\togglefalse{DissertateSingleSpace}
+%\togglefalse{DissertateSingleSpace}
 \DeclareOption{dsingle}{
     \toggletrue{DissertateSingleSpace}
     \ClassWarning{Dissertate}{Single-spaced mode on.}
 }
-\DeclareOption{ddouble}{\togglefalse{DissertateSingleSpace}}
+%\DeclareOption{ddouble}{\togglefalse{DissertateSingleSpace}}
 
 \ProcessOptions\relax
 
@@ -67,6 +67,7 @@
 \RaggedRight
 \RequirePackage{float}
 \RequirePackage{graphicx}
+\RequirePackage{pdfpages}
 \RequirePackage{subcaption}
 \usepackage{fixltx2e}
 \parindent 12pt
@@ -91,13 +92,12 @@
 \setmonofont[Scale=MatchLowercase]{Source Code Pro}
 \RequirePackage[labelfont={bf,sf,footnotesize,singlespacing},
                 textfont={bf,sf,footnotesize,singlespacing},
-                justification={justified,RaggedRight},
                 singlelinecheck=false,
                 margin=0pt,
                 figurewithin=chapter,
                 tablewithin=chapter]{caption}
 
-
+%justification={justified,RaggedRight},
 \RequirePackage[perpage]{footmisc}
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 \RequirePackage{microtype}

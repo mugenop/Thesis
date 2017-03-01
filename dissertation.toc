@@ -1,118 +1,147 @@
 \contentsline {chapter}{\numberline {0}Materials and methods}{1}{chapter.0}
+\contentsline {paragraph}{}{2}{chapter.0}
 \contentsline {section}{\numberline {0.1}Shell fabrication}{2}{section.0.1}
 \contentsline {subsection}{\numberline {0.1.1}Motivations}{2}{subsection.0.1.1}
 \contentsline {paragraph}{}{2}{subsection.0.1.1}
 \contentsline {paragraph}{}{2}{subsection.0.1.1}
-\contentsline {paragraph}{}{2}{subsection.0.1.1}
-\contentsline {paragraph}{}{2}{subsection.0.1.1}
-\contentsline {subsection}{\numberline {0.1.2}Molding equipments}{3}{subsection.0.1.2}
-\contentsline {paragraph}{Female mold:}{3}{subsection.0.1.2}
-\contentsline {paragraph}{Translation guide sleeve:}{4}{figure.caption.4}
-\contentsline {paragraph}{Male mold:}{4}{figure.caption.5}
-\contentsline {paragraph}{Gluing sleeve:}{5}{figure.caption.6}
-\contentsline {paragraph}{Mechanical press:}{5}{figure.caption.6}
-\contentsline {paragraph}{Pasta machine:}{5}{figure.caption.6}
-\contentsline {subsection}{\numberline {0.1.3}Materials and protocols}{7}{subsection.0.1.3}
-\contentsline {subsubsection}{Dragon skin\textregistered 30}{7}{subsection.0.1.3}
+\contentsline {paragraph}{}{3}{subsection.0.1.1}
+\contentsline {paragraph}{}{3}{subsection.0.1.1}
+\contentsline {subsection}{\numberline {0.1.2}Materials and protocols}{5}{subsection.0.1.2}
+\contentsline {subsubsection}{Dragon skin\textregistered 30}{5}{subsection.0.1.2}
+\contentsline {paragraph}{}{5}{subsection.0.1.2}
+\contentsline {subsubsection}{AJO121/122}{6}{subsection.0.1.2}
+\contentsline {paragraph}{}{6}{subsection.0.1.2}
+\contentsline {subsection}{\numberline {0.1.3}Spherical shells}{7}{subsection.0.1.3}
 \contentsline {paragraph}{}{7}{subsection.0.1.3}
-\contentsline {paragraph}{Half shell casting}{8}{subsection.0.1.3}
-\contentsline {paragraph}{Half spheres gluing:}{9}{Item.8}
-\contentsline {paragraph}{}{9}{Item.8}
-\contentsline {subsubsection}{AJO121/122}{11}{Item.16}
-\contentsline {paragraph}{}{11}{Item.16}
-\contentsline {paragraph}{Half shell casting:}{12}{Item.16}
-\contentsline {paragraph}{Half spheres gluing:}{13}{Item.23}
-\contentsline {section}{\numberline {0.2}Spring experiment}{15}{section.0.2}
-\contentsline {subsection}{\numberline {0.2.1}Brief introduction and motives}{15}{subsection.0.2.1}
-\contentsline {paragraph}{}{15}{subsection.0.2.1}
-\contentsline {subsection}{\numberline {0.2.2}Equipment}{16}{subsection.0.2.2}
-\contentsline {subsubsection}{Tank}{16}{subsection.0.2.2}
-\contentsline {paragraph}{}{16}{subsection.0.2.2}
-\contentsline {subsubsection}{Spring}{17}{figure.caption.9}
-\contentsline {paragraph}{}{17}{figure.caption.9}
-\contentsline {paragraph}{}{17}{figure.caption.9}
-\contentsline {paragraph}{}{18}{figure.caption.9}
-\contentsline {subsubsection}{Spherical shells}{19}{figure.caption.9}
-\contentsline {paragraph}{}{19}{figure.caption.9}
-\contentsline {paragraph}{}{19}{figure.caption.9}
-\contentsline {paragraph}{}{20}{figure.caption.9}
-\contentsline {subsubsection}{Pressure controller}{20}{figure.caption.9}
-\contentsline {paragraph}{}{20}{figure.caption.9}
-\contentsline {paragraph}{}{20}{figure.caption.9}
-\contentsline {paragraph}{}{20}{figure.caption.9}
-\contentsline {paragraph}{}{21}{figure.caption.9}
-\contentsline {paragraph}{}{21}{figure.caption.9}
-\contentsline {paragraph}{Notes}{22}{figure.caption.10}
-\contentsline {subsubsection}{Camera,lenses and light sources}{22}{figure.caption.10}
-\contentsline {paragraph}{Camera:}{22}{figure.caption.10}
-\contentsline {paragraph}{}{23}{figure.caption.10}
-\contentsline {paragraph}{Lenses:}{23}{figure.caption.10}
-\contentsline {paragraph}{Light source:}{23}{figure.caption.10}
-\contentsline {subsection}{\numberline {0.2.3}Experimental process}{25}{subsection.0.2.3}
-\contentsline {subsubsection}{1-D orientation}{25}{subsection.0.2.3}
-\contentsline {paragraph}{}{25}{subsection.0.2.3}
-\contentsline {paragraph}{}{25}{subsection.0.2.3}
-\contentsline {paragraph}{}{26}{subsection.0.2.3}
-\contentsline {subsubsection}{Experimental protocol}{26}{subsection.0.2.3}
-\contentsline {paragraph}{}{26}{subsection.0.2.3}
-\contentsline {paragraph}{Quasi-static experiments:}{26}{table.caption.12}
-\contentsline {paragraph}{Dynamic experiments:}{28}{figure.caption.13}
-\contentsline {paragraph}{Distortion correction:}{30}{table.caption.17}
-\contentsline {subsection}{\numberline {0.2.4}Image treatment}{31}{subsection.0.2.4}
-\contentsline {paragraph}{}{31}{subsection.0.2.4}
-\contentsline {subsubsection}{Image calibration due to window distortion}{31}{subsection.0.2.4}
-\contentsline {paragraph}{}{31}{subsection.0.2.4}
-\contentsline {paragraph}{Calibration step}{32}{equation.0.2.1}
-\contentsline {paragraph}{}{32}{equation.0.2.1}
-\contentsline {paragraph}{}{34}{figure.caption.19}
-\contentsline {subsubsection}{Contour extraction algorithm}{34}{figure.caption.19}
-\contentsline {paragraph}{}{34}{figure.caption.19}
-\contentsline {paragraph}{}{34}{Item.38}
-\contentsline {paragraph}{}{35}{figure.caption.20}
-\contentsline {paragraph}{}{35}{figure.caption.20}
-\contentsline {paragraph}{}{38}{figure.caption.21}
-\contentsline {paragraph}{}{38}{figure.caption.22}
-\contentsline {paragraph}{}{39}{figure.caption.23}
-\contentsline {paragraph}{}{42}{Item.44}
-\contentsline {paragraph}{}{43}{figure.caption.25}
-\contentsline {paragraph}{}{46}{figure.caption.26}
-\contentsline {paragraph}{}{46}{figure.caption.26}
-\contentsline {paragraph}{}{47}{figure.caption.26}
-\contentsline {paragraph}{Note}{47}{figure.caption.27}
-\contentsline {paragraph}{}{47}{figure.caption.27}
-\contentsline {section}{\numberline {0.3}Frictionless rail}{48}{section.0.3}
-\contentsline {subsection}{\numberline {0.3.1}Brief introduction and motives}{48}{subsection.0.3.1}
-\contentsline {paragraph}{}{48}{subsection.0.3.1}
-\contentsline {subsection}{\numberline {0.3.2}Equipment}{50}{subsection.0.3.2}
-\contentsline {subsubsection}{Air bearing system}{50}{subsection.0.3.2}
-\contentsline {paragraph}{}{50}{subsection.0.3.2}
-\contentsline {paragraph}{}{51}{table.caption.30}
-\contentsline {paragraph}{}{51}{figure.caption.31}
-\contentsline {subsubsection}{Mounting support}{52}{figure.caption.31}
-\contentsline {paragraph}{}{52}{figure.caption.31}
-\contentsline {subsubsection}{Spherical shells}{53}{figure.caption.32}
-\contentsline {paragraph}{}{53}{figure.caption.32}
-\contentsline {paragraph}{}{53}{figure.caption.32}
-\contentsline {paragraph}{}{53}{figure.caption.32}
-\contentsline {subsubsection}{Pressure controller}{54}{figure.caption.32}
-\contentsline {paragraph}{}{54}{figure.caption.32}
-\contentsline {subsubsection}{Tank}{54}{figure.caption.32}
-\contentsline {paragraph}{}{54}{figure.caption.32}
-\contentsline {subsubsection}{Camera,lenses and light sources}{54}{figure.caption.32}
-\contentsline {subsection}{\numberline {0.3.3}Experimental process}{54}{subsection.0.3.3}
-\contentsline {paragraph}{}{54}{subsection.0.3.3}
-\contentsline {paragraph}{}{55}{Item.47}
-\contentsline {subsubsection}{Experimental protocol}{57}{table.caption.33}
-\contentsline {paragraph}{}{57}{table.caption.33}
-\contentsline {paragraph}{Preliminary settings}{57}{table.caption.33}
-\contentsline {paragraph}{Multiple pressure cycles}{57}{table.caption.33}
-\contentsline {paragraph}{}{58}{figure.caption.35}
-\contentsline {paragraph}{}{59}{figure.caption.36}
-\contentsline {paragraph}{High temporal resolution recordings}{59}{figure.caption.36}
-\contentsline {paragraph}{Drag-coefficient measurements}{60}{figure.caption.36}
-\contentsline {paragraph}{}{60}{figure.caption.36}
-\contentsline {subsection}{\numberline {0.3.4}Image treatment}{61}{subsection.0.3.4}
-\contentsline {paragraph}{}{61}{subsection.0.3.4}
-\contentsline {paragraph}{}{62}{Item.51}
-\contentsline {chapter}{Appendix \numberline {A}Some extra stuff}{63}{Appendix.1.A}
-\contentsline {chapter}{References}{64}{chapter*.38}
+\contentsline {paragraph}{}{7}{subsection.0.1.3}
+\contentsline {paragraph}{}{8}{subsection.0.1.3}
+\contentsline {paragraph}{}{8}{subsection.0.1.3}
+\contentsline {paragraph}{}{8}{subsection.0.1.3}
+\contentsline {section}{\numberline {0.2}Spring experiment}{9}{section.0.2}
+\contentsline {subsection}{\numberline {0.2.1}Brief introduction and motives}{9}{subsection.0.2.1}
+\contentsline {paragraph}{}{9}{subsection.0.2.1}
+\contentsline {subsection}{\numberline {0.2.2}Equipment}{10}{subsection.0.2.2}
+\contentsline {subsubsection}{Tank}{10}{subsection.0.2.2}
+\contentsline {paragraph}{}{10}{subsection.0.2.2}
+\contentsline {subsubsection}{Spring}{11}{figure.caption.5}
+\contentsline {paragraph}{}{11}{figure.caption.5}
+\contentsline {paragraph}{}{12}{figure.caption.5}
+\contentsline {paragraph}{}{12}{figure.caption.5}
+\contentsline {subsubsection}{Pressure controller}{13}{figure.caption.5}
+\contentsline {paragraph}{}{13}{figure.caption.5}
+\contentsline {paragraph}{}{13}{figure.caption.5}
+\contentsline {paragraph}{}{13}{figure.caption.5}
+\contentsline {paragraph}{}{13}{figure.caption.5}
+\contentsline {subsubsection}{Camera,lenses and light sources}{14}{figure.caption.5}
+\contentsline {paragraph}{Camera:}{14}{figure.caption.5}
+\contentsline {paragraph}{}{14}{figure.caption.5}
+\contentsline {paragraph}{Lenses:}{14}{figure.caption.5}
+\contentsline {paragraph}{Light source:}{15}{figure.caption.5}
+\contentsline {subsection}{\numberline {0.2.3}Experimental process}{17}{subsection.0.2.3}
+\contentsline {subsubsection}{1-D orientation}{17}{subsection.0.2.3}
+\contentsline {paragraph}{}{17}{subsection.0.2.3}
+\contentsline {paragraph}{}{17}{subsection.0.2.3}
+\contentsline {paragraph}{}{18}{subsection.0.2.3}
+\contentsline {subsubsection}{Experimental protocol}{18}{subsection.0.2.3}
+\contentsline {paragraph}{}{18}{subsection.0.2.3}
+\contentsline {paragraph}{Dynamic experiments:}{18}{table.caption.7}
+\contentsline {subsection}{\numberline {0.2.4}Image treatment}{20}{subsection.0.2.4}
+\contentsline {paragraph}{}{20}{subsection.0.2.4}
+\contentsline {subsubsection}{Image calibration due to window distortion}{20}{subsection.0.2.4}
+\contentsline {paragraph}{Distortion correction:}{20}{subsection.0.2.4}
+\contentsline {paragraph}{}{22}{figure.caption.12}
+\contentsline {paragraph}{}{24}{figure.caption.13}
+\contentsline {subsubsection}{Contour extraction algorithm}{24}{figure.caption.13}
+\contentsline {paragraph}{}{24}{figure.caption.13}
+\contentsline {paragraph}{}{24}{Item.6}
+\contentsline {paragraph}{}{25}{figure.caption.14}
+\contentsline {paragraph}{}{26}{figure.caption.14}
+\contentsline {paragraph}{}{26}{figure.caption.15}
+\contentsline {paragraph}{}{27}{figure.caption.15}
+\contentsline {paragraph}{}{27}{figure.caption.16}
+\contentsline {paragraph}{}{28}{figure.caption.17}
+\contentsline {paragraph}{}{30}{figure.caption.18}
+\contentsline {paragraph}{}{30}{figure.caption.18}
+\contentsline {paragraph}{}{30}{figure.caption.18}
+\contentsline {section}{\numberline {0.3}Frictionless rail}{31}{section.0.3}
+\contentsline {subsection}{\numberline {0.3.1}Brief introduction and motives}{31}{subsection.0.3.1}
+\contentsline {paragraph}{}{31}{subsection.0.3.1}
+\contentsline {paragraph}{}{32}{subsection.0.3.1}
+\contentsline {subsection}{\numberline {0.3.2}Equipment}{33}{subsection.0.3.2}
+\contentsline {subsubsection}{Air bearing system}{33}{subsection.0.3.2}
+\contentsline {paragraph}{}{33}{subsection.0.3.2}
+\contentsline {paragraph}{}{35}{table.caption.22}
+\contentsline {paragraph}{}{35}{figure.caption.23}
+\contentsline {subsubsection}{Mounting support}{35}{figure.caption.23}
+\contentsline {paragraph}{}{35}{figure.caption.23}
+\contentsline {subsubsection}{Pressure controller}{36}{figure.caption.24}
+\contentsline {paragraph}{}{36}{figure.caption.24}
+\contentsline {subsubsection}{Tank}{37}{figure.caption.24}
+\contentsline {paragraph}{}{37}{figure.caption.24}
+\contentsline {subsubsection}{Camera,lenses and light sources}{37}{figure.caption.24}
+\contentsline {subsection}{\numberline {0.3.3}Experimental process}{37}{subsection.0.3.3}
+\contentsline {paragraph}{}{37}{subsection.0.3.3}
+\contentsline {paragraph}{}{38}{Item.9}
+\contentsline {subsubsection}{Experimental protocol}{39}{table.caption.25}
+\contentsline {paragraph}{}{39}{table.caption.25}
+\contentsline {paragraph}{Preliminary settings}{39}{table.caption.25}
+\contentsline {paragraph}{Multiple pressure cycles}{40}{table.caption.25}
+\contentsline {paragraph}{}{41}{figure.caption.27}
+\contentsline {paragraph}{High temporal resolution recordings}{42}{figure.caption.27}
+\contentsline {paragraph}{Drag-coefficient measurements}{42}{figure.caption.27}
+\contentsline {paragraph}{}{42}{figure.caption.27}
+\contentsline {subsection}{\numberline {0.3.4}Image treatment}{43}{subsection.0.3.4}
+\contentsline {paragraph}{}{43}{subsection.0.3.4}
+\contentsline {paragraph}{}{44}{Item.12}
+\contentsline {section}{\numberline {0.4}Particle-image velocimetry measurements}{45}{section.0.4}
+\contentsline {subsection}{\numberline {0.4.1}Brief introduction and motives}{45}{subsection.0.4.1}
+\contentsline {paragraph}{}{45}{subsection.0.4.1}
+\contentsline {paragraph}{}{45}{subsection.0.4.1}
+\contentsline {paragraph}{}{45}{subsection.0.4.1}
+\contentsline {paragraph}{}{46}{figure.caption.30}
+\contentsline {subsection}{\numberline {0.4.2}Equipment}{48}{subsection.0.4.2}
+\contentsline {paragraph}{}{48}{subsection.0.4.2}
+\contentsline {subsubsection}{Laser source, light sheet generator and camera}{49}{subsection.0.4.2}
+\contentsline {subsubsection}{Tracer particles}{51}{figure.caption.32}
+\contentsline {subsection}{\numberline {0.4.3}Experimental protocol}{52}{subsection.0.4.3}
+\contentsline {paragraph}{Laser sheet and camera alignment}{52}{subsection.0.4.3}
+\contentsline {paragraph}{Seeding}{52}{subsection.0.4.3}
+\contentsline {paragraph}{}{53}{subsection.0.4.3}
+\contentsline {paragraph}{Note}{53}{Item.16}
+\contentsline {subsection}{\numberline {0.4.4}Image processing}{54}{subsection.0.4.4}
+\contentsline {paragraph}{}{54}{subsection.0.4.4}
+\contentsline {section}{\numberline {0.5}Summary of the experimental setups}{55}{section.0.5}
+\contentsline {paragraph}{}{55}{section.0.5}
+\contentsline {paragraph}{}{55}{section.0.5}
+\contentsline {paragraph}{Spring experiment}{56}{section.0.5}
+\contentsline {paragraph}{Frictionless rail experiment}{56}{section.0.5}
+\contentsline {paragraph}{PIV measurements}{57}{section.0.5}
+\contentsline {paragraph}{}{57}{section.0.5}
+\contentsline {chapter}{Appendix \numberline {A}Some extra stuff}{58}{Appendix.1.A}
+\contentsline {section}{\numberline {A.1}Molding equipments}{58}{section.1.A.1}
+\contentsline {paragraph}{Female mold:}{58}{section.1.A.1}
+\contentsline {paragraph}{Translation guide sleeve:}{59}{figure.caption.33}
+\contentsline {paragraph}{Male mold:}{60}{figure.caption.34}
+\contentsline {paragraph}{Gluing sleeve:}{60}{figure.caption.35}
+\contentsline {paragraph}{Mechanical press:}{61}{figure.caption.35}
+\contentsline {paragraph}{Pasta machine:}{61}{figure.caption.35}
+\contentsline {section}{\numberline {A.2}Dragon skin\textregistered 30 molding protocol}{61}{section.1.A.2}
+\contentsline {paragraph}{Half shell casting}{61}{section.1.A.2}
+\contentsline {paragraph}{Half spheres gluing:}{62}{Item.29}
+\contentsline {paragraph}{}{63}{Item.29}
+\contentsline {section}{\numberline {A.3}AJO 121/122 molding protocol}{64}{section.1.A.3}
+\contentsline {paragraph}{Half shell casting:}{64}{section.1.A.3}
+\contentsline {paragraph}{Half spheres gluing:}{65}{Item.44}
+\contentsline {subsection}{\numberline {A.3.1}Material documentation}{67}{subsection.1.A.3.1}
+\contentsline {subsubsection}{Dragon skin 30}{67}{subsection.1.A.3.1}
+\contentsline {subsubsection}{AJO 121}{69}{subsection.1.A.3.1}
+\contentsline {paragraph}{}{69}{subsection.1.A.3.1}
+\contentsline {subsubsection}{AJO 122}{72}{subsection.1.A.3.1}
+\contentsline {paragraph}{}{72}{subsection.1.A.3.1}
+\contentsline {section}{\numberline {A.4}Algorithm for fitting the external shape of the shell}{76}{section.1.A.4}
+\contentsline {paragraph}{}{76}{section.1.A.4}
+\contentsline {section}{\numberline {A.5}Frictionless rail}{78}{section.1.A.5}
+\contentsline {subsection}{\numberline {A.5.1}Technical details}{78}{subsection.1.A.5.1}
+\contentsline {section}{\numberline {A.6}PIV measurements}{81}{section.1.A.6}
+\contentsline {subsection}{\numberline {A.6.1}Davis image analysis parameters}{81}{subsection.1.A.6.1}
+\contentsline {chapter}{References}{84}{chapter*.40}
